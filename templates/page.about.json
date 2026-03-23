@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/b6730fb7f9b1a5128c9771463b82eff3.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-700",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "About Dr. Biss",
+        "heading_size": "heading-feature",
+        "richtext": "Natural soaps and personal care, crafted with pure botanical ingredients since 2024.",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop Our Products",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "story": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Our Story",
+        "heading_size": "heading-standard",
+        "rich_text": "<p>The brand originated from two university professors—a chemist and industrial engineer—who questioned why everyday soap couldn’t be simple, effective, and reasonably priced. After examining market trends, they identified a gap: products were either overly synthetic, unnecessarily complicated, or expensive.</p><p>This realization led to Dr. BISS, offering households an alternative to complex formulas. The brand emphasizes <strong>affordable, accessible products—crafted with simple ingredients</strong> while helping families avoid common additives in daily care routines.</p><p>Today Dr. BISS offers palm-oil-free bar soaps, multi-purpose liquid soaps, essential oils, and diffusers—each one rooted in the same founding principle: clean ingredients, honest labels, real results.</p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-2/3",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "mission": {
+      "type": "image-with-text",
+      "settings": {
+        "display_on_card": false,
+        "image": "shopify://shop_images/f5a44305e3b88f232a9d45f157bb07eb.jpg",
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "default",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "right",
+        "image_size": "half",
+        "disable_media_style": false,
+        "title": "Our Mission",
+        "heading_size": "heading-standard",
+        "richtext": "<p>To create simple, skin-friendly essentials—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and clear labeling, so everyday care is easy.</p><p>We formulate without palm oil, parabens, sulfates, dyes, or alcohols. Every Dr. Biss product comes with straightforward labeling, so you always know exactly what you are putting on your skin.</p>",
+        "text_alignment": "text-left",
+        "button_link": "shopify://collections",
+        "button_label": "Shop All Products",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "promise": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "heading_size": "heading-standard",
+        "rich_text": "<p><em>“Affordable, accessible products—crafted with simple ingredients.”</em></p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-1/2",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "values": {
+      "type": "image-with-text",
+      "settings": {
+        "display_on_card": false,
+        "image": "shopify://shop_images/a83c5df73b53c6e683f85b33831acf53.jpg",
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "default",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "left",
+        "image_size": "half",
+        "disable_media_style": false,
+        "title": "What We Stand For",
+        "heading_size": "heading-standard",
+        "richtext": "<p><strong>Simplicity that performs</strong> — Short ingredient lists and practical formulas designed for effective rinsing.</p><p><strong>Clear labeling &amp; transparency</strong> — Straightforward communication about product contents without misleading claims.</p><p><strong>Practical clean standards</strong> — Formulated without palm oil, parabens, sulfates, dyes, or alcohols.</p><p><strong>Everyday safety-first</strong> — Accessible safety instructions across all product categories.</p><p><strong>Realistic sustainability</strong> — Reducing unnecessary additives and promoting efficient product use.</p>",
+        "text_alignment": "text-left",
+        "button_link": "shopify://pages/ingredients-transparency",
+        "button_label": "View Our Ingredients",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "icons": {
+      "type": "icon-list",
+      "blocks": {
+        "icon-vegan": {
+          "type": "icon",
+          "settings": {
+            "icon": "leaf",
+            "text": "100% Vegan"
+          }
+        },
+        "icon-sulfate": {
+          "type": "icon",
+          "settings": {
+            "icon": "alcohol_free",
+            "text": "Sulfate-Free"
+          }
+        },
+        "icon-eco": {
+          "type": "icon",
+          "settings": {
+            "icon": "globe",
+            "text": "Eco Packaging"
+          }
+        },
+        "icon-transparent": {
+          "type": "icon",
+          "settings": {
+            "icon": "eye",
+            "text": "Full Transparency"
+          }
+        },
+        "icon-delivery": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "text": "Fast Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "icon-vegan",
+        "icon-sulfate",
+        "icon-eco",
+        "icon-transparent",
+        "icon-delivery"
+      ],
+      "settings": {
+        "title": "",
+        "max_width": 80,
+        "text_style": "body",
+        "uppercase_text": false,
+        "layout_on_mobile": "wrap",
+        "icon_alignment_on_desktop": "md:justify-between",
+        "icon_thickness": 1.3,
+        "background_color": "bg-scheme-card text-scheme-card-text",
+        "show_border": true,
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Stay Connected",
+        "richtext": "<p>Sign up for exclusive offers, new product launches, and tips for a cleaner daily routine.</p>",
+        "display_on_card": false,
+        "color_scheme": "scheme3",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story",
+    "mission",
+    "promise",
+    "values",
+    "icons",
+    "newsletter"
+  ]
+}

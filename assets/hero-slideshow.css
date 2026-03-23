@@ -1,0 +1,23 @@
+.shopify-section--hero-slideshow .product-tile--mini {
+  background: rgb(var(--color-button-background-hover));
+  color: rgb(var(--color-button-text));
+  bottom: 20px;
+  padding: 8px;
+  position: absolute;
+  right: 30px;
+  z-index: 19;
+}
+.shopify-section--hero-slideshow .product-tile--mini:hover {
+  background: rgb(var(--color-button-background));
+}
+.shopify-section--hero-slideshow .product-tile--mini .product-tile {
+  align-items: stretch;
+}
+.shopify-section--hero-slideshow .product-tile--mini .product-tile > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+}

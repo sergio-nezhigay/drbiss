@@ -1,0 +1,260 @@
+{%- liquid
+  assign text = section.settings.text
+  assign link = section.settings.link
+  assign show_announcement_bar = false
+
+  if section.settings.home_page_only == false or template.name == 'index'
+    assign show_announcement_bar = true
+  endif
+-%}
+
+{%- if show_announcement_bar -%}
+  <section
+    class="relative bg-scheme-background text-scheme-text {% if link != blank and section.settings.display != 'slider' %}hover:bg-scheme-accent-1 hover:text-scheme-accent-1-contrast{% endif %} border-section-border border-b-section text-center {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}"
+    data-color-scheme="{{ section.settings.color_scheme }}"
+    id="AnnouncementBar"
+  >
+    {%- if section.settings.display == 'slider' -%}
+      {%- if section.blocks.size > 0 -%}
+        <div
+          id="announcement-slider-{{ section.id }}"
+          class="splide"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              {%- for block in section.blocks -%}
+                <li class="splide__slide" {{ block.shopify_attributes }}>
+                  {%- if block.settings.link != blank -%}
+                    <a
+                      class="block w-full px-5 py-1 text-sm text-current lg:px-0 lg:py-2"
+                      href="{{ block.settings.link }}"
+                    >
+                      {{ block.settings.text | escape }}
+                    </a>
+                  {%- else -%}
+                    <div
+                      class="py-1 text-center text-sm text-current lg:py-2"
+                      role="complementary"
+                    >
+                      <p class="px-5 lg:px-0">{{ block.settings.text | escape }}</p>
+                    </div>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- if section.blocks.size > 1 -%}
+            <div class="splide__arrows absolute left-0 top-0 flex h-full w-full items-center justify-between px-5 lg:px-0">
+              <button class="splide__arrow splide__arrow--prev text-current" aria-label="{{ 'sections.slideshow.previous_slide' | t }}">
+                <span class="block">{% render 'icon-previous-announcement' %}</span>
+              </button>
+              <button class="splide__arrow splide__arrow--next text-current" aria-label="{{ 'sections.slideshow.next_slide' | t }}">
+                <span class="block">{% render 'icon-next-announcement' %}</span>
+              </button>
+            </div>
+          {%- endif -%}
+          <script class="slideshow-options" type="application/json">
+            {
+              "mediaQuery": "min",
+              "arrows": true,
+              "pagination": false,
+              "rewind": true,
+              "perPage": 1,
+              "perMove": 1,
+              "type": "loop",
+              "autoScroll": {
+                "autoStart": false
+              },
+              "autoplay": true,
+              "interval": 3000,
+              "pauseOnHover": true,
+              "pauseOnFocus": true
+            }
+          </script>
+        </div>
+      {%- else -%}
+        <div
+          class="py-1 text-center text-sm text-current lg:py-2"
+          role="complementary"
+        >
+          <p class="px-5 lg:px-0">{{ text | escape }}</p>
+        </div>
+      {%- endif -%}
+    {%- elsif section.settings.display == 'static' -%}
+      {%- if link != blank -%}
+        <a
+          class="block w-full px-5 py-1 text-sm text-current lg:px-0 lg:py-2"
+          href="{{ link }}"
+        >
+          {{ text | escape }}
+        </a>
+      {%- else -%}
+        <div
+          class="py-1 text-center text-sm text-current lg:py-2"
+          role="complementary"
+        >
+          <p class="px-5 lg:px-0">{{ text | escape }}</p>
+        </div>
+      {%- endif -%}
+    {%- else -%}
+      {%- render 'scrolling-text', class: 'py-1 lg:py-2' %}
+    {%- endif -%}
+  </section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.announcement_bar.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "home_page_only",
+      "label": "t:common.settings.home_page_only.label",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "display",
+      "label": "t:sections.announcement_bar.settings.display.label",
+      "options": [
+        {
+          "value": "scrolling_text",
+          "label": "t:sections.announcement_bar.settings.display.options.scrolling_text.label"
+        },
+        {
+          "value": "static",
+          "label": "t:sections.announcement_bar.settings.display.options.static.label"
+        },
+        {
+          "value": "slider",
+          "label": "t:sections.announcement_bar.settings.display.options.slider.label"
+        }
+      ],
+      "default": "scrolling_text"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:sections.announcement_bar.settings.text.label",
+      "default": "Announce something here"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:common.settings.link.label"
+    },
+    {
+      "type": "header",
+      "content": "t:common.settings.header_color"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme1",
+      "label": "t:common.settings.color_scheme.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_gradient_background",
+      "label": "t:common.settings.use_gradient_background.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement_bar.settings.header_scrolling_text"
+    },
+    {
+      "type": "checkbox",
+      "id": "repeat_text",
+      "default": true,
+      "label": "t:common.settings.repeat_text.label",
+      "info": "t:common.settings.repeat_text.info"
+    },
+    {
+      "type": "select",
+      "id": "shape_between_text",
+      "label": "t:common.settings.shape_between_text.label",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:common.options.none.label"
+        },
+        {
+          "value": "circle",
+          "label": "t:common.options.circle.label"
+        },
+        {
+          "value": "diamond",
+          "label": "t:common.options.diamond.label"
+        },
+        {
+          "value": "triangle",
+          "label": "t:common.options.triangle.label"
+        },
+        {
+          "value": "star",
+          "label": "t:common.options.star.label"
+        },
+        {
+          "value": "10_point_star",
+          "label": "t:common.options.10_point_star.label"
+        },
+        {
+          "value": "flower",
+          "label": "t:common.options.flower.label"
+        }
+      ],
+      "default": "10_point_star"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate_shape_between_text",
+      "default": true,
+      "label": "t:common.settings.animate_shape_between_text.label"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 400,
+      "step": 10,
+      "label": "t:common.settings.speed.label",
+      "default": 120
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "t:common.settings.direction.label",
+      "options": [
+        {
+          "value": "",
+          "label": "t:common.options.right_to_left.label"
+        },
+        {
+          "value": "reverse",
+          "label": "t:common.options.left_to_right.label"
+        }
+      ],
+      "default": ""
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement_bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.announcement_bar.settings.text.label",
+          "default": "Announce something here"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:common.settings.link.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

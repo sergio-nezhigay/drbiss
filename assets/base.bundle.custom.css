@@ -1,0 +1,191 @@
+@media (min-width: 990px) {
+  [data-related-products-section] .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 25%));
+  }
+}
+.product-tile__link:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.product-tile:hover .group .product-media-object img {
+  --tw-scale-x: var(--hover-effect-zoom-media);
+  --tw-scale-y: var(--hover-effect-zoom-media);
+}
+
+.main-banner-section-home-page .push-btn__surface {
+  padding: 1rem 2rem;
+}
+
+.product-media .feature-media-item .media {
+  max-height: calc(100vh - var(--section-vertical-spacing) - var(--header-group-height) - 52px);
+}
+
+/* ============================================
+   Diffusers collection — visual size hierarchy
+   VF120A = Large-Area (biggest), VC50L = Mini (smallest)
+   ============================================ */
+
+/* VF120A: Large-Area Diffuser appears bigger */
+ul.grid li:has(a[href*="vf120a"]) .media--css-only {
+  overflow: visible;
+}
+ul.grid li:has(a[href*="vf120a"]) .media--css-only img {
+  transform: scale(1.25);
+  transform-origin: center center;
+}
+ul.grid li:has(a[href*="vf120a"]) .product-tile:hover .media--css-only img {
+  transform: scale(1.35);
+  transform-origin: center center;
+}
+
+/* VC50L: Mini Diffuser appears smaller */
+ul.grid li:has(a[href*="vc50l"]) .media--css-only img {
+  transform: scale(0.65);
+  transform-origin: center center;
+}
+ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
+  transform: scale(0.72);
+  transform-origin: center center;
+}
+
+
+/* ===== Dr. Biss Custom Overrides ===== */
+
+/* Ensure image-with-text-overlay parent is positioned for overlay to work */
+.shopify-section--image-with-text-overlay > div,
+.shopify-section--hero-slideshow .splide__slide > div {
+  position: relative;
+}
+
+/* Stop unwanted scrolling text marquee animations */
+.scrolling-text__track {
+  animation-play-state: paused !important;
+}
+
+
+
+
+
+/* Newsletter — текст по центру, обмежена ширина */
+.shopify-section--newsletter .section-content {
+  max-width: 560px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+.shopify-section--newsletter h2,
+.shopify-section--newsletter .rte,
+.shopify-section--newsletter p {
+  text-align: center !important;
+}
+
+
+
+
+
+/* Стікер — без обертання, текст нормально */
+.rotate-anim {
+  animation: none !important;
+}
+.shopify-section-content-static-sticker {
+  transform: translate(-50%, -50%) rotate(0deg) !important;
+}
+
+/* About page image-with-text aspect ratio fix - targets section IDs, works with any image */
+#shopify-section-template--21195744215237__mission .media--css-only,
+#shopify-section-template--21195744215237__values .media--css-only {
+  padding-bottom: 66% !important;
+  height: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+#shopify-section-template--21195744215237__mission .media--css-only img,
+#shopify-section-template--21195744215237__values .media--css-only img {
+  position: absolute !important;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* About page icons section - tighter vertical padding */
+#shopify-section-template--21195744215237__icons .py-section-vertical-spacing {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+#shopify-section-template--21233722458309__packaging .media--css-only img,
+#shopify-section-template--21233722458309__sourcing .media--css-only img {
+  position: absolute !important;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#shopify-section-template--21233722949829__what_we_use .media--css-only img,
+#shopify-section-template--21233722949829__never_use .media--css-only img {
+  position: absolute !important;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Homepage hero banner — lighter overlay */
+#shopify-section-template--21195744149701__hero_slideshow_n4GQYX .absolute.inset-0.pointer-events-none {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+#shopify-section-template--21233722458309__intro .media--css-only img {
+  position: absolute !important;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#shopify-section-template--21233722949829__philosophy .media--css-only img {
+  position: absolute !important;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Testimonials — subtle grey card background per review */
+#shopify-section-template--21195744149701__featured_testimonials_ymJpd6 .break-words.text-center {
+  background-color: #f0eeeb;
+  padding: 2.5rem 2rem;
+  border-radius: 6px;
+}
+
+#shopify-section-template--21233722458309__packaging .media--css-only img {
+  position: absolute !important; top: 0; left: 0;
+  width: 100% !important; height: 100% !important; object-fit: cover !important;
+}
+
+#shopify-section-template--21233722949829__what_we_use .media--css-only img {
+  position: absolute !important; top: 0; left: 0;
+  width: 100% !important; height: 100% !important; object-fit: cover !important;
+}
+
+
+
+/* Sustainability & Ingredients image-with-text sections: reduce spacing, align text to top */
+#shopify-section-template--21233722458309__packaging .py-section-vertical-spacing,
+#shopify-section-template--21233722949829__what_we_use .py-section-vertical-spacing {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#shopify-section-template--21233722458309__packaging .flex.items-center,
+#shopify-section-template--21233722949829__what_we_use .flex.items-center {
+  align-items: flex-start;
+  padding-top: 16px;
+}

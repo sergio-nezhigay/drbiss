@@ -1,0 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand-social": {
+          "type": "tagline_and_social_links",
+          "settings": {
+            "tagline": "Dr. Biss — natural soaps and personal care crafted with pure botanical ingredients. Vegan, sulfate-free, and clearly labeled.",
+            "show_social_icons": true
+          }
+        },
+        "collections-col": {
+          "type": "menus",
+          "settings": {
+            "show_menu_headings": true,
+            "linklist_1": "footer-collections",
+            "linklist_2": "footer-menu",
+            "linklist_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "brand-social",
+        "collections-col"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_locale_selector": false,
+        "color_scheme": "scheme1",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

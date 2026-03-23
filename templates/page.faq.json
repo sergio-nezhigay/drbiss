@@ -1,0 +1,161 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "max_width": "medium",
+        "display_on_card": true,
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "faq_FAq8Hg": {
+      "type": "faq",
+      "blocks": {
+        "question_kG4KM6": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Are your soaps vegan and sulfate-free?",
+            "answer": "<p>Yes. Our labels state plant-based, sulfate-free, vegan, and palm‑oil‑free.</p>"
+          }
+        },
+        "question_T4tY8r": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What can I use the liquid soap for?",
+            "answer": "<p>Body, hands, and home.</p>"
+          }
+        },
+        "question_GaEd7K": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What can I use the bar soap for?",
+            "answer": "<p>Body, hands, and face.</p>"
+          }
+        },
+        "question_pAXgkA": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Is potassium hydroxide safe in soap?",
+            "answer": "<p>Potassium hydroxide is used to turn oils into soap and is not present as a harsh active<br/>in the finished product.</p>"
+          }
+        },
+        "question_V7XwyN": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I use the liquid soap?",
+            "answer": "<p>Pump 1-2 times onto wet skin. Lather and rinse.</p>"
+          }
+        },
+        "question_m3hapq": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I store bar soap to make it last?",
+            "answer": "<p>Keep the bar dry between uses (no standing water).</p>"
+          }
+        },
+        "question_bFnmYc": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What is the safety guidance for soaps?",
+            "answer": "<p>For external use only. Avoid contact with eyes. Keep out of reach of children.<br/>Discontinue use if irritation occurs.</p>"
+          }
+        },
+        "question_aHBKRw": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What does 'Free from' mean?",
+            "answer": "<p>No parabens, SLS/SLES, dyes/colorant, palm oil, or alcohols (see each product<br/>page).</p>"
+          }
+        },
+        "question_dYARXe": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I use essential oils in a diffuser?",
+            "answer": "<p>Our diffusers are waterless. Simply add 3–5 drops of essential oil directly into the reservoir, place on a stable surface, and press the power button. Start with fewer drops and adjust to your preference.<\\/p>"
+          }
+        },
+        "question_jVYN7U": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Can I ingest essential oils?",
+            "answer": "<p>No. Do not ingest essential oils.</p>"
+          }
+        },
+        "question_Ua4HDF": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Can I apply essential oils directly to skin?",
+            "answer": "<p>Essential oils are concentrated. Dilute first and discontinue use if irritation occurs.</p>"
+          }
+        },
+        "question_QVGipd": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Any note about turmeric soap?",
+            "answer": "<p>Turmeric may stain light fabrics. Rinse thoroughly after use.</p>"
+          }
+        },
+        "question_c9JGgD": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I contact you?",
+            "answer": "<p>Email: <a href=\"mailto:info@bisschemical.com\" title=\"mailto:info@bisschemical.com\">info@bisschemical.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_kG4KM6",
+        "question_T4tY8r",
+        "question_GaEd7K",
+        "question_pAXgkA",
+        "question_V7XwyN",
+        "question_m3hapq",
+        "question_bFnmYc",
+        "question_aHBKRw",
+        "question_dYARXe",
+        "question_jVYN7U",
+        "question_Ua4HDF",
+        "question_QVGipd",
+        "question_c9JGgD"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "display_on_card": true,
+        "heading_text_style": "heading",
+        "two_columns_desktop": true,
+        "title": "FAQ",
+        "richtext": "Find the most frequently asked questions below.",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_FAq8Hg"
+  ]
+}

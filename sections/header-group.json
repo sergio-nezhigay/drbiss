@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_9dfkeB": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free shipping on orders over $30",
+            "link": ""
+          }
+        },
+        "announcement_ghbirY": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free shipping on orders over $30!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_9dfkeB",
+        "announcement_ghbirY"
+      ],
+      "settings": {
+        "home_page_only": false,
+        "display": "slider",
+        "text": "Free shipping on orders over $30",
+        "link": "",
+        "color_scheme": "scheme1",
+        "use_gradient_background": false,
+        "repeat_text": true,
+        "shape_between_text": "circle",
+        "animate_shape_between_text": true,
+        "speed": 120,
+        "direction": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo": "shopify://shop_images/WhatsApp_Image_2026-01-06_at_17.43.35-removebg-preview.png",
+        "logo_max_width": 70,
+        "main_linklist": "main-menu-1",
+        "nested_nav_style": "mega_menu",
+        "showcase_top_level_collections": true,
+        "show_all_navigation_links": true,
+        "showcase_second_level_links": true,
+        "crop": "aspect-w-1 aspect-h-1",
+        "header_layout": "navigation_left_logo_center",
+        "header_show_search": true,
+        "sticky_header": true,
+        "show_icons": true,
+        "enable_overlay_on_homepage": true,
+        "enable_overlay_on_collection_pages": false,
+        "enable_overlay_on_product_pages": false,
+        "overlay_color_scheme": "scheme1",
+        "transparent_when_overlaid_and_stuck": false,
+        "overlay_show_separator_border": false,
+        "overlay_first_section_padding_top_desktop": 6,
+        "overlay_first_section_padding_top_mobile": 3,
+        "color_scheme": "scheme1",
+        "active_color_scheme": "",
+        "mobile_main_linklist": "",
+        "sidebar_menu_font_size": "heading-secondary",
+        "sidebar_show_footer_menu": false,
+        "sidebar_show_social_icons": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

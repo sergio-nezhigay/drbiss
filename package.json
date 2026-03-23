@@ -1,0 +1,15 @@
+{
+  "name": "drbiss",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "shopify theme dev --store=dr-biss.myshopify.com --theme 155487895749",
+    "push": "shopify theme push --store=dr-biss.myshopify.com --theme 155487895749",
+    "pull": "shopify theme pull --store=dr-biss.myshopify.com --theme 155487895749"
+  }
+}

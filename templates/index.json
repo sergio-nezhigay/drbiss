@@ -1,0 +1,537 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_slideshow_n4GQYX": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_CBjAAz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/f492c512a838608f6a3286c224fb8d15.jpg",
+            "image_mobile": "shopify://shop_images/f492c512a838608f6a3286c224fb8d15.jpg",
+            "title": "Everyday care made easy.",
+            "richtext": "Vegan, sulfate-free, and clearly labeled",
+            "cta_url": "shopify://collections",
+            "cta_text": "Shop Now",
+            "place_content": "place-content-end-start",
+            "text_align": "text-left",
+            "product": "build-a-box-bar-soap-bundle-4-bars"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CBjAAz"
+      ],
+      "name": "t:sections.hero_slideshow.name",
+      "settings": {
+        "style": "full",
+        "height": "pt-screen-height",
+        "display_on_card": true,
+        "display_content_below_image_on_mobile": false,
+        "auto_rotate": false,
+        "slide_speed": "5000",
+        "place_content": "place-content-center-start",
+        "text_align": "text-left",
+        "heading_size": "heading-standard",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "icon-list": {
+      "type": "icon-list",
+      "blocks": {
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "plane",
+            "text": "Bringing Soap to the World"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "alcohol_free",
+            "text": "Alcohol free"
+          }
+        },
+        "icon-2": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "paraben_free",
+            "text": "Paraben free"
+          }
+        },
+        "icon-3": {
+          "type": "icon",
+          "settings": {
+            "icon": "return",
+            "text": "Easy Returns"
+          }
+        },
+        "icon-4": {
+          "type": "icon",
+          "settings": {
+            "icon": "clock",
+            "text": "Fast Delivery"
+          }
+        },
+        "icon-5": {
+          "type": "icon",
+          "settings": {
+            "icon": "leaf",
+            "text": "Eco-Friendly"
+          }
+        }
+      },
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4",
+        "icon-5"
+      ],
+      "settings": {
+        "title": "",
+        "max_width": 60,
+        "text_style": "body",
+        "uppercase_text": false,
+        "layout_on_mobile": "wrap",
+        "icon_alignment_on_desktop": "md:justify-between",
+        "icon_thickness": 1.3,
+        "background_color": "bg-scheme-card text-scheme-card-text",
+        "show_border": true,
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "lifestyle_nature_YkL7mP": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
+        "image_mobile": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "Rooted in Nature",
+        "heading_size": "heading-standard",
+        "richtext": "Our soaps are crafted with pure, natural ingredients — lavender, peppermint, turmeric — harvested from nature for your everyday care.",
+        "cta_url": "shopify://collections/bar-soaps",
+        "cta_text": "Shop Bar Soaps",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "featured_collection_tFkmTr": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "New arrivals",
+        "subheading": "",
+        "collection": "new-arrivals",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "0",
+        "product_tiles_aspect_ratio": "aspect-w-1 aspect-h-1",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "featured_collection_BLDjni": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "Bestsellers",
+        "subheading": "",
+        "collection": "bestsellers",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "0",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "lifestyle_botanical_Rm3kNq": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/395ae6abf93ede957294f5344158bdcb.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-start",
+        "text_align": "text-left",
+        "title": "Pure Botanical Ingredients",
+        "heading_size": "heading-standard",
+        "richtext": "Every bar is enriched with plant-based oils, essential herbs, and botanicals — no harsh chemicals, just nature’s best.",
+        "cta_url": "shopify://collections/essential-oils",
+        "cta_text": "Explore Essential Oils",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "featured_collection_xHCFDW": {
+      "type": "featured-collection",
+      "blocks": {
+        "tab_wE6tMi": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "bundles-gift-sets",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "0"
+          }
+        },
+        "tab_pPNpip": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "liquid-soaps",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "0"
+          }
+        },
+        "tab_BUEtHP": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "bar-soaps",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "0"
+          }
+        },
+        "tab_xcRCia": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "essential-oils",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "0"
+          }
+        },
+        "tab_Ne6dMY": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "diffusers",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "0"
+          }
+        }
+      },
+      "block_order": [
+        "tab_wE6tMi",
+        "tab_pPNpip",
+        "tab_BUEtHP",
+        "tab_xcRCia",
+        "tab_Ne6dMY"
+      ],
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "What's popular",
+        "subheading": "",
+        "collection": "bar-soaps",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "tabs",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "0",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "lifestyle_green_Xp4wRs": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/b921dda0f634b2b2f35587038be92cfb.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "From Nature, For You",
+        "heading_size": "heading-standard",
+        "richtext": "Feel the freshness of nature in every wash. Handcrafted with care, our products bring the outdoors to your daily routine.",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop All Products",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "featured_testimonials_ymJpd6": {
+      "type": "featured-testimonials",
+      "blocks": {
+        "testimonial_bGnz4e": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Smells amazing. Skin feels soft, moisturized.",
+            "source": "libby"
+          }
+        },
+        "testimonial_ehBTQt": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "After two weeks of reliciously using it, my skin is more supple than it was before.",
+            "source": "Jane"
+          }
+        },
+        "testimonial_cVhKkx": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "I love it! I always wake up with hydrated and soft skin the next day.",
+            "source": "Charlie"
+          }
+        },
+        "testimonial_EEDY8i": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "These are perfect and a great upgrade to the line of products. I’ve been hoping that this change was coming and I wasn’t let down.",
+            "source": "Natalya"
+          }
+        },
+        "testimonial_3i99Qw": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Nice soap and sweet scent. Definitely would recommend.",
+            "source": "Steve"
+          }
+        },
+        "shape_divider_VJjEem": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "above",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_bGnz4e",
+        "testimonial_ehBTQt",
+        "testimonial_cVhKkx",
+        "testimonial_EEDY8i",
+        "testimonial_3i99Qw",
+        "shape_divider_VJjEem"
+      ],
+      "name": "t:sections.feature_testimonials.name",
+      "settings": {
+        "display_on_card": false,
+        "title": "",
+        "font": "font-body",
+        "mobile_text_scale": 0,
+        "desktop_text_scale": 2,
+        "source_font": "font-heading heading-secondary",
+        "max_width": 100,
+        "disable_media_style": false,
+        "crop": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "testimonials_VW9gz8": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_n6teFE": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Absolutely love this soap! It smells amazing, feels so gentle on the skin, and leaves me feeling refreshed every time. Definitely a top pick!",
+            "source": "Source"
+          }
+        },
+        "testimonial_CAUQrK": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "This soap is fantastic! Super moisturizing, great fragrance, and lasts a long time. Totally worth buying!",
+            "source": "Source"
+          }
+        },
+        "testimonial_CC7EQG": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Hands down the best soap I’ve tried! Softens skin, smells heavenly, and gives such a luxurious feel. Highly recommend!",
+            "source": "Source"
+          }
+        },
+        "testimonial_YbNTc8": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Incredible soap! Very high quality, works wonders on my skin, and I can’t get enough of it. A must-have!",
+            "source": "Source"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_n6teFE",
+        "testimonial_CAUQrK",
+        "testimonial_CC7EQG",
+        "testimonial_YbNTc8"
+      ],
+      "disabled": true,
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "display_on_card": true,
+        "title": "Reviews",
+        "max_width": 100,
+        "disable_media_style": false,
+        "crop": "",
+        "image_shape": "default",
+        "desktop_slide_width": 20,
+        "autoscroll_mode": "1",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "shape-divider-newsletter-0": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "above",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        },
+        "shape-divider-newsletter-1": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "shape-divider-newsletter-0",
+        "shape-divider-newsletter-1"
+      ],
+      "settings": {
+        "title": "Sign up to our newsletter",
+        "richtext": "<p>Discover the power of natural ingredients — notes of avocado, coconut and turmeric for anti-aging & dark-spot removal. Sign up for special offers and first look at new products.</p>",
+        "display_on_card": false,
+        "color_scheme": "scheme3",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "hero_slideshow_n4GQYX",
+    "icon-list",
+    "lifestyle_nature_YkL7mP",
+    "featured_collection_tFkmTr",
+    "featured_collection_BLDjni",
+    "lifestyle_botanical_Rm3kNq",
+    "featured_collection_xHCFDW",
+    "lifestyle_green_Xp4wRs",
+    "featured_testimonials_ymJpd6",
+    "testimonials_VW9gz8",
+    "newsletter"
+  ]
+}

@@ -1,0 +1,160 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/e8da44ddc5f03a3bb19ac03c526bd8aa.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-700",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "Ingredients & Transparency",
+        "heading_size": "heading-feature",
+        "richtext": "Every ingredient we use is chosen, explained, and selected with purpose.",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop Our Products",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "philosophy": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Our Ingredient Philosophy",
+        "heading_size": "heading-standard",
+        "rich_text": "<p>We believe you have the right to know exactly what you are putting on your skin. Every Dr. Biss product carries a full ingredient list — no proprietary blends, no hidden complexes, no vague terms like 'fragrance' that mask dozens of unknown chemicals.</p><p>Every ingredient must pass one simple test: does it belong? If it doesn't actively benefit your skin, protect the formula or improve the texture, it doesn't make the cut.</p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-2/3",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme1",
+        "use_gradient_background": false
+      }
+    },
+    "what_we_use": {
+      "type": "image-with-text",
+      "settings": {
+        "display_on_card": true,
+        "image": "shopify://shop_images/395ae6abf93ede957294f5344158bdcb.jpg",
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "default",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "right",
+        "image_size": "half",
+        "disable_media_style": false,
+        "title": "What We Use",
+        "heading_size": "heading-standard",
+        "richtext": "<p><strong>Cold-Pressed Oils</strong> — Coconut oil, olive oil, sunflower and castor oil form the base of our bar soaps — chosen for their nourishing fatty acid profiles and rich lather.</p><p><strong>Plant Butters</strong> — Shea butter and cocoa butter add moisture and a silky feel without synthetic emollients.</p><p><strong>Essential Oils</strong> — Lavender, peppermint, eucalyptus, tea tree — pure, identifiable, sourced from reputable distillers.</p><p><strong>Botanical Extracts</strong> — Aloe vera, chamomile, calendula and turmeric: targeted benefits rooted in centuries of traditional use.</p>",
+        "text_alignment": "text-left",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "never_use": {
+      "type": "rich-text",
+      "settings": {
+        "title": "What We Never Use",
+        "heading_size": "heading-standard",
+        "rich_text": "<p><strong>No Sulfates</strong> — No SLS or SLES. These harsh detergents strip the skin's natural oils.</p><p><strong>No Parabens</strong> — No methylparaben, propylparaben, or any other paraben preservatives.</p><p><strong>No Synthetic Fragrances</strong> — Every scent comes from an identifiable essential oil. No mystery 'fragrance' on our labels.</p><p><strong>No Artificial Dyes</strong> — Color from botanicals only: turmeric, activated charcoal, spirulina.</p><p><strong>No Palm Oil</strong> — Linked to deforestation and habitat destruction. We don't use it.</p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-2/3",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme1",
+        "use_gradient_background": false
+      }
+    },
+    "icons": {
+      "type": "icon-list",
+      "blocks": {
+        "icon-vegan": {
+          "type": "icon",
+          "settings": {
+            "icon": "leaf",
+            "text": "100% Vegan"
+          }
+        },
+        "icon-sulfate": {
+          "type": "icon",
+          "settings": {
+            "icon": "alcohol_free",
+            "text": "Sulfate Free"
+          }
+        },
+        "icon-palm": {
+          "type": "icon",
+          "settings": {
+            "icon": "globe",
+            "text": "Palm Oil Free"
+          }
+        },
+        "icon-trans": {
+          "type": "icon",
+          "settings": {
+            "icon": "eye",
+            "text": "Full Transparency"
+          }
+        },
+        "icon-frag": {
+          "type": "icon",
+          "settings": {
+            "icon": "return",
+            "text": "Natural Fragrance"
+          }
+        }
+      },
+      "block_order": [
+        "icon-vegan",
+        "icon-sulfate",
+        "icon-palm",
+        "icon-trans",
+        "icon-frag"
+      ],
+      "settings": {
+        "title": "",
+        "max_width": 80,
+        "text_style": "body",
+        "uppercase_text": false,
+        "layout_on_mobile": "wrap",
+        "icon_alignment_on_desktop": "md:justify-between",
+        "icon_thickness": 1.3,
+        "background_color": "bg-scheme-card text-scheme-card-text",
+        "show_border": true,
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Stay in the Know",
+        "richtext": "<p>Get updates on new formulas, ingredient education, and new beauty drops.</p>",
+        "display_on_card": false,
+        "color_scheme": "scheme3",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "philosophy",
+    "what_we_use",
+    "never_use",
+    "icons",
+    "newsletter"
+  ]
+}

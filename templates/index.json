@@ -32,7 +32,7 @@
       "name": "t:sections.hero_slideshow.name",
       "settings": {
         "style": "full",
-        "height": "pt-screen-height",
+        "height": "natural",
         "display_on_card": true,
         "display_content_below_image_on_mobile": false,
         "auto_rotate": false,

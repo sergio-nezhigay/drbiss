@@ -56,7 +56,7 @@
         "disable_media_style": false,
         "title": "Our Mission",
         "heading_size": "heading-standard",
-        "richtext": "<p>To create simple, skin-friendly essentials—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and clear labeling, so everyday care is easy.</p><p>We formulate without palm oil, parabens, sulfates, dyes, or alcohols. Every Dr. Biss product comes with straightforward labeling, so you always know exactly what you are putting on your skin.</p>",
+        "richtext": "<p>To create <strong>simple, skin-friendly essentials</strong>—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and <strong>clear labeling</strong>, so everyday care is easy.</p>",
         "text_alignment": "text-left",
         "button_link": "shopify://collections",
         "button_label": "Shop All Products",

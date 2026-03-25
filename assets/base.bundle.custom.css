@@ -248,4 +248,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
     object-fit: cover;
     object-position: 30% center;
   }
+  .main-banner-section-home-page .product-tile--mini {
+    display: none;
+  }
 }

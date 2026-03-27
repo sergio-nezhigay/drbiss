@@ -33,7 +33,7 @@
       "settings": {
         "title": "Our Story",
         "heading_size": "heading-standard",
-        "rich_text": "<p>The brand originated from two university professors—a chemist and industrial engineer—who questioned why everyday soap couldn’t be simple, effective, and reasonably priced. After examining market trends, they identified a gap: products were either overly synthetic, unnecessarily complicated, or expensive.</p><p>This realization led to Dr. BISS, offering households an alternative to complex formulas. The brand emphasizes <strong>affordable, accessible products—crafted with simple ingredients</strong> while helping families avoid common additives in daily care routines.</p><p>Today Dr. BISS offers palm-oil-free bar soaps, multi-purpose liquid soaps, essential oils, and diffusers—each one rooted in the same founding principle: clean ingredients, honest labels, real results.</p>",
+        "rich_text": "<p>Dr. BISS began with two founders — <strong>a chemist</strong> and an <strong>industrial engineer</strong>, both university professors — who asked a simple question: <em>Why shouldn’t everyday soap be clean, effective, and affordable?</em> After studying the U.S. market, we found that many products were either too synthetic, too complicated, or priced out of reach.</p><p>That insight became Dr. BISS: a line of soaps and home - care essentials designed to help households move away from overly complex, synthetic-heavy formulas. Our goal is to offer <strong>affordable, accessible</strong> products — crafted with simple ingredients and clear labeling — so more families can choose options that avoid common additives like <strong>sulfates and parabens</strong> in their daily routines.</p>",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
@@ -46,7 +46,7 @@
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/f5a44305e3b88f232a9d45f157bb07eb.jpg",
+        "image": "shopify://shop_images/make-an-image-banner-withoput-any-text-for-section-at-about-us-mood-mission-to-create-simple-skin-friendly-essentials-bar-soap-liquid-soap-essential-oils-and-diffusers-made-with-a-cle.png",
         "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,

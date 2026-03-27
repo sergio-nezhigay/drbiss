@@ -56,7 +56,7 @@
         "disable_media_style": false,
         "title": "What We Use",
         "heading_size": "heading-standard",
-        "richtext": "<p><strong>Cold-Pressed Oils</strong> — Coconut oil, olive oil, sunflower and castor oil form the base of our bar soaps — chosen for their nourishing fatty acid profiles and rich lather.</p><p><strong>Plant Butters</strong> — Shea butter and cocoa butter add moisture and a silky feel without synthetic emollients.</p><p><strong>Essential Oils</strong> — Lavender, peppermint, eucalyptus, tea tree — pure, identifiable, sourced from reputable distillers.</p><p><strong>Botanical Extracts</strong> — Aloe vera, chamomile, calendula and turmeric: targeted benefits rooted in centuries of traditional use.</p>",
+        "richtext": "<p><strong>Oils</strong> — Coconut Oil, Olive Oil, Soybean Oil<br/><strong>Scent</strong> — Lavender Essential Oil, Peppermint Essential Oil<br/><strong>Botanical</strong> — Turmeric (Curcuma longa)<br/><strong>Supporting</strong> — Glycerin, Citric Acid, Tocopherol, Sea Salt, Sucrose</p>",
         "text_alignment": "text-left",
         "button_link": "",
         "button_label": "",

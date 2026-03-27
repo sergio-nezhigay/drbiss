@@ -189,3 +189,27 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   align-items: flex-start;
   padding-top: 16px;
 }
+
+
+/* Hero banner mobile — popup smaller, text/button not covered */
+@media (max-width: 1023px) {
+  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .product-tile--mini {
+    font-size: 0.82rem;
+  }
+  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .product-tile--mini .media--small {
+    width: 3.8rem;
+  }
+  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .product-tile--mini .card__surface {
+    padding: 0.4rem 0.6rem;
+  }
+  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .px-section.py-section-vertical-spacing {
+    padding-bottom: 90px;
+  }
+}
+
+/* Hero mobile — normal button size */
+@media (max-width: 1023px) {
+  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .push-btn__surface {
+    padding: 0.65rem 1.4rem;
+  }
+}

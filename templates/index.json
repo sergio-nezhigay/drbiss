@@ -118,8 +118,7 @@
     "lifestyle_nature_YkL7mP": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
-        "image_mobile": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
+        "image": "shopify://shop_images/isbl_3360x840.84178489_feto06cr_1.webp",
         "display_on_card": false,
         "display_content_below_image_on_mobile": false,
         "style": "full",

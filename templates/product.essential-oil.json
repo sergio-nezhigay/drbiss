@@ -325,8 +325,8 @@
       ],
       "settings": {
         "rich_text": "{{ product.metafields.custom.feature_text.value }}",
-        "mobile_text_scale": 4,
-        "desktop_text_scale": 9,
+        "mobile_text_scale": 2,
+        "desktop_text_scale": 5,
         "display_on_card": false,
         "apply_effects": false,
         "content_width_desktop": "lg:w-full",

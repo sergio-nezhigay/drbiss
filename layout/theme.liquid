@@ -225,7 +225,7 @@
     {% # theme-check-enable AssetPreload %}
   </head>
 
-  <body data-color-scheme="scheme1">
+  <body data-color-scheme="scheme1" class="template-{{ template | handle }}">
     {%- if settings.show_on_sale_badge -%}
       {%- render 'static-sticker-defs',
         shape: settings.on_sale_badge_shape,

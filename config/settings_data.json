@@ -13,7 +13,7 @@
     "selected_text_background_color": "accent_2",
     "base_font_size": 16,
     "type_heading_font": "inter_n4",
-    "heading_uppercase": true,
+    "heading_uppercase": false,
     "heading_letterspacing": 25,
     "heading_line_height": 1,
     "mobile_standard_heading_scale": 2,

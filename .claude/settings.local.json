@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l \"h1\\\\|h2\\\\|h3\\\\|heading\" /c/projects/drbiss/sections/*.liquid)",
+      "Bash(ls:*)"
+    ]
+  }
+}

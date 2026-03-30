@@ -213,3 +213,8 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
     padding: 0.65rem 1.4rem;
   }
 }
+
+/* Uppercase headings on homepage only */
+.template-index .font-heading {
+  text-transform: uppercase;
+}

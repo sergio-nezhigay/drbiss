@@ -214,7 +214,10 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   }
 }
 
-/* Uppercase headings on homepage only */
-.template-index .font-heading {
+/* Uppercase headings on homepage and selected content pages */
+.template-index .font-heading,
+.template-page-about .font-heading,
+.template-page-sustainability .font-heading,
+.template-page-ingredients-transparency .font-heading {
   text-transform: uppercase;
 }

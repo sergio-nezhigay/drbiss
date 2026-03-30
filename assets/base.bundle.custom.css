@@ -214,6 +214,22 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   }
 }
 
+/* Policy pages — match heading-standard size */
+.shopify-policy__title h1 {
+  font-family: var(--heading-font-stack);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  letter-spacing: var(--heading-letterspacing);
+  line-height: var(--heading-line-height);
+  font-size: var(--type-scale-n2);
+}
+
+@media (min-width: 1024px) {
+  .shopify-policy__title h1 {
+    font-size: var(--type-scale-n5);
+  }
+}
+
 /* Uppercase headings on homepage and selected content pages */
 .template-index .font-heading,
 .template-page-about .font-heading,

@@ -202,8 +202,8 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .product-tile--mini .card__surface {
     padding: 0.4rem 0.6rem;
   }
-  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .px-section.py-section-vertical-spacing {
-    padding-bottom: 90px;
+  .main-banner-section-home-page .px-section.py-section-vertical-spacing {
+    padding-bottom: 140px;
   }
 }
 

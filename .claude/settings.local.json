@@ -5,7 +5,8 @@
       "Bash(ls:*)",
       "Bash(find /c/projects/drbiss/assets -name *island*.js -type f)",
       "Bash(grep -rn \"data-section-id\\\\|sectionId\\\\|section\\\\.id.*\\\\[0-9\\\\]\\\\|shopify:section\" /c/projects/drbiss/assets --include=*.js)",
-      "Bash(find /c/projects/drbiss -name *.js -path */js/* -o -name *.ts -path */js/*)"
+      "Bash(find /c/projects/drbiss -name *.js -path */js/* -o -name *.ts -path */js/*)",
+      "Bash(xargs grep:*)"
     ]
   }
 }

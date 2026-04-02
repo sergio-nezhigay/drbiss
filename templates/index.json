@@ -52,7 +52,8 @@
           "type": "icon",
           "settings": {
             "icon": "plane",
-            "text": "Bringing Soap to the World"
+            "text": "Bringing Soap to the World",
+            "subtext": "Delivered worldwide"
           }
         },
         "icon-1": {
@@ -75,21 +76,24 @@
           "type": "icon",
           "settings": {
             "icon": "return",
-            "text": "Easy Returns"
+            "text": "Easy Returns",
+            "subtext": "Hassle-free, no questions asked"
           }
         },
         "icon-4": {
           "type": "icon",
           "settings": {
             "icon": "clock",
-            "text": "Fast Delivery"
+            "text": "Fast Delivery",
+            "subtext": "Ships within 1–2 business days"
           }
         },
         "icon-5": {
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "Eco-Friendly"
+            "text": "Eco-Friendly",
+            "subtext": "100% plant-based ingredients"
           }
         }
       },

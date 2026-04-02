@@ -31,6 +31,8 @@
 <style>
   #icon-row-{{ section.id }} {
     --icon-max-width: {{ icon_max_width  }}px;
+    row-gap: calc(var(--grid-gap) * 0.5);
+    column-gap: calc(var(--grid-gap) * 0.8);
   }
   @media (min-width: 768px) {
     #icon-row-{{ section.id }} {
@@ -59,12 +61,12 @@
       >
         {% for block in icons %}
           <li
-            class="text-center {{ item_mobile_classes }} space-y-4 md:w-auto md:min-w-0 md:max-w-[var(--icon-max-width)] md:flex-1"
+            class="text-center flex flex-col items-center gap-y-2 md:text-left md:flex-row md:items-center md:gap-x-3 {{ item_mobile_classes }} md:w-auto md:min-w-0 md:flex-1"
             {{ block.shopify_attributes }}
           >
-            <div class="mx-auto">
+            <div class="shrink-0 mx-auto md:mx-0">
               <span
-                class="mx-auto block text-scheme-text"
+                class="block text-scheme-text"
                 style="max-width: {{ icon_max_width }}px; --icon-thickness: {{ section.settings.icon_thickness }};"
               >
                 {%- unless block.settings.custom_image -%}
@@ -92,11 +94,16 @@
                 {%- endunless -%}
               </span>
             </div>
-            {% if block.settings.text != '' %}
-              <{{ block_heading_level }} class="break-words text-base {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{%  endif %}">
-                {{- block.settings.text -}}
-              </{{ block_heading_level }}>
-            {% endif %}
+            <div class="min-w-0">
+              {% if block.settings.text != '' %}
+                <{{ block_heading_level }} class="break-words text-base {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{%  endif %}">
+                  {{- block.settings.text -}}
+                </{{ block_heading_level }}>
+              {% endif %}
+              {% if block.settings.subtext != blank %}
+                <p class="text-sm opacity-60 mt-0.5">{{ block.settings.subtext }}</p>
+              {% endif %}
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -521,6 +528,12 @@
           "type": "text",
           "id": "text",
           "label": "t:sections.icon_list.blocks.icon.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Description",
+          "placeholder": "Short description"
         }
       ]
     },

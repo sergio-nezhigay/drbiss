@@ -338,8 +338,11 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 }
 
 .icon-list__label {
-  word-break: break-word;
   font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .icon-list__subtext {

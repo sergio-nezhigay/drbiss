@@ -11,8 +11,8 @@
 {%- if show_announcement_bar -%}
   <style>
     #AnnouncementBar {
-      background-color: #3d6b2e;
-      color: #c9a84c;
+      background-color: var(--announcement-bar-bg);
+      color: var(--announcement-bar-color);
       text-align: center;
     }
     #AnnouncementBar a,
@@ -22,7 +22,7 @@
       font-weight: 600;
       padding-top: 8px;
       padding-bottom: 8px;
-      color: #c9a84c;
+      color: var(--announcement-bar-color);
     }
     #AnnouncementBar a {
       display: block;
@@ -53,7 +53,7 @@
     }
     #AnnouncementBar .splide__arrow {
       pointer-events: all;
-      color: #c9a84c;
+      color: var(--announcement-bar-color);
       background: none;
       border: none;
       cursor: pointer;

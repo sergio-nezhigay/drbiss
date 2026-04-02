@@ -36,6 +36,21 @@ npm run pull   # Pull latest theme from Shopify store
 - **Snippet includes:** Use `{% render 'snippet-name', param: value %}` — snippets cannot access parent scope directly, so all needed data must be passed explicitly.
 - **Theme events:** Custom JS events for cart, drawer, and UI state changes are defined in `assets/theme-events.js`.
 
+## Brand Colors
+
+Defined as CSS variables in `assets/base.bundle.custom.css` on `:root`:
+
+```css
+--announcement-bar-bg: #3d6b2e;    /* dark green */
+--announcement-bar-color: #f5e09a; /* light gold */
+```
+
+Reuse these variables anywhere on the site rather than hardcoding the hex values.
+
+## CSS / Tailwind Note
+
+Tailwind utility classes exist throughout the codebase but there is **no Tailwind compiler running**. The existing classes work because they are already in the pre-built `base.bundle.css`. For any new or modified styles, **use standard CSS** (in `base.bundle.custom.css` or an inline `<style>` block in a section) — do not add new Tailwind utility classes as they will not be compiled.
+
 ### Customization Points
 
 - Visual overrides → `assets/base.bundle.custom.css`

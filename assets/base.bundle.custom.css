@@ -356,6 +356,36 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 0.125rem;
 }
 
+/* === Product Card Badges === */
+
+/* Sold Out - brand green background, gold text */
+.dr-sold-out-bg {
+  background-color: var(--announcement-bar-bg);
+}
+.dr-sold-out-text {
+  color: var(--announcement-bar-color);
+}
+
+/* Sale % badge - pill shape, inverted brand colors (gold bg, green text) */
+.dr-sale-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--announcement-bar-color);
+  color: var(--announcement-bar-bg);
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid var(--announcement-bar-bg);
+  z-index: 20;
+  pointer-events: none;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
 /* Uppercase headings on homepage and selected content pages */
 .template-index .font-heading,
 .template-page-about .font-heading,

@@ -211,36 +211,9 @@
       {%- endif -%}
       {%- if settings.show_on_sale_badge and on_sale -%}
         {%- liquid
-          assign text = 'products.product.on_sale' | t
-          assign id = 'on-sale-sticker-' | append: product.id
-          assign shape = settings.on_sale_badge_shape
-          assign vertical_position = 15
-          assign horizontal_position = 90
-          if rotate > 0
-            assign rotate = -5
-          else
-            assign rotate = 5
-          endif
-          if display_on_card
-            assign vertical_position = 5
-          endif
-          if scatter_position
-            assign vertical_position = vertical_position | plus: 15
-          endif
+          assign discount_pct = target.compare_at_price | minus: target.price | times: 100 | divided_by: target.compare_at_price | round
         -%}
-        {%- render 'static-sticker',
-          static_id: 'on-sale',
-          shape: shape,
-          id: id,
-          text: text,
-          vertical_position: vertical_position,
-          horizontal_position: horizontal_position,
-          rotate: rotate,
-          width: 100,
-          font_size: settings.badge_font_size,
-          color: 'bg-scheme-accent-1 text-scheme-accent-1-contrast',
-          will_transform: will_transform
-        %}
+        <div class="dr-sale-badge">{{ discount_pct }}% OFF</div>
       {%- endif -%}
       {%- if settings.show_sold_out_badge and available == false -%}
         {%- liquid
@@ -269,7 +242,7 @@
           rotate: rotate,
           width: 100,
           font_size: settings.badge_font_size,
-          color: 'bg-scheme-text text-scheme-text-contrast',
+          color: 'dr-sold-out-bg dr-sold-out-text',
           will_transform: will_transform
         %}
       {%- endif -%}

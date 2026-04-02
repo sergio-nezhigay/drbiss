@@ -8,7 +8,9 @@
       "Bash(find /c/projects/drbiss -name *.js -path */js/* -o -name *.ts -path */js/*)",
       "Bash(xargs grep:*)",
       "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
-      "Bash(wc -l /c/projects/drbiss/layout/*.liquid)"
+      "Bash(wc -l /c/projects/drbiss/layout/*.liquid)",
+      "Bash(grep -r \"discount\" /c/projects/drbiss/snippets/*.liquid)",
+      "Bash(grep -r \"percentage\\\\|percent\" /c/projects/drbiss/snippets/*.liquid)"
     ]
   }
 }

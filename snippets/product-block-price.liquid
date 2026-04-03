@@ -27,7 +27,7 @@
   {% if product.compare_at_price_max > product.price %}
     <span
       x-show="currentVariantHasCompareAtPrice"
-      class="{{ price_text_size }}"
+      class="inline-flex flex-wrap items-center gap-2 {{ price_text_size }}"
     >
       <span class="sr-only">{{ 'products.general.sale_price' | t }}</span>
       <s
@@ -40,10 +40,21 @@
         {% endif %}
       </s>
       {% liquid
-        assign discount = current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round: 2
+        if current_variant.compare_at_price > current_variant.price
+          assign discount = current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round: 1
+        else
+          assign discount = 0
+        endif
       %}
-      <span class="price-item price-item--discount">
-        {{ 'products.product.price.percent' | t: amount: discount }}
+      <span
+        class="price-item price-item--discount product-price__discount-badge"
+        x-text="
+          currentVariant && currentVariantHasCompareAtPrice
+            ? parseFloat((((currentVariant.compare_at_price - currentVariant.price) / currentVariant.compare_at_price) * 100).toFixed(1)) + '% OFF'
+            : ''
+        "
+      >
+        {{ discount | remove: '.0' }}% OFF
       </span>
     </span>
   {% endif %}

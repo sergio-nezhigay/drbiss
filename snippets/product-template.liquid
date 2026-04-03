@@ -130,6 +130,19 @@
     font-size: var(--type-scale-n4);
     line-height: 1.1;
   }
+
+  /* Make secondary content headings in product tabs less dominant. */
+  #shopify-section-{{ section.id }} .product-block .rte h2 {
+    font-size: var(--font-size-lg);
+    line-height: 1.2;
+  }
+
+  @media (min-width: 990px) {
+    #shopify-section-{{ section.id }} .product-block .rte h2 {
+      font-size: var(--font-size-xl);
+      line-height: 1.15;
+    }
+  }
 </style>
 
 <data-island

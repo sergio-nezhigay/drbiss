@@ -35,7 +35,7 @@
       "settings": {
         "no_products": 8,
         "display_on_card": false,
-        "enable_quick_buy": true,
+        "enable_quick_buy": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "enable_filtering": true,

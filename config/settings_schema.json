@@ -2922,7 +2922,7 @@
         "type": "checkbox",
         "id": "use_buttons_if_product_has_two_variants",
         "label": "t:settings_schema.product_tiles.settings.use_buttons_if_product_has_two_variants.label",
-        "default": true,
+        "default": false,
         "info": "t:settings_schema.product_tiles.settings.use_buttons_if_product_has_two_variants.info"
       }
     ]

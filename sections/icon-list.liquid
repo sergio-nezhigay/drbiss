@@ -46,7 +46,7 @@
   class="icon-list-section bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}"
   data-color-scheme="{{ section.settings.color_scheme }}"
 >
-  <div class="section-content max-w-site px-section py-section-vertical-spacing">
+  <div class="section-content max-w-site px-section py-section-vertical-spacing padding-smaller">
     {% if section.settings.title != '' %}
       {%- assign block_heading_level = 'h3' -%}
       <h2 class="inline-heading-rte font-heading heading-standard heading-style icon-list__heading {{ settings.heading_drop_shadow_style }}">
@@ -2044,11 +2044,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

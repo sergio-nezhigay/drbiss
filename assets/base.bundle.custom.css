@@ -562,3 +562,8 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .template-page-ingredients-transparency .font-heading {
   text-transform: uppercase;
 }
+
+.padding-smaller {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

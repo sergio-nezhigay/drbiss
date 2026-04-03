@@ -1037,6 +1037,41 @@
       ]
     },
     {
+      "type": "qty_discount",
+      "name": "Quantity Discount",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Tier 1 is always qty 1 at full price. Configure tiers 2 and 3 below."
+        },
+        {
+          "type": "number",
+          "id": "tier2_qty",
+          "label": "Tier 2 — min quantity",
+          "default": 2
+        },
+        {
+          "type": "number",
+          "id": "tier2_discount",
+          "label": "Tier 2 — discount %",
+          "default": 10
+        },
+        {
+          "type": "number",
+          "id": "tier3_qty",
+          "label": "Tier 3 — min quantity",
+          "default": 3
+        },
+        {
+          "type": "number",
+          "id": "tier3_discount",
+          "label": "Tier 3 — discount %",
+          "default": 15
+        }
+      ]
+    },
+    {
       "type": "variant_picker",
       "name": "t:common.blocks.variant_picker.name",
       "limit": 1,

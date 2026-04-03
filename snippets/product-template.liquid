@@ -595,6 +595,12 @@
                       block: block,
                       block_base_classes: block_base_classes
                     %}
+                  {% when 'qty_discount' %}
+                    {% render 'product-block-qty-discount',
+                      product: product,
+                      block: block,
+                      block_base_classes: block_base_classes
+                    %}
                   {% when 'buy_buttons' %}
                     {% render 'product-block-buy-buttons',
                       product: product,

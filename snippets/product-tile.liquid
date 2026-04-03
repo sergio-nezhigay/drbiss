@@ -2,8 +2,8 @@
   assign crop = crop | default: settings.product_tiles_aspect_ratio
   assign shape = shape | default: settings.product_tile_media_shape
   assign hover_image = blank
-  if settings.product_tiles_second_image_on_hover and product.media.size > 1
-    assign hover_image = product.media[1]
+  if product.images.size > 1
+    assign hover_image = product.images[1]
   endif
   if enable_quick_buy
     assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id
@@ -82,7 +82,7 @@
 -%}
 {%- if product and product != empty -%}
   <div
-    class="product-tile relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
+    class="product-tile group relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
   >
     {% if enable_quick_buy %}
       <data-island

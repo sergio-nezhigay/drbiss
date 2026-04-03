@@ -1,6 +1,10 @@
 {%- liquid
   assign crop = crop | default: settings.product_tiles_aspect_ratio
   assign shape = shape | default: settings.product_tile_mini_media_shape
+  assign hover_image = blank
+  if product.images.size > 1
+    assign hover_image = product.images[1]
+  endif
   if enable_quick_buy
     assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id
     assign current_variant = product.selected_or_first_available_variant
@@ -39,7 +43,7 @@
 -%}
 {%- if product and product != empty -%}
   <div
-    class="product-tile product-tile--mini relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
+    class="product-tile group product-tile--mini relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
   >
     {% if enable_quick_buy %}
       <data-island
@@ -59,7 +63,7 @@
     <div class="flex items-center justify-between {% if display_on_card %}bg-scheme-card card__surface p-2.5{%  endif %}">
       <a
         href="{{ product.url | within: collection }}"
-        class="flex justify-start gap-5"
+        class="group flex justify-start gap-5"
       >
         {%- if product.featured_media -%}
           <div class="media--small w-24 shrink-0">

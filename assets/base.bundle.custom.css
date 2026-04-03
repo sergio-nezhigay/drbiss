@@ -102,6 +102,10 @@ li > .product-tile {
   width: 100%;
 }
 
+.product-tile {
+  --hover-effect-zoom-media: 1;
+}
+
 .product-tile:hover .group .product-media-object img {
   --tw-scale-x: var(--hover-effect-zoom-media);
   --tw-scale-y: var(--hover-effect-zoom-media);

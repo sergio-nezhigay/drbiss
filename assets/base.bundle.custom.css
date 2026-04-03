@@ -74,9 +74,7 @@ li > .product-tile {
   margin-top: 0.25rem;
 }
 
-.product-tile__footer .price__container,
-.product-tile__footer .price__regular,
-.product-tile__footer .price__sale {
+.product-tile__footer .price__container {
   align-items: center;
   display: flex;
   flex-wrap: wrap;

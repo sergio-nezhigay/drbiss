@@ -126,16 +126,18 @@
           </div>
         </div>
       {%- endif -%}
-      <div class="product-tile mt-5 break-words {{ settings.product_tile_text_align }}">
-        <h2 class="font-body text-base">
+      <div class="product-tile product-tile__content mt-5 break-words {{ settings.product_tile_text_align }}">
+        <h2 class="product-tile__title font-body text-base">
           <a
             href="{{ product.url | within: collection }}"
-            class="block h-full w-full product-tile__link"
+            class="product-tile__title-link block w-full product-tile__link"
           >
             {{- product.title | escape -}}
           </a>
         </h2>
-        <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'>{{ product.metafields.judgeme.badge }}</div>
+        <div class="product-tile__reviews-row">
+          <div class="product-tile__reviews jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">{{ product.metafields.judgeme.badge }}</div>
+        </div>
         {%- if settings.product_tiles_show_vendor -%}
           <p class="mt-1">{{ product.vendor }}</p>
         {%- endif -%}
@@ -151,50 +153,54 @@
           </div>
         {% endif %}
 
-        {%- if enable_quick_buy -%}
-          <span
-            class="mt-2.5 inline-block"
-            x-html="formatMoney(currentPrice)"
-            :class="
-              {
-                'invisible': !currentVariant
-              }
-            "
-            data-product-price
-          >
-            {{ current_variant.price | money }}
-          </span>
-          {% if product.compare_at_price_max > product.price %}
-            <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
-              <span class="{{ price_text_size }}">
-                <span class="sr-only">
-                  {{- 'products.general.sale_price' | t -}}
-                </span>
-                <s
-                  data-compare-price
-                  class="text-scheme-text"
-                  x-html="formatMoney(currentVariant.compare_at_price)"
-                >
-                  {% if current_variant.compare_at_price > current_variant.price %}
-                    {{ current_variant.compare_at_price | money }}
-                  {% endif %}
-                </s>
-              </span>
+        <div class="product-tile__footer">
+          {%- if enable_quick_buy -%}
+            <span
+              class="mt-2.5 inline-block"
+              x-html="formatMoney(currentPrice)"
+              :class="
+                {
+                  'invisible': !currentVariant
+                }
+              "
+              data-product-price
+            >
+              {{ current_variant.price | money }}
             </span>
-          {% endif %}
-        {%- else -%}
-          {%- render 'price',
-            product: product,
-            price_class: 'mt-2.5',
-            compare_at_price: compare_at_price,
-            price: price,
-            money_price: money_price,
-            on_sale: on_sale
-          -%}
-        {%- endif -%}
-        {%- if product.metafields.custom.volume != blank -%}
-          <p class="mt-1 text-sm" style="color: #9ca3af;">{{ product.metafields.custom.volume }}</p>
-        {%- endif -%}
+            {% if product.compare_at_price_max > product.price %}
+              <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
+                <span class="{{ price_text_size }}">
+                  <span class="sr-only">
+                    {{- 'products.general.sale_price' | t -}}
+                  </span>
+                  <s
+                    data-compare-price
+                    class="text-scheme-text"
+                    x-html="formatMoney(currentVariant.compare_at_price)"
+                  >
+                    {% if current_variant.compare_at_price > current_variant.price %}
+                      {{ current_variant.compare_at_price | money }}
+                    {% endif %}
+                  </s>
+                </span>
+              </span>
+            {% endif %}
+          {%- else -%}
+            {%- render 'price',
+              product: product,
+              price_class: 'mt-2.5',
+              compare_at_price: compare_at_price,
+              price: price,
+              money_price: money_price,
+              on_sale: on_sale
+            -%}
+          {%- endif -%}
+          <div class="product-tile__meta-row">
+            {%- if product.metafields.custom.volume != blank -%}
+              <p class="product-tile__meta text-sm" style="color: #9ca3af;">{{ product.metafields.custom.volume }}</p>
+            {%- endif -%}
+          </div>
+        </div>
       </div>
       {%- if enable_quick_buy -%}
         <div class="product-tile__quick-buy">

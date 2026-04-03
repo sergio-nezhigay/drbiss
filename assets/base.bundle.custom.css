@@ -53,6 +53,9 @@ li > .product-tile {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.product-tile__reviews-row.has-reviews .product-tile__reviews {
   min-height: 24px;
   margin-top: 0.5rem;
 }

@@ -135,7 +135,7 @@
             {{- product.title | escape -}}
           </a>
         </h2>
-        <div class="product-tile__reviews-row">
+        <div class="product-tile__reviews-row{% if product.metafields.judgeme.badge != blank %} has-reviews{% endif %}">
           <div class="product-tile__reviews jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">{{ product.metafields.judgeme.badge }}</div>
         </div>
         {%- if settings.product_tiles_show_vendor -%}

@@ -124,6 +124,12 @@
     --largest-media-aspect-ratio: {{ tallest_media_aspect_ratio }};
     --thumbnails-height:  calc(var(--feature-media-width) / var(--largest-media-aspect-ratio));
   }
+
+  /* Slightly reduce the main product title so it feels less overpowering. */
+  #shopify-section-{{ section.id }} .product-block-title h1 {
+    font-size: var(--type-scale-n4);
+    line-height: 1.1;
+  }
 </style>
 
 <data-island

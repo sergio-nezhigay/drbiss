@@ -61,7 +61,8 @@
           "disabled": true,
           "settings": {
             "icon": "alcohol_free",
-            "text": "Alcohol free"
+            "text": "Alcohol free",
+            "subtext": ""
           }
         },
         "icon-2": {
@@ -69,7 +70,8 @@
           "disabled": true,
           "settings": {
             "icon": "paraben_free",
-            "text": "Paraben free"
+            "text": "Paraben free",
+            "subtext": ""
           }
         },
         "icon-3": {
@@ -147,7 +149,7 @@
         "collection": "new-arrivals",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -176,7 +178,7 @@
         "collection": "bestsellers",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -308,7 +310,7 @@
         "collection": "bar-soaps",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "tabs",
         "products_per_row_mobile": "1",

@@ -489,7 +489,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .qty-discount-tier {
   padding: 10px 8px;
   border: 1.5px solid #d6e8cf;
-  border-radius: 8px;
+  border-radius: 50px;
   background: #fff;
   cursor: pointer;
   font-size: 0.85rem;

@@ -135,6 +135,7 @@
             {{- product.title | escape -}}
           </a>
         </h2>
+        <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'>{{ product.metafields.judgeme.badge }}</div>
         {%- if settings.product_tiles_show_vendor -%}
           <p class="mt-1">{{ product.vendor }}</p>
         {%- endif -%}

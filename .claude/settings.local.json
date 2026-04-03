@@ -10,7 +10,11 @@
       "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
       "Bash(wc -l /c/projects/drbiss/layout/*.liquid)",
       "Bash(grep -r \"discount\" /c/projects/drbiss/snippets/*.liquid)",
-      "Bash(grep -r \"percentage\\\\|percent\" /c/projects/drbiss/snippets/*.liquid)"
+      "Bash(grep -r \"percentage\\\\|percent\" /c/projects/drbiss/snippets/*.liquid)",
+      "Bash(find /c/projects/drbiss -type f \\\\\\( -name \"*.liquid\" -o -name \"*.json\" -o -name \"*.js\" \\\\\\) -exec grep -l -i \"judge\\\\.me\\\\|judgeme\\\\|jmr\\\\|product.*review\\\\|review.*rating\" {} \\\\;)",
+      "WebSearch",
+      "WebFetch(domain:judge.me)",
+      "WebFetch(domain:support.judge.me)"
     ]
   }
 }

@@ -404,6 +404,11 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
     flex: 1;
   }
 }
+@media (min-width: 1200px) {
+  .feature-icon-list .icon-list__item {
+    flex: 0 0 auto;
+  }
+}
 
 .icon-list__icon-wrap {
   flex-shrink: 0;

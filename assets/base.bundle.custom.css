@@ -497,7 +497,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  line-height: 1;
+  line-height: 1.1;
   text-transform: uppercase;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;

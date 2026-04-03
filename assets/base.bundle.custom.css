@@ -320,6 +320,13 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   }
 }
 
+@media (min-width: 1024px) {
+  .shopify-policy__container {
+    max-width: 860px !important;
+    width: min(100%, 860px);
+  }
+}
+
 /* ===== Icon List Section ===== */
 
 .icon-list-section {

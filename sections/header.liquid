@@ -720,7 +720,7 @@
     --active-color-scheme-background: rgb(var(--color-scheme-{{ active_color_scheme.id }}-background));
   "
 >
-  <div id="headerBorderWrap" class="headerBorderWrap" style="    background: white;     border-top: 1px solid silver;">
+  <div id="headerBorderWrap" class="headerBorderWrap relative z-10" style="    background: white;     border-top: 1px solid silver;">
     <div
       id="headerContainer"
       class="z-10"
@@ -851,6 +851,22 @@
       </div>
     </div>
   </div>
+  {% if nested_nav_style == 'mega_menu' %}
+    <div
+      x-cloak
+      x-show="menuIsActive"
+      x-transition:enter="transition ease-in-out duration-200"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in-out duration-150"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      @click="closeMenus()"
+      class="fixed left-0 right-0 bottom-0 z-0 bg-scheme-text"
+      style="top: var(--header-height, 0px); background-color: rgba(var(--color-scheme-text), 0.6);"
+      aria-hidden="true"
+    ></div>
+  {% endif %}
 </data-island>
 <noscript>
   <style>

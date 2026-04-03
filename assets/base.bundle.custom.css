@@ -37,6 +37,7 @@ li > .product-tile {
 
 .product-tile__title {
   margin: 0;
+  padding: 0 6px;
 }
 
 .product-tile__title-link {
@@ -67,7 +68,7 @@ li > .product-tile {
 }
 
 .product-tile__meta-row {
-  display: flex;
+  display: none;
   align-items: flex-start;
   justify-content: center;
   min-height: 21px;

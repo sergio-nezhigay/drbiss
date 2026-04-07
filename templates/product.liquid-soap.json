@@ -12,7 +12,7 @@
     "breadcrumbs": {
       "type": "breadcrumbs",
       "settings": {
-        "separator": "\/",
+        "separator": "/",
         "text_alignment": "justify-center",
         "font_size": "text-base",
         "active_text_color": "text",
@@ -237,13 +237,13 @@
             "display_on_card": false,
             "uppercase_heading": false,
             "heading_1": "Ingredients",
-            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.<\/p>",
+            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.</p>",
             "page_content_1": "",
             "heading_2": "Shipping & delivery",
-            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.<\/p>",
+            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.</p>",
             "page_content_2": "",
             "heading_3": "",
-            "content_3": "<p>Display content in this tab<\/p>",
+            "content_3": "<p>Display content in this tab</p>",
             "page_content_3": "",
             "tab_style": "underline",
             "tab_color": "text"
@@ -514,7 +514,7 @@
           "settings": {
             "icon": "none",
             "title": "What skin types are Aura products suitable for?",
-            "answer": "<p>Our products are designed to be gentle and effective for all skin types, including sensitive, dry, oily, and combination skin. Each formula is crafted with plant-based ingredients that work harmoniously with your skin’s natural balance.<\/p>"
+            "answer": "<p>Our products are designed to be gentle and effective for all skin types, including sensitive, dry, oily, and combination skin. Each formula is crafted with plant-based ingredients that work harmoniously with your skin’s natural balance.</p>"
           }
         },
         "question_2": {
@@ -522,7 +522,7 @@
           "settings": {
             "icon": "none",
             "title": "Are Aura products cruelty-free?",
-            "answer": "<p>Yes, absolutely. We are proudly cruelty-free and do not test our products on animals at any stage of development. We believe in ethical beauty and only partner with suppliers who share our values.<\/p>"
+            "answer": "<p>Yes, absolutely. We are proudly cruelty-free and do not test our products on animals at any stage of development. We believe in ethical beauty and only partner with suppliers who share our values.</p>"
           }
         },
         "question_3": {
@@ -530,7 +530,7 @@
           "settings": {
             "icon": "none",
             "title": "Do you use synthetic fragrances in your products?",
-            "answer": "<p>No, we never use synthetic fragrances. Our products are naturally scented with essential oils and botanical extracts, ensuring a gentle and pleasant experience without the use of artificial chemicals.<\/p>"
+            "answer": "<p>No, we never use synthetic fragrances. Our products are naturally scented with essential oils and botanical extracts, ensuring a gentle and pleasant experience without the use of artificial chemicals.</p>"
           }
         },
         "question_4": {
@@ -538,7 +538,7 @@
           "settings": {
             "icon": "none",
             "title": "What ingredients do you avoid in your formulations?",
-            "answer": "<p>At Aura, we avoid harmful ingredients such as parabens, sulfates, phthalates, synthetic dyes, and artificial fragrances. We prioritize clean, plant-based ingredients that are both safe and effective.<\/p>"
+            "answer": "<p>At Aura, we avoid harmful ingredients such as parabens, sulfates, phthalates, synthetic dyes, and artificial fragrances. We prioritize clean, plant-based ingredients that are both safe and effective.</p>"
           }
         },
         "question_5": {
@@ -546,7 +546,7 @@
           "settings": {
             "icon": "none",
             "title": "How should I store my Aura skincare products?",
-            "answer": "<p>To maintain the freshness and efficacy of our products, we recommend storing them in a cool, dry place, away from direct sunlight. Our eco-friendly packaging helps protect the integrity of the ingredients.<\/p>"
+            "answer": "<p>To maintain the freshness and efficacy of our products, we recommend storing them in a cool, dry place, away from direct sunlight. Our eco-friendly packaging helps protect the integrity of the ingredients.</p>"
           }
         },
         "question_6": {
@@ -554,7 +554,7 @@
           "settings": {
             "icon": "none",
             "title": "What is your return policy?",
-            "answer": "<p>We want you to love your Aura experience. If you’re not completely satisfied with your purchase, we offer a 30-day return policy. Simply contact our customer service team, and they’ll guide you through the process.<\/p>"
+            "answer": "<p>We want you to love your Aura experience. If you’re not completely satisfied with your purchase, we offer a 30-day return policy. Simply contact our customer service team, and they’ll guide you through the process.</p>"
           }
         },
         "question_7": {
@@ -562,7 +562,7 @@
           "settings": {
             "icon": "none",
             "title": "How does Aura ensure sustainability in its packaging?",
-            "answer": "<p>We’re committed to sustainability in every aspect of our business. Our packaging is made from eco-friendly materials, including recycled and recyclable components, and we are always exploring new ways to reduce our environmental impact.<\/p>"
+            "answer": "<p>We’re committed to sustainability in every aspect of our business. Our packaging is made from eco-friendly materials, including recycled and recyclable components, and we are always exploring new ways to reduce our environmental impact.</p>"
           }
         },
         "question_8": {
@@ -570,7 +570,7 @@
           "settings": {
             "icon": "none",
             "title": "What are the shipping options and how long does delivery take?",
-            "answer": "<p>We offer standard and expedited shipping options. Standard shipping typically takes 3-5 business days within the continental US, while expedited options are available for faster delivery. All orders are shipped in eco-friendly packaging.<\/p>"
+            "answer": "<p>We offer standard and expedited shipping options. Standard shipping typically takes 3-5 business days within the continental US, while expedited options are available for faster delivery. All orders are shipped in eco-friendly packaging.</p>"
           }
         }
       },
@@ -603,7 +603,7 @@
           "settings": {
             "icon": "none",
             "title": "Are your soaps vegan and sulfate-free?",
-            "answer": "<p>Yes. Our labels state plant-based, sulfate-free, vegan, and palm‑oil‑free.<\/p>"
+            "answer": "<p>Yes. Our labels state plant-based, sulfate-free, vegan, and palm‑oil‑free.</p>"
           }
         },
         "question_xXfedH": {
@@ -611,7 +611,7 @@
           "settings": {
             "icon": "none",
             "title": "What can I use the liquid soap for?",
-            "answer": "<p>Body, hands, and home.<\/p>"
+            "answer": "<p>Body, hands, and home.</p>"
           }
         },
         "question_aQ8JE6": {
@@ -619,7 +619,7 @@
           "settings": {
             "icon": "none",
             "title": "What can I use the bar soap for?",
-            "answer": "<p>Body, hands, and face.<\/p>"
+            "answer": "<p>Body, hands, and face.</p>"
           }
         },
         "question_XgVGKY": {
@@ -627,7 +627,7 @@
           "settings": {
             "icon": "none",
             "title": "Is potassium hydroxide safe in soap?",
-            "answer": "<p>Potassium hydroxide is used to turn oils into soap and is not present as a harsh active<br\/>in the finished product.<\/p>"
+            "answer": "<p>Potassium hydroxide is used to turn oils into soap and is not present as a harsh active<br/>in the finished product.</p>"
           }
         },
         "question_pzFAix": {
@@ -635,7 +635,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I use the liquid soap?",
-            "answer": "<p>Pump 1-2 times onto wet skin. Lather and rinse.<\/p>"
+            "answer": "<p>Pump 1-2 times onto wet skin. Lather and rinse.</p>"
           }
         },
         "question_JrgKzr": {
@@ -643,7 +643,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I store bar soap to make it last?",
-            "answer": "<p>Keep the bar dry between uses (no standing water).<\/p>"
+            "answer": "<p>Keep the bar dry between uses (no standing water).</p>"
           }
         },
         "question_RqMRTk": {
@@ -651,7 +651,7 @@
           "settings": {
             "icon": "none",
             "title": "What is the safety guidance for soaps?",
-            "answer": "<p>For external use only. Avoid contact with eyes. Keep out of reach of children. Discontinue use if irritation occurs.<\/p>"
+            "answer": "<p>For external use only. Avoid contact with eyes. Keep out of reach of children. Discontinue use if irritation occurs.</p>"
           }
         },
         "question_U6PEzr": {
@@ -659,7 +659,7 @@
           "settings": {
             "icon": "none",
             "title": "What does 'Free from' mean?",
-            "answer": "<p>No parabens, SLS\/SLES, dyes\/colorant, palm oil, or alcohols (see each product page).<\/p>"
+            "answer": "<p>No parabens, SLS/SLES, dyes/colorant, palm oil, or alcohols (see each product page).</p>"
           }
         },
         "question_pXWGbL": {
@@ -667,7 +667,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I use essential oils in a diffuser?",
-            "answer": "<p>Add water to your diffuser, then add a few drops of essential oil. Start small and adjust.<\/p>"
+            "answer": "<p>Add water to your diffuser, then add a few drops of essential oil. Start small and adjust.</p>"
           }
         },
         "question_7CnpgW": {
@@ -675,7 +675,7 @@
           "settings": {
             "icon": "none",
             "title": "Can I ingest essential oils?",
-            "answer": "<p>No. Do not ingest essential oils.<\/p>"
+            "answer": "<p>No. Do not ingest essential oils.</p>"
           }
         },
         "question_UAJ7Tn": {
@@ -683,7 +683,7 @@
           "settings": {
             "icon": "none",
             "title": "Can I apply essential oils directly to skin?",
-            "answer": "<p>Essential oils are concentrated. Dilute first and discontinue use if irritation occurs.<\/p>"
+            "answer": "<p>Essential oils are concentrated. Dilute first and discontinue use if irritation occurs.</p>"
           }
         },
         "question_iJDtrp": {
@@ -691,7 +691,7 @@
           "settings": {
             "icon": "none",
             "title": "Any note about turmeric soap?",
-            "answer": "<p>Turmeric may stain light fabrics. Rinse thoroughly after use.<\/p>"
+            "answer": "<p>Turmeric may stain light fabrics. Rinse thoroughly after use.</p>"
           }
         },
         "question_TpTKjL": {
@@ -699,7 +699,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I contact you?",
-            "answer": "<p>Email: <a href=\"mailto:info@drbiss.com\" title=\"mailto:info@drbiss.com\">info@drbiss.com<\/a><\/p>"
+            "answer": "<p>Email: <a href=\"mailto:info@drbiss.com\" title=\"mailto:info@drbiss.com\">info@drbiss.com</a></p>"
           }
         }
       },
@@ -733,7 +733,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_dBQtgm": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
@@ -766,6 +766,31 @@
         "color_scheme": "scheme1",
         "use_gradient_background": false
       }
+    },
+    "177552284292439428": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_p4rPfK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_p4rPfK"
+      ],
+      "settings": {
+        "apply_vertical_spacing": true,
+        "apply_horizontal_spacing": true,
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-full",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
     }
   },
   "order": [
@@ -777,6 +802,7 @@
     "faq",
     "faq_VmifMc",
     "17696879010161131f",
-    "related-products"
+    "related-products",
+    "177552284292439428"
   ]
 }

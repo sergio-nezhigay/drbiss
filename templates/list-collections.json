@@ -45,7 +45,7 @@
         "display_on_card": true,
         "enable_quick_buy": true,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
+        "products_per_row_desktop": 5,
         "slideshow_focus": "center",
         "mobile_slide_width": "three_fifths",
         "desktop_slide_width": 40,

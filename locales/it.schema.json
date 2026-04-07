@@ -2474,6 +2474,10 @@
         "use_buttons_if_product_has_two_variants": {
           "label": "Usa i pulsanti se il prodotto ha due varianti",
           "info": "Le piastrelle di prodotto Mini consentiranno solo l'aggiunta della prima variante disponibile. [Scopri di più](https://help.switchthemes.co/shapes/guides/show-quick-buy.html)"
+        },
+        "hide_variant_selector_in_cards": {
+          "label": "Hide variant selector in cards",
+          "info": "Hides the variant dropdown in product cards. Customers will still be able to select variants on the product page."
         }
       }
     },

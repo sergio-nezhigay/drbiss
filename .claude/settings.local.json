@@ -14,7 +14,10 @@
       "Bash(find /c/projects/drbiss -type f \\\\\\( -name \"*.liquid\" -o -name \"*.json\" -o -name \"*.js\" \\\\\\) -exec grep -l -i \"judge\\\\.me\\\\|judgeme\\\\|jmr\\\\|product.*review\\\\|review.*rating\" {} \\\\;)",
       "WebSearch",
       "WebFetch(domain:judge.me)",
-      "WebFetch(domain:support.judge.me)"
+      "WebFetch(domain:support.judge.me)",
+      "Bash(python3:*)",
+      "Bash(where python:*)",
+      "Bash(python:*)"
     ]
   }
 }

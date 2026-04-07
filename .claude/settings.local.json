@@ -17,7 +17,8 @@
       "WebFetch(domain:support.judge.me)",
       "Bash(python3:*)",
       "Bash(where python:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(grep:*)"
     ]
   }
 }

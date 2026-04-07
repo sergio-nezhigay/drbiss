@@ -55,11 +55,21 @@
             "display_on_card": false,
             "truncate_description": false
           }
+        },
+        "qty_discount": {
+          "type": "qty_discount",
+          "settings": {
+            "tier2_qty": 2,
+            "tier2_discount": 10,
+            "tier3_qty": 3,
+            "tier3_discount": 15
+          }
         }
       },
       "block_order": [
         "title",
         "price",
+        "qty_discount",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",

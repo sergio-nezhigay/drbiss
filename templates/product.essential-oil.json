@@ -173,6 +173,15 @@
             "text_align": "text-left"
           }
         },
+        "qty_discount": {
+          "type": "qty_discount",
+          "settings": {
+            "tier2_qty": 2,
+            "tier2_discount": 10,
+            "tier3_qty": 3,
+            "tier3_discount": 15
+          }
+        },
         "quantity-selector": {
           "type": "quantity_selector",
           "settings": {
@@ -264,6 +273,7 @@
         "collapsible_tab_hdL96m",
         "collapsible_tab_6VQfjW",
         "description",
+        "qty_discount",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",

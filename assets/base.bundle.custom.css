@@ -8,6 +8,11 @@ li > .product-tile {
   border: 1px solid #d6e8cf;
   border-radius: 8px;
   padding-bottom: 6px;
+  overflow: hidden;
+}
+
+li > .product-tile .media__styled-element {
+  border-radius: 8px 8px 0 0;
 }
 
 li > .product-tile,

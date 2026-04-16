@@ -572,3 +572,9 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+/* Better readability for text on bright image backgrounds */
+.inline-heading-rte,
+.inline-rte {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}

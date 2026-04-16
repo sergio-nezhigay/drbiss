@@ -240,10 +240,6 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   object-fit: cover !important;
 }
 
-/* Homepage hero banner — lighter overlay */
-#shopify-section-template--21195744149701__hero_slideshow_n4GQYX .absolute.inset-0.pointer-events-none {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-}
 
 #shopify-section-template--21233722458309__intro .media--css-only img {
   position: absolute !important;

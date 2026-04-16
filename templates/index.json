@@ -40,6 +40,7 @@
         "place_content": "place-content-center-start",
         "text_align": "text-left",
         "heading_size": "heading-standard",
+        "overlay_opacity": 0,
         "color_scheme": "scheme5",
         "use_gradient_background": false
       }

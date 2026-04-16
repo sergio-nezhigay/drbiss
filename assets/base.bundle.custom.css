@@ -1,3 +1,8 @@
+/* New Arrivals featured collection section — no bottom padding */
+.featured-collection--new-arrivals {
+  padding-bottom: 0;
+}
+
 :root {
   --announcement-bar-bg: #3d6b2e;
   --announcement-bar-color: #f5e09a;

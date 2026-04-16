@@ -77,7 +77,7 @@
                     assign crop = 'object-wrapper  main-banner-object ' | append: height
                   endif
 
-                  render 'x-image-with-text-overlay', image: block.settings.image, image_mobile: block.settings.image_mobile, place_content: place_content, text_align: text_align, color_scheme: section.settings.color_scheme, use_gradient_background: block.settings.use_gradient_background, title: block.settings.title, richtext: block.settings.richtext, cta_url: block.settings.cta_url, cta_text: block.settings.cta_text, display_on_card: section.settings.display_on_card, style: style, crop: crop, slideshow_height: height, display_content_below_image_on_mobile: section.settings.display_content_below_image_on_mobile, heading_size: section.settings.heading_size, loading: loading, preload: preload, forloop: forloop, product: block.settings.product
+                  render 'x-image-with-text-overlay', image: block.settings.image, image_mobile: block.settings.image_mobile, place_content: place_content, text_align: text_align, color_scheme: section.settings.color_scheme, use_gradient_background: block.settings.use_gradient_background, title: block.settings.title, richtext: block.settings.richtext, cta_url: block.settings.cta_url, cta_text: block.settings.cta_text, display_on_card: section.settings.display_on_card, style: style, crop: crop, slideshow_height: height, display_content_below_image_on_mobile: section.settings.display_content_below_image_on_mobile, heading_size: section.settings.heading_size, loading: loading, preload: preload, forloop: forloop, product: block.settings.product, overlay_opacity: section.settings.overlay_opacity
                 when 'video_slide'
                   if height == 'natural'
                     assign crop = block.settings.crop
@@ -322,6 +322,20 @@
         }
       ],
       "default": "heading-standard"
+    },
+    {
+      "type": "header",
+      "content": "Image overlay"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay darkness",
+      "default": 40
     },
     {
       "type": "header",

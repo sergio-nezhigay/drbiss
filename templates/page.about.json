@@ -46,7 +46,7 @@
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/make-an-image-banner-withoput-any-text-for-section-at-about-us-mood-mission-to-create-simple-skin-friendly-essentials-bar-soap-liquid-soap-essential-oils-and-diffusers-made-with-a-cle.png",
+        "image": "shopify://shop_images/image_1771884652788_xkqpiz.jpg",
         "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,
@@ -107,35 +107,40 @@
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "100% Vegan"
+            "text": "100% Vegan",
+            "subtext": ""
           }
         },
         "icon-sulfate": {
           "type": "icon",
           "settings": {
             "icon": "alcohol_free",
-            "text": "Sulfate-Free"
+            "text": "Sulfate-Free",
+            "subtext": ""
           }
         },
         "icon-eco": {
           "type": "icon",
           "settings": {
             "icon": "globe",
-            "text": "Eco Packaging"
+            "text": "Eco Packaging",
+            "subtext": ""
           }
         },
         "icon-transparent": {
           "type": "icon",
           "settings": {
             "icon": "eye",
-            "text": "Full Transparency"
+            "text": "Full Transparency",
+            "subtext": ""
           }
         },
         "icon-delivery": {
           "type": "icon",
           "settings": {
             "icon": "truck",
-            "text": "Fast Delivery"
+            "text": "Fast Delivery",
+            "subtext": ""
           }
         }
       },

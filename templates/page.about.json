@@ -12,7 +12,7 @@
     "hero": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/b6730fb7f9b1a5128c9771463b82eff3.jpg",
+        "image": "shopify://shop_images/image_12_f34926b3-5781-4daa-bf3a-2c163e44c105.jpg",
         "display_on_card": false,
         "display_content_below_image_on_mobile": false,
         "style": "full",
@@ -82,7 +82,7 @@
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/a83c5df73b53c6e683f85b33831acf53.jpg",
+        "image": "shopify://shop_images/image_08_2ff5687a-45e2-416e-867a-d6ade671f998.jpg",
         "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,
@@ -92,7 +92,7 @@
         "disable_media_style": false,
         "title": "What We Stand For",
         "heading_size": "heading-standard",
-        "richtext": "<p><strong>Simplicity that performs</strong> — Short ingredient lists and practical formulas designed for effective rinsing.</p><p><strong>Clear labeling &amp; transparency</strong> — Straightforward communication about product contents without misleading claims.</p><p><strong>Practical clean standards</strong> — Formulated without palm oil, parabens, sulfates, dyes, or alcohols.</p><p><strong>Everyday safety-first</strong> — Accessible safety instructions across all product categories.</p><p><strong>Realistic sustainability</strong> — Reducing unnecessary additives and promoting efficient product use.</p>",
+        "richtext": "<p><strong>Simplicity that performs</strong> — Short ingredient lists and practical formulas designed for effective rinsing.</p><p><strong>Clear labeling & transparency</strong> — Straightforward communication about product contents without misleading claims.</p><p><strong>Practical clean standards</strong> — Formulated without palm oil, parabens, sulfates, dyes, or alcohols.</p><p><strong>Everyday safety-first</strong> — Accessible safety instructions across all product categories.</p><p><strong>Realistic sustainability</strong> — Reducing unnecessary additives and promoting efficient product use.</p>",
         "text_alignment": "text-left",
         "button_link": "shopify://pages/ingredients-transparency",
         "button_label": "View Our Ingredients",

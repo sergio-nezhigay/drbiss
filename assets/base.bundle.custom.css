@@ -583,3 +583,101 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .inline-rte {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
+
+/* ===== /collections page — collection card grid ===== */
+
+.collection-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .collection-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+.collection-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--color-scheme-card, #fff);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.collection-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.11);
+  transform: translateY(-3px);
+}
+
+.collection-card__image-wrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f5f5f3;
+}
+
+.collection-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.collection-card:hover .collection-card__image-wrap img {
+  transform: scale(1.05);
+}
+
+.collection-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0eeeb;
+}
+
+.collection-card__placeholder .placeholder-svg {
+  width: 60%;
+  height: 60%;
+  opacity: 0.35;
+}
+
+.collection-card__body {
+  padding: 0.875rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.collection-card__title {
+  font-family: var(--heading-font-stack);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  letter-spacing: var(--heading-letterspacing);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .collection-card__title {
+    font-size: 1.1rem;
+  }
+}
+
+.collection-card__count {
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin: 0;
+}
+
+.collection-card__btn {
+  margin-top: 0.75rem;
+}

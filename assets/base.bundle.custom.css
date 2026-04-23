@@ -527,6 +527,15 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   }
 }
 
+/* Metaobject accordion rows in product info tabs */
+.product-info-tabs__item {
+  margin-top: 0 !important;
+}
+
+.product-info-tabs__item + .product-info-tabs__item {
+  margin-top: 0 !important;
+}
+
 /* ===== Quantity Discount Block ===== */
 .qty-discount-tiers {
   display: grid;

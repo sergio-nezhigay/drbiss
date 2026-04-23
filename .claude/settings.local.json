@@ -19,7 +19,18 @@
       "Bash(where python:*)",
       "Bash(python:*)",
       "Bash(grep:*)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Read(//c/Users/abc19/.claude/plugins/cache/shopify-ai-toolkit/shopify-plugin/1.0.0/skills/shopify-admin/**)",
+      "Bash(node scripts/search_docs.mjs \"product metafields query\" --model claude-sonnet-4-6 --client-name claude-code --client-version 1.0.0)",
+      "Bash(node scripts/validate.mjs --code 'query ProductMetafields\\($productId: ID!\\) { product\\(id: $productId\\) { id title metafields\\(first: 50\\) { edges { node { namespace key value type } } } } }' --model claude-sonnet-4-6 --client-name claude-code --client-version 1.0.0 --artifact-id prod-metafields-001 --revision 1)",
+      "Read(//c/Users/abc19/.claude/plugins/cache/shopify-ai-toolkit/shopify-plugin/1.0.0/skills/shopify-admin-execution/**)",
+      "Bash(shopify store *)",
+      "Bash(shopify whoami *)",
+      "Bash(shopify theme *)",
+      "Bash(node *)",
+      "Bash(sed -n '378,385p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
+      "Bash(sed -n '4188,4210p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
+      "Bash(sed -n '4698,4715p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")"
     ]
   }
 }

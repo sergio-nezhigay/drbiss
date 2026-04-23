@@ -655,6 +655,12 @@
                       block: block,
                       block_base_classes: block_base_classes
                     %}
+                  {%- when 'product_info_tabs' -%}
+                    {% render 'product-block-product-info-tabs',
+                      product: product,
+                      block: block,
+                      block_base_classes: block_base_classes
+                    %}
                   {%- when 'icon_row' -%}
                     {% render 'product-block-icon-row',
                       block: block,

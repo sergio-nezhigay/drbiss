@@ -164,6 +164,10 @@
             "page": ""
           }
         },
+        "product_info_tabs_1": {
+          "type": "product_info_tabs",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -275,6 +279,7 @@
         "collapsible_tab_VBLH7z",
         "collapsible_tab_8jFdRx",
         "collapsible_tab_BgEaPT",
+        "product_info_tabs_1",
         "description",
         "qty_discount",
         "quantity-selector",

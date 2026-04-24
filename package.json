@@ -8,8 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "shopify theme dev --store=dr-biss.myshopify.com --theme 155816394949",
-    "push": "shopify theme push --store=dr-biss.myshopify.com --theme 155816394949",
-    "pull": "shopify theme pull --store=dr-biss.myshopify.com --theme 155816394949"
+    "dev": "shopify theme dev --store=dr-biss.myshopify.com --theme 156490793157",
+    "push": "shopify theme push --store=dr-biss.myshopify.com --theme 156490793157",
+    "pull": "shopify theme pull --store=dr-biss.myshopify.com --theme 156490793157"
   }
 }

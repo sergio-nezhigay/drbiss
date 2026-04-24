@@ -1409,8 +1409,16 @@ var header_default = (count) => {
         );
       });
     },
+    closeMenus() {
+      Object.keys(this.menuOpen).forEach((menu) => {
+        this.menuOpen[menu] = false;
+      });
+    },
     toggleMenu(index) {
-      this.menuOpen["menu" + index] = !this.menuOpen["menu" + index];
+      const menu = "menu" + index;
+      const shouldOpen = !this.menuOpen[menu];
+      this.closeMenus();
+      this.menuOpen[menu] = shouldOpen;
     },
     focusOut(event, menu) {
       if (event.relatedTarget) {
@@ -1449,10 +1457,16 @@ var header_default = (count) => {
     keyUpListener(event) {
       if (event.key === "Escape") {
         if (this.searchOpen === false) {
-          for (let i = 0; i < dropdownCount; i++) {
-            if (this.menuOpen["menu" + i] === true) {
-              this.menuOpen["menu" + i] = false;
-              document.querySelector(`[aria-controls="menu${i}"]`).focus();
+          const openMenu = Object.keys(this.menuOpen).find(
+            (menu) => this.menuOpen[menu]
+          );
+          if (openMenu) {
+            this.closeMenus();
+            const menuToggle = document.querySelector(
+              `[aria-controls="${openMenu}"]`
+            );
+            if (menuToggle) {
+              menuToggle.focus();
             }
           }
         } else {

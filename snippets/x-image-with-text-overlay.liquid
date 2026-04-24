@@ -119,7 +119,8 @@
       {% endif %}
     </div>
   </div>
-  <div class="absolute inset-0 pointer-events-none" style="background: rgba(0,0,0,0.40); z-index: 5;"></div>
+  {%- assign overlay_alpha = overlay_opacity | default: 40 | divided_by: 100.0 -%}
+  <div class="absolute inset-0 pointer-events-none" style="background: rgba(0,0,0,{{ overlay_alpha }}); z-index: 5;"></div>
   <div
     class="px-section py-section-vertical-spacing empty:hidden {{ content_class }} z-10  text-scheme-text {{ place_content }} {{ text_align }} {% if style == 'inset' %}max-w-site mx-auto{% endif %}"
   >

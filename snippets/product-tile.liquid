@@ -2,8 +2,8 @@
   assign crop = crop | default: settings.product_tiles_aspect_ratio
   assign shape = shape | default: settings.product_tile_media_shape
   assign hover_image = blank
-  if settings.product_tiles_second_image_on_hover and product.media.size > 1
-    assign hover_image = product.media[1]
+  if product.images.size > 1
+    assign hover_image = product.images[1]
   endif
   if enable_quick_buy
     assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id
@@ -82,7 +82,7 @@
 -%}
 {%- if product and product != empty -%}
   <div
-    class="product-tile relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
+    class="product-tile group relative {{ class }} {% if display_on_card %}text-scheme-text card{% endif %}"
   >
     {% if enable_quick_buy %}
       <data-island
@@ -126,15 +126,18 @@
           </div>
         </div>
       {%- endif -%}
-      <div class="product-tile mt-5 break-words {{ settings.product_tile_text_align }}">
-        <h2 class="font-body text-base">
+      <div class="product-tile product-tile__content mt-5 break-words {{ settings.product_tile_text_align }}">
+        <h2 class="product-tile__title font-body text-base">
           <a
             href="{{ product.url | within: collection }}"
-            class="block h-full w-full product-tile__link"
+            class="product-tile__title-link block w-full product-tile__link"
           >
             {{- product.title | escape -}}
           </a>
         </h2>
+        <div class="product-tile__reviews-row{% if product.metafields.judgeme.badge != blank %} has-reviews{% endif %}">
+          <div class="product-tile__reviews jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">{{ product.metafields.judgeme.badge }}</div>
+        </div>
         {%- if settings.product_tiles_show_vendor -%}
           <p class="mt-1">{{ product.vendor }}</p>
         {%- endif -%}
@@ -150,50 +153,54 @@
           </div>
         {% endif %}
 
-        {%- if enable_quick_buy -%}
-          <span
-            class="mt-2.5 inline-block"
-            x-html="formatMoney(currentPrice)"
-            :class="
-              {
-                'invisible': !currentVariant
-              }
-            "
-            data-product-price
-          >
-            {{ current_variant.price | money }}
-          </span>
-          {% if product.compare_at_price_max > product.price %}
-            <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
-              <span class="{{ price_text_size }}">
-                <span class="sr-only">
-                  {{- 'products.general.sale_price' | t -}}
-                </span>
-                <s
-                  data-compare-price
-                  class="text-scheme-text"
-                  x-html="formatMoney(currentVariant.compare_at_price)"
-                >
-                  {% if current_variant.compare_at_price > current_variant.price %}
-                    {{ current_variant.compare_at_price | money }}
-                  {% endif %}
-                </s>
-              </span>
+        <div class="product-tile__footer">
+          {%- if enable_quick_buy -%}
+            <span
+              class="mt-2.5 inline-block"
+              x-html="formatMoney(currentPrice)"
+              :class="
+                {
+                  'invisible': !currentVariant
+                }
+              "
+              data-product-price
+            >
+              {{ current_variant.price | money }}
             </span>
-          {% endif %}
-        {%- else -%}
-          {%- render 'price',
-            product: product,
-            price_class: 'mt-2.5',
-            compare_at_price: compare_at_price,
-            price: price,
-            money_price: money_price,
-            on_sale: on_sale
-          -%}
-        {%- endif -%}
-        {%- if product.metafields.custom.volume != blank -%}
-          <p class="mt-1 text-sm" style="color: #9ca3af;">{{ product.metafields.custom.volume }}</p>
-        {%- endif -%}
+            {% if product.compare_at_price_max > product.price %}
+              <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
+                <span class="{{ price_text_size }}">
+                  <span class="sr-only">
+                    {{- 'products.general.sale_price' | t -}}
+                  </span>
+                  <s
+                    data-compare-price
+                    class="text-scheme-text"
+                    x-html="formatMoney(currentVariant.compare_at_price)"
+                  >
+                    {% if current_variant.compare_at_price > current_variant.price %}
+                      {{ current_variant.compare_at_price | money }}
+                    {% endif %}
+                  </s>
+                </span>
+              </span>
+            {% endif %}
+          {%- else -%}
+            {%- render 'price',
+              product: product,
+              price_class: 'mt-2.5',
+              compare_at_price: compare_at_price,
+              price: price,
+              money_price: money_price,
+              on_sale: on_sale
+            -%}
+          {%- endif -%}
+          <div class="product-tile__meta-row">
+            {%- if product.metafields.custom.volume != blank -%}
+              <p class="product-tile__meta text-sm" style="color: #9ca3af;">{{ product.metafields.custom.volume }}</p>
+            {%- endif -%}
+          </div>
+        </div>
       </div>
       {%- if enable_quick_buy -%}
         <div class="product-tile__quick-buy">
@@ -211,36 +218,9 @@
       {%- endif -%}
       {%- if settings.show_on_sale_badge and on_sale -%}
         {%- liquid
-          assign text = 'products.product.on_sale' | t
-          assign id = 'on-sale-sticker-' | append: product.id
-          assign shape = settings.on_sale_badge_shape
-          assign vertical_position = 15
-          assign horizontal_position = 90
-          if rotate > 0
-            assign rotate = -5
-          else
-            assign rotate = 5
-          endif
-          if display_on_card
-            assign vertical_position = 5
-          endif
-          if scatter_position
-            assign vertical_position = vertical_position | plus: 15
-          endif
+          assign discount_pct = target.compare_at_price | minus: target.price | times: 100 | divided_by: target.compare_at_price | round
         -%}
-        {%- render 'static-sticker',
-          static_id: 'on-sale',
-          shape: shape,
-          id: id,
-          text: text,
-          vertical_position: vertical_position,
-          horizontal_position: horizontal_position,
-          rotate: rotate,
-          width: 100,
-          font_size: settings.badge_font_size,
-          color: 'bg-scheme-accent-1 text-scheme-accent-1-contrast',
-          will_transform: will_transform
-        %}
+        <div class="dr-sale-badge">{{ discount_pct }}% OFF</div>
       {%- endif -%}
       {%- if settings.show_sold_out_badge and available == false -%}
         {%- liquid
@@ -269,7 +249,7 @@
           rotate: rotate,
           width: 100,
           font_size: settings.badge_font_size,
-          color: 'bg-scheme-text text-scheme-text-contrast',
+          color: 'dr-sold-out-bg dr-sold-out-text',
           will_transform: will_transform
         %}
       {%- endif -%}

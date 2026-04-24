@@ -125,12 +125,35 @@
       inset: 0;
       background: linear-gradient(
         to right,
-        rgba(0,0,0,0.65) 0%,
-        rgba(0,0,0,0.35) 50%,
-        rgba(0,0,0,0.1) 100%
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.01) 50%,
+        rgba(0,0,0,0.01) 100%
+      );
+      z-index: 1;
+    }
+
+    @media screen and (max-width: 749px) {
+      .main-banner-object.object-wrapper::before {
+        background: linear-gradient(
+          to right,
+          rgba(0,0,0,0.6) 0%,
+          rgba(0,0,0,0.4) 40%,
+          rgba(0,0,0,0.01) 100%
         );
-        z-index: 1;
       }
+    }
+
+    @media screen and (min-width: 750px) {
+      .main-banner-object.object-wrapper::before {
+        background: linear-gradient(
+          to right,
+          rgba(0,0,0,0.6) 0%,
+          rgba(0,0,0,0.1) 50%,
+          rgba(0,0,0,0.01) 100%
+        );
+      }
+    }
+
       {{ main_font | font_face: font_display: 'swap' }}
       {{ heading_font | font_face: font_display: 'swap' }}
 
@@ -162,7 +185,7 @@
 
       :root {
         --heading-font-stack: {{ heading_font.family }}, {{ heading_font.fallback_families }};
-        --heading-font-weight: {{ heading_font.weight }};
+        --heading-font-weight: 600;
         --heading-font-style: {{ heading_font.style }};
         --heading-letterspacing: {{ heading_letterspacing }};
         --heading-capitalize: {{ heading_capitalize }};
@@ -225,7 +248,7 @@
     {% # theme-check-enable AssetPreload %}
   </head>
 
-  <body data-color-scheme="scheme1">
+  <body data-color-scheme="scheme1" class="template-{{ template | replace: '.', '-' }}">
     {%- if settings.show_on_sale_badge -%}
       {%- render 'static-sticker-defs',
         shape: settings.on_sale_badge_shape,

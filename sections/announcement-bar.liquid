@@ -9,8 +9,59 @@
 -%}
 
 {%- if show_announcement_bar -%}
+  <style>
+    #AnnouncementBar {
+      background-color: var(--announcement-bar-bg);
+      color: var(--announcement-bar-color);
+      text-align: center;
+    }
+    #AnnouncementBar a,
+    #AnnouncementBar p,
+    #AnnouncementBar div[role="complementary"] {
+      font-size: 1rem;
+      font-weight: 600;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: var(--announcement-bar-color);
+    }
+    #AnnouncementBar a {
+      display: block;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-decoration: none;
+    }
+    #AnnouncementBar .splide__track {
+      overflow: hidden;
+    }
+    #AnnouncementBar .splide__slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #AnnouncementBar .splide__arrows {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      pointer-events: none;
+    }
+    #AnnouncementBar .splide__arrow {
+      pointer-events: all;
+      color: var(--announcement-bar-color);
+      background: none;
+      border: none;
+      cursor: pointer;
+      opacity: 1;
+    }
+  </style>
   <section
-    class="relative bg-scheme-background text-scheme-text {% if link != blank and section.settings.display != 'slider' %}hover:bg-scheme-accent-1 hover:text-scheme-accent-1-contrast{% endif %} border-section-border border-b-section text-center {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}"
+    class="relative border-section-border border-b-section"
     data-color-scheme="{{ section.settings.color_scheme }}"
     id="AnnouncementBar"
   >
@@ -25,18 +76,12 @@
               {%- for block in section.blocks -%}
                 <li class="splide__slide" {{ block.shopify_attributes }}>
                   {%- if block.settings.link != blank -%}
-                    <a
-                      class="block w-full px-5 py-1 text-sm text-current lg:px-0 lg:py-2"
-                      href="{{ block.settings.link }}"
-                    >
+                    <a href="{{ block.settings.link }}">
                       {{ block.settings.text | escape }}
                     </a>
                   {%- else -%}
-                    <div
-                      class="py-1 text-center text-sm text-current lg:py-2"
-                      role="complementary"
-                    >
-                      <p class="px-5 lg:px-0">{{ block.settings.text | escape }}</p>
+                    <div role="complementary">
+                      <p>{{ block.settings.text | escape }}</p>
                     </div>
                   {%- endif -%}
                 </li>
@@ -44,12 +89,12 @@
             </ul>
           </div>
           {%- if section.blocks.size > 1 -%}
-            <div class="splide__arrows absolute left-0 top-0 flex h-full w-full items-center justify-between px-5 lg:px-0">
-              <button class="splide__arrow splide__arrow--prev text-current" aria-label="{{ 'sections.slideshow.previous_slide' | t }}">
-                <span class="block">{% render 'icon-previous-announcement' %}</span>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev" aria-label="{{ 'sections.slideshow.previous_slide' | t }}">
+                <span>{% render 'icon-previous-announcement' %}</span>
               </button>
-              <button class="splide__arrow splide__arrow--next text-current" aria-label="{{ 'sections.slideshow.next_slide' | t }}">
-                <span class="block">{% render 'icon-next-announcement' %}</span>
+              <button class="splide__arrow splide__arrow--next" aria-label="{{ 'sections.slideshow.next_slide' | t }}">
+                <span>{% render 'icon-next-announcement' %}</span>
               </button>
             </div>
           {%- endif -%}
@@ -73,27 +118,16 @@
           </script>
         </div>
       {%- else -%}
-        <div
-          class="py-1 text-center text-sm text-current lg:py-2"
-          role="complementary"
-        >
-          <p class="px-5 lg:px-0">{{ text | escape }}</p>
+        <div role="complementary">
+          <p>{{ text | escape }}</p>
         </div>
       {%- endif -%}
     {%- elsif section.settings.display == 'static' -%}
       {%- if link != blank -%}
-        <a
-          class="block w-full px-5 py-1 text-sm text-current lg:px-0 lg:py-2"
-          href="{{ link }}"
-        >
-          {{ text | escape }}
-        </a>
+        <a href="{{ link }}">{{ text | escape }}</a>
       {%- else -%}
-        <div
-          class="py-1 text-center text-sm text-current lg:py-2"
-          role="complementary"
-        >
-          <p class="px-5 lg:px-0">{{ text | escape }}</p>
+        <div role="complementary">
+          <p>{{ text | escape }}</p>
         </div>
       {%- endif -%}
     {%- else -%}

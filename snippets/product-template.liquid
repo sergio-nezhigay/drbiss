@@ -124,6 +124,25 @@
     --largest-media-aspect-ratio: {{ tallest_media_aspect_ratio }};
     --thumbnails-height:  calc(var(--feature-media-width) / var(--largest-media-aspect-ratio));
   }
+
+  /* Slightly reduce the main product title so it feels less overpowering. */
+  #shopify-section-{{ section.id }} .product-block-title h1 {
+    font-size: var(--type-scale-n4);
+    line-height: 1.1;
+  }
+
+  /* Make secondary content headings in product tabs less dominant. */
+  #shopify-section-{{ section.id }} .product-block .rte h2 {
+    font-size: var(--font-size-lg);
+    line-height: 1.2;
+  }
+
+  @media (min-width: 990px) {
+    #shopify-section-{{ section.id }} .product-block .rte h2 {
+      font-size: var(--font-size-xl);
+      line-height: 1.15;
+    }
+  }
 </style>
 
 <data-island
@@ -546,7 +565,7 @@
                       {%- if is_feature -%}
                         <a href="{{ product.url }}">
                       {%- endif -%}
-                      <{{ header_tag }} class="font-heading heading-feature {{ block.settings.text_align }}">
+                      <{{ header_tag }} class="font-heading heading-standard {{ block.settings.text_align }}">
                         {{ product.title }}
                       </{{ header_tag }}>
                       {%- if is_feature -%}
@@ -573,6 +592,12 @@
                     {% render 'product-block-quantity',
                       product_form_id: product_form_id,
                       label_class: label_class,
+                      block: block,
+                      block_base_classes: block_base_classes
+                    %}
+                  {% when 'qty_discount' %}
+                    {% render 'product-block-qty-discount',
+                      product: product,
                       block: block,
                       block_base_classes: block_base_classes
                     %}
@@ -627,6 +652,12 @@
                     %}
                   {%- when 'collapsible_tab' -%}
                     {% render 'product-block-collapsible-tab',
+                      block: block,
+                      block_base_classes: block_base_classes
+                    %}
+                  {%- when 'product_info_tabs' -%}
+                    {% render 'product-block-product-info-tabs',
+                      product: product,
                       block: block,
                       block_base_classes: block_base_classes
                     %}

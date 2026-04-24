@@ -173,6 +173,15 @@
             "text_align": "text-left"
           }
         },
+        "qty_discount": {
+          "type": "qty_discount",
+          "settings": {
+            "tier2_qty": 2,
+            "tier2_discount": 10,
+            "tier3_qty": 3,
+            "tier3_discount": 15
+          }
+        },
         "quantity-selector": {
           "type": "quantity_selector",
           "settings": {
@@ -264,6 +273,7 @@
         "collapsible_tab_HVGac6",
         "collapsible_tab_FjaKLk",
         "description",
+        "qty_discount",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",
@@ -326,8 +336,8 @@
       ],
       "settings": {
         "rich_text": "{{ product.metafields.custom.feature_text.value }}",
-        "mobile_text_scale": 4,
-        "desktop_text_scale": 9,
+        "mobile_text_scale": 2,
+        "desktop_text_scale": 5,
         "display_on_card": false,
         "apply_effects": false,
         "content_width_desktop": "lg:w-full",
@@ -591,7 +601,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I contact you?",
-            "answer": "<p>Email: <a href=\"mailto:info@bisschemical.com\" title=\"mailto:info@bisschemical.com\">info@bisschemical.com<\/a><\/p>"
+            "answer": "<p>Email: <a href=\"mailto:info@drbiss.com\" title=\"mailto:info@drbiss.com\">info@drbiss.com<\/a><\/p>"
           }
         }
       },

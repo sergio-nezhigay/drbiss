@@ -6,23 +6,23 @@
 
   assign container_mobile_classes = ''
   if layout_on_mobile == 'wrap'
-    assign list_mobile_classes = 'grid'
+    assign list_mobile_classes = 'icon-list--grid'
     assign divisible_by_three = icons.size | modulo: 3
     if divisible_by_three == 0
-      assign list_mobile_classes = list_mobile_classes | append: ' grid-cols-3'
+      assign list_mobile_classes = list_mobile_classes | append: ' icon-list--cols-3'
     else
-      assign list_mobile_classes = list_mobile_classes | append: ' grid-cols-2'
+      assign list_mobile_classes = list_mobile_classes | append: ' icon-list--cols-2'
     endif
   else
-    assign container_mobile_classes = '-mx-section'
-    assign list_mobile_classes = 'flex px-section overflow-x-auto snap-x snap-promixity'
-    assign item_mobile_classes = 'scroll-mx-section snap-start shrink-0 w-[var(--icon-max-width)]'
+    assign container_mobile_classes = 'icon-list-outer--scroll'
+    assign list_mobile_classes = 'icon-list--scroll px-section'
+    assign item_mobile_classes = 'icon-list__item--scroll'
   endif
 
-  assign icon_align = 'items-center'
+  assign icon_align = 'icon-list--items-center'
   for icon in icons
     if icon.settings.text != ''
-      assign icon_align = 'items-baseline'
+      assign icon_align = 'icon-list--items-baseline'
       break
     endif
   endfor
@@ -31,6 +31,8 @@
 <style>
   #icon-row-{{ section.id }} {
     --icon-max-width: {{ icon_max_width  }}px;
+    row-gap: calc(var(--grid-gap) * 0.5);
+    column-gap: calc(var(--grid-gap) * 0.8);
   }
   @media (min-width: 768px) {
     #icon-row-{{ section.id }} {
@@ -41,13 +43,13 @@
 
 <section
   id="section-{{ section.id }}"
-  class="relative bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %} relative overflow-hidden"
+  class="icon-list-section bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}"
   data-color-scheme="{{ section.settings.color_scheme }}"
 >
-  <div class="section-content relative z-10 mx-auto max-w-site px-section py-section-vertical-spacing">
+  <div class="section-content max-w-site px-section py-section-vertical-spacing padding-smaller">
     {% if section.settings.title != '' %}
       {%- assign block_heading_level = 'h3' -%}
-      <h2 class="inline-heading-rte font-heading heading-standard  heading-style break-words text-center {{ settings.heading_drop_shadow_style }}">
+      <h2 class="inline-heading-rte font-heading heading-standard heading-style icon-list__heading {{ settings.heading_drop_shadow_style }}">
         {{ section.settings.title }}
       </h2>
     {% endif %}
@@ -55,20 +57,20 @@
     <div class="{{ container_mobile_classes }} {% if section.settings.title != '' %}section-content-top-margin{% endif %}">
       <ul
         id="icon-row-{{ section.id }}"
-        class="feature-icon-list items-top {{ list_mobile_classes }} {{ icon_align }}  gap-theme md:mt-0 md:flex md:flex md:flex-nowrap {{ section.settings.icon_alignment_on_desktop }}"
+        class="feature-icon-list {{ list_mobile_classes }} {{ icon_align }} gap-theme {{ section.settings.icon_alignment_on_desktop }}"
       >
         {% for block in icons %}
           <li
-            class="text-center {{ item_mobile_classes }} space-y-4 md:w-auto md:min-w-0 md:max-w-[var(--icon-max-width)] md:flex-1"
+            class="icon-list__item {{ item_mobile_classes }}"
             {{ block.shopify_attributes }}
           >
-            <div class="mx-auto">
+            <div class="icon-list__icon-wrap">
               <span
-                class="mx-auto block text-scheme-text"
+                class="icon-list__icon text-scheme-text"
                 style="max-width: {{ icon_max_width }}px; --icon-thickness: {{ section.settings.icon_thickness }};"
               >
                 {%- unless block.settings.custom_image -%}
-                  <div class="rounded-full {% if section.settings.show_border %}border-[calc(var(--icon-thickness)_*_1px)]{% else %}border-0{% endif %} block rounded-full border-current {{  section.settings.background_color }}">
+                  <div class="icon-list__icon-inner {% if section.settings.show_border %}icon-list__icon-inner--bordered{% else %}icon-list__icon-inner--no-border{% endif %} {{ section.settings.background_color }}">
                     {%- render 'theme-icon', icon: block.settings.icon -%}
                   </div>
                 {%- else -%}
@@ -92,11 +94,16 @@
                 {%- endunless -%}
               </span>
             </div>
-            {% if block.settings.text != '' %}
-              <{{ block_heading_level }} class="break-words text-base {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{%  endif %}">
-                {{- block.settings.text -}}
-              </{{ block_heading_level }}>
-            {% endif %}
+            <div class="icon-list__content">
+              {% if block.settings.text != '' %}
+                <{{ block_heading_level }} class="icon-list__label {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{% endif %}">
+                  {{- block.settings.text -}}
+                </{{ block_heading_level }}>
+              {% endif %}
+              {% if block.settings.subtext != blank %}
+                <p class="icon-list__subtext">{{ block.settings.subtext }}</p>
+              {% endif %}
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -189,15 +196,15 @@
       "label": "t:sections.icon_list.settings.icon_alignment_on_desktop.label",
       "options": [
         {
-          "value": "md:justify-center",
+          "value": "icon-list--justify-center",
           "label": "t:common.options.center.label"
         },
         {
-          "value": "md:justify-between",
+          "value": "icon-list--justify-between",
           "label": "t:common.options.spread.label"
         }
       ],
-      "default": "md:justify-center"
+      "default": "icon-list--justify-center"
     },
     {
       "type": "header",
@@ -521,6 +528,12 @@
           "type": "text",
           "id": "text",
           "label": "t:sections.icon_list.blocks.icon.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Description",
+          "placeholder": "Short description"
         }
       ]
     },
@@ -2031,11 +2044,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

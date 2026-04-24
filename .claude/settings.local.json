@@ -1,7 +1,36 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xargs grep:*)"
+      "Bash(grep -l \"h1\\\\|h2\\\\|h3\\\\|heading\" /c/projects/drbiss/sections/*.liquid)",
+      "Bash(ls:*)",
+      "Bash(find /c/projects/drbiss/assets -name *island*.js -type f)",
+      "Bash(grep -rn \"data-section-id\\\\|sectionId\\\\|section\\\\.id.*\\\\[0-9\\\\]\\\\|shopify:section\" /c/projects/drbiss/assets --include=*.js)",
+      "Bash(find /c/projects/drbiss -name *.js -path */js/* -o -name *.ts -path */js/*)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
+      "Bash(wc -l /c/projects/drbiss/layout/*.liquid)",
+      "Bash(grep -r \"discount\" /c/projects/drbiss/snippets/*.liquid)",
+      "Bash(grep -r \"percentage\\\\|percent\" /c/projects/drbiss/snippets/*.liquid)",
+      "Bash(find /c/projects/drbiss -type f \\\\\\( -name \"*.liquid\" -o -name \"*.json\" -o -name \"*.js\" \\\\\\) -exec grep -l -i \"judge\\\\.me\\\\|judgeme\\\\|jmr\\\\|product.*review\\\\|review.*rating\" {} \\\\;)",
+      "WebSearch",
+      "WebFetch(domain:judge.me)",
+      "WebFetch(domain:support.judge.me)",
+      "Bash(python3:*)",
+      "Bash(where python:*)",
+      "Bash(python:*)",
+      "Bash(grep:*)",
+      "Bash(pip install *)",
+      "Read(//c/Users/abc19/.claude/plugins/cache/shopify-ai-toolkit/shopify-plugin/1.0.0/skills/shopify-admin/**)",
+      "Bash(node scripts/search_docs.mjs \"product metafields query\" --model claude-sonnet-4-6 --client-name claude-code --client-version 1.0.0)",
+      "Bash(node scripts/validate.mjs --code 'query ProductMetafields\\($productId: ID!\\) { product\\(id: $productId\\) { id title metafields\\(first: 50\\) { edges { node { namespace key value type } } } } }' --model claude-sonnet-4-6 --client-name claude-code --client-version 1.0.0 --artifact-id prod-metafields-001 --revision 1)",
+      "Read(//c/Users/abc19/.claude/plugins/cache/shopify-ai-toolkit/shopify-plugin/1.0.0/skills/shopify-admin-execution/**)",
+      "Bash(shopify store *)",
+      "Bash(shopify whoami *)",
+      "Bash(shopify theme *)",
+      "Bash(node *)",
+      "Bash(sed -n '378,385p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
+      "Bash(sed -n '4188,4210p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
+      "Bash(sed -n '4698,4715p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")"
     ]
   }
 }

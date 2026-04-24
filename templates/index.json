@@ -15,7 +15,7 @@
         "slide_CBjAAz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/isbl_3360x840.84178489_feto06cr.webp",
+            "image": "shopify://shop_images/ChatGPT_Image_21_._2026_._23_25_57.png",
             "title": "Everyday care made easy.",
             "richtext": "Vegan, sulfate-free, and clearly labeled",
             "cta_url": "shopify://collections",
@@ -32,7 +32,7 @@
       "name": "t:sections.hero_slideshow.name",
       "settings": {
         "style": "full",
-        "height": "natural",
+        "height": "pt-three-quarters-screen-height",
         "display_on_card": true,
         "display_content_below_image_on_mobile": false,
         "auto_rotate": false,
@@ -40,6 +40,7 @@
         "place_content": "place-content-center-start",
         "text_align": "text-left",
         "heading_size": "heading-standard",
+        "overlay_opacity": 0,
         "color_scheme": "scheme5",
         "use_gradient_background": false
       }
@@ -51,7 +52,8 @@
           "type": "icon",
           "settings": {
             "icon": "plane",
-            "text": "Bringing Soap to the World"
+            "text": "Bringing Soap to the World",
+            "subtext": "Delivered worldwide"
           }
         },
         "icon-1": {
@@ -59,7 +61,8 @@
           "disabled": true,
           "settings": {
             "icon": "alcohol_free",
-            "text": "Alcohol free"
+            "text": "Alcohol free",
+            "subtext": ""
           }
         },
         "icon-2": {
@@ -67,28 +70,32 @@
           "disabled": true,
           "settings": {
             "icon": "paraben_free",
-            "text": "Paraben free"
+            "text": "Paraben free",
+            "subtext": ""
           }
         },
         "icon-3": {
           "type": "icon",
           "settings": {
             "icon": "return",
-            "text": "Easy Returns"
+            "text": "Easy Returns",
+            "subtext": "Hassle-free, no questions asked"
           }
         },
         "icon-4": {
           "type": "icon",
           "settings": {
             "icon": "clock",
-            "text": "Fast Delivery"
+            "text": "Fast Delivery",
+            "subtext": "Ships within 1–2 business days"
           }
         },
         "icon-5": {
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "Eco-Friendly"
+            "text": "Eco-Friendly",
+            "subtext": "100% plant-based ingredients"
           }
         }
       },
@@ -117,8 +124,7 @@
     "lifestyle_nature_YkL7mP": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
-        "image_mobile": "shopify://shop_images/841aa6f165a9074a0cacbe2de5314ab6.jpg",
+        "image": "shopify://shop_images/isbl_3360x840.84178489_feto06cr_1.webp",
         "display_on_card": false,
         "display_content_below_image_on_mobile": false,
         "style": "full",
@@ -143,7 +149,7 @@
         "collection": "new-arrivals",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -172,7 +178,7 @@
         "collection": "bestsellers",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -304,7 +310,7 @@
         "collection": "bar-soaps",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "tabs",
         "products_per_row_mobile": "1",
@@ -419,7 +425,9 @@
         "crop": "",
         "image_shape": "default",
         "color_scheme": "",
-        "use_gradient_background": false
+        "use_gradient_background": false,
+        "padding_top": 4,
+        "padding_bottom": 0
       }
     },
     "testimonials_VW9gz8": {
@@ -479,6 +487,59 @@
         "use_gradient_background": false
       }
     },
+    "why_choose_us": {
+      "type": "why-choose-us",
+      "blocks": {
+        "wcu_card_1": {
+          "type": "feature",
+          "settings": {
+            "emoji": "🔬",
+            "icon_bg": "#dde8f5",
+            "title": "Science-backed formulas",
+            "description": "Developed by university professors in chemistry & engineering — not marketing departments."
+          }
+        },
+        "wcu_card_2": {
+          "type": "feature",
+          "settings": {
+            "emoji": "🌿",
+            "icon_bg": "#dff0de",
+            "title": "Zero palm oil. Ever.",
+            "description": "Palm-free by principle. We use coconut, olive, avocado oil & glycerin for a lather that's good for you and the planet."
+          }
+        },
+        "wcu_card_3": {
+          "type": "feature",
+          "settings": {
+            "emoji": "💧",
+            "icon_bg": "#daeef7",
+            "title": "Transparently simple",
+            "description": "No parabens, no SLS, no dyes, no alcohols. Every ingredient earns its place — nothing hidden."
+          }
+        },
+        "wcu_card_4": {
+          "type": "feature",
+          "settings": {
+            "emoji": "♻️",
+            "icon_bg": "#fef3d0",
+            "title": "Sustainably minded",
+            "description": "Shorter, cleaner formulas mean less waste. Based in Austin, TX — crafted with care from the ground up."
+          }
+        }
+      },
+      "block_order": [
+        "wcu_card_1",
+        "wcu_card_2",
+        "wcu_card_3",
+        "wcu_card_4"
+      ],
+      "settings": {
+        "eyebrow": "Why Choose Us",
+        "heading": "Clean science. Real results.",
+        "subtitle": "Founded by chemists and engineers who asked: why does soap need 30 ingredients? We kept only what matters.",
+        "color_scheme": ""
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -531,6 +592,7 @@
     "lifestyle_green_Xp4wRs",
     "featured_testimonials_ymJpd6",
     "testimonials_VW9gz8",
+    "why_choose_us",
     "newsletter"
   ]
 }

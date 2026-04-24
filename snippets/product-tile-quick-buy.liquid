@@ -25,7 +25,7 @@
     x-ref: 'productForm',
     class: 'quick-buy-product-form'
   %}
-    {%- if current_variant_only or single_variant -%}
+    {%- if current_variant_only or single_variant or settings.hide_variant_selector_in_cards -%}
       <input type="hidden" name="id" value="{{ current_variant.id }}">
     {%- else -%}
       <div class="{% if use_buttons %}hidden{% else %}mb-2.5 text-center{% endif %}">

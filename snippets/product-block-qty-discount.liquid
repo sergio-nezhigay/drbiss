@@ -1,0 +1,95 @@
+{%- liquid
+  assign tier2_qty      = block.settings.tier2_qty      | default: 2
+  assign tier2_discount = block.settings.tier2_discount | default: 10
+  assign tier3_qty      = block.settings.tier3_qty      | default: 3
+  assign tier3_discount = block.settings.tier3_discount | default: 15
+-%}
+
+<div
+  class="{{ block_base_classes }}"
+  {{ block.shopify_attributes }}
+  x-data="qtyDiscount({
+    price: {{ product.price }},
+    tiers: [
+      { min: 1, discount: 0 },
+      { min: {{ tier2_qty }}, discount: {{ tier2_discount }} },
+      { min: {{ tier3_qty }}, discount: {{ tier3_discount }} }
+    ]
+  })"
+  x-init="init()"
+>
+  <div class="qty-discount-tiers">
+    <template x-for="(tier, i) in tiers" :key="i">
+      <button
+        type="button"
+        class="qty-discount-tier"
+        :class="{ 'qty-discount-tier--active': activeTierIndex === i }"
+        @click="setQty(tier.min)"
+      >
+        <span x-text="tierLabel(tier, i)"></span>
+      </button>
+    </template>
+  </div>
+
+  <div class="qty-discount-nudge" x-show="nudgeText" x-cloak>
+    <span x-text="nudgeText"></span>
+  </div>
+</div>
+
+<script>
+  if (!window.qtyDiscount) {
+    window.qtyDiscount = function(config) {
+      return {
+        qty: 1,
+        tiers: config.tiers,
+        price: config.price,
+
+        get activeTierIndex() {
+          let idx = 0;
+          for (let i = 0; i < this.tiers.length; i++) {
+            if (this.qty >= this.tiers[i].min) idx = i;
+          }
+          return idx;
+        },
+
+        get nudgeText() {
+          const next = this.tiers[this.activeTierIndex + 1];
+          if (!next) return '';
+          const need = next.min - this.qty;
+          return `Add ${need} more — get ${next.discount}% off!`;
+        },
+
+        tierLabel(tier, i) {
+          const isLast = i === this.tiers.length - 1;
+          const qtyStr = isLast ? `${tier.min}+` : `${tier.min}`;
+          if (tier.discount === 0) {
+            const fmt = (this.price / 100).toFixed(2);
+            return `${qtyStr} pc — $${fmt}`;
+          }
+          return `${qtyStr} pc — ${tier.discount}% off`;
+        },
+
+        setQty(val) {
+          const input = document.querySelector('input[name="quantity"]');
+          if (!input) return;
+          input.value = val;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          this.qty = val;
+        },
+
+        init() {
+          this.$nextTick(() => {
+            const input = document.querySelector('input[name="quantity"]');
+            if (input) this.qty = parseInt(input.value) || 1;
+            document.addEventListener('input', (e) => {
+              if (e.target && e.target.name === 'quantity') {
+                this.qty = parseInt(e.target.value) || 1;
+              }
+            });
+          });
+        }
+      };
+    };
+  }
+</script>

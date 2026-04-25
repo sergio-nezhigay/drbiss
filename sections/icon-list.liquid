@@ -96,7 +96,7 @@
             </div>
             <div class="icon-list__content">
               {% if block.settings.text != '' %}
-                <{{ block_heading_level }} class="icon-list__label {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{% endif %}">
+                <{{ block_heading_level }} class="test icon-list__label {% if section.settings.text_style == 'heading' %}font-heading heading-secondary{% endif %} {% if section.settings.uppercase_text %}uppercase{% endif %}">
                   {{- block.settings.text -}}
                 </{{ block_heading_level }}>
               {% endif %}

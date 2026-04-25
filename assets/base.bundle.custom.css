@@ -669,10 +669,11 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 
 .collection-card .push-btn.push-btn__surface {
   background-color: white;
-  /* border-color: blue !important; */
+  box-shadow: none;;
+  border: 1px solid #50463e !important;
 }
 .collection-card:hover .push-btn.push-btn__surface {
-  background-color: #4b4443;
+  background-color: #50463e;
   color: white;
 }
 
@@ -743,3 +744,4 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .collection-card__btn {
   margin-top: 0.75rem;
 }
+

@@ -629,7 +629,7 @@ button {
   font-size: var(--font-size-base);
   line-height: var(--base-line-height);
   text-transform: var(--button-text-transform);
-  background: transparent;
+  background: blue;
   color: rgb(var(--color-button-text));
   box-shadow: inset 0 0 0 var(--button-border-width)
     rgb(var(--color-button-border));

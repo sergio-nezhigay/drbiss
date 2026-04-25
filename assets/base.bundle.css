@@ -6990,5 +6990,6 @@ html.no-js .no-js\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
   .push-btn--pop:hover .push-btn__surface:not(.push-btn__surface--secondary),
   .shopify-payment-button__button--unbranded.shopify-payment-button__button--unbranded:hover:before {
     background: rgb(30 30 30);
+    color: white;
   }
 }

@@ -667,6 +667,17 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   transform: translateY(-3px);
 }
 
+.collection-card .push-btn.push-btn__surface {
+  background-color: white;
+  /* border-color: blue !important; */
+}
+.collection-card:hover .push-btn.push-btn__surface {
+  background-color: #4b4443;
+  color: white;
+}
+
+
+
 .collection-card__image-wrap {
   aspect-ratio: 1 / 1;
   overflow: hidden;

@@ -31,8 +31,8 @@
     "story": {
       "type": "rich-text",
       "custom_css": [
-        ".rte ul {display: table; margin: 0 auto; text-align: left;}",
-        ".rte li {list-style-position: outside; margin-bottom: 0.5rem;}"
+        ".section-content, .rte {text-align: left !important; margin-left: 0 !important; margin-right: auto !important;}",
+        ".rte ul {padding-left: 1.5rem !important; /* Gives the bullets breathing room */ margin-left: 0 !important;}"
       ],
       "settings": {
         "title": "Our Story",

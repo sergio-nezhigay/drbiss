@@ -33,7 +33,7 @@
       "settings": {
         "title": "Our Ingredient Philosophy",
         "heading_size": "heading-standard",
-        "rich_text": "<p>We believe you have the right to know exactly what you are putting on your skin. Every Dr. Biss product carries a full ingredient list — no proprietary blends, no hidden complexes, no vague terms like 'fragrance' that mask dozens of unknown chemicals.</p><p>Every ingredient must pass one simple test: does it belong? If it doesn't actively benefit your skin, protect the formula or improve the texture, it doesn't make the cut.</p>",
+        "rich_text": "<p>At Dr. Biss, we believe customers deserve to know exactly what they are putting on their skin. That is why we use simple, recognizable ingredients and avoid unnecessary additives.<br/><br/><strong>What We Use</strong><br/>Oils: Coconut oil, olive oil, soybean oil, and avocado oil<br/>Scents: Lavender essential oil and peppermint essential oil<br/>Botanicals: Turmeric<br/>Supporting ingredients: Glycerin, citric acid, tocopherol, sea salt, and sucrose<br/><br/><strong>What We Avoid</strong><br/>We do not use sulfates, parabens, palm oil, alcohol, synthetic dyes, or unnecessary fillers.<br/><br/><strong>Liquid Soap Note</strong><br/>Our liquid soaps may include potassium hydroxide during the soap-making process. It is used for saponification and is not present as a harsh free ingredient in the finished soap.</p>",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
@@ -85,35 +85,40 @@
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "100% Vegan"
+            "text": "100% Vegan",
+            "subtext": ""
           }
         },
         "icon-sulfate": {
           "type": "icon",
           "settings": {
             "icon": "alcohol_free",
-            "text": "Sulfate Free"
+            "text": "Sulfate Free",
+            "subtext": ""
           }
         },
         "icon-palm": {
           "type": "icon",
           "settings": {
             "icon": "globe",
-            "text": "Palm Oil Free"
+            "text": "Palm Oil Free",
+            "subtext": ""
           }
         },
         "icon-trans": {
           "type": "icon",
           "settings": {
             "icon": "eye",
-            "text": "Full Transparency"
+            "text": "Full Transparency",
+            "subtext": ""
           }
         },
         "icon-frag": {
           "type": "icon",
           "settings": {
             "icon": "return",
-            "text": "Natural Fragrance"
+            "text": "Natural Fragrance",
+            "subtext": ""
           }
         }
       },

@@ -28,29 +28,11 @@
         "use_gradient_background": false
       }
     },
-    "story": {
-      "type": "rich-text",
-      "custom_css": [
-        ".section-content, .rte {text-align: left !important; margin-left: 0 !important; margin-right: auto !important;}",
-        ".rte ul {padding-left: 1.5rem !important; /* Gives the bullets breathing room */ margin-left: 0 !important;}"
-      ],
-      "settings": {
-        "title": "Our Story",
-        "heading_size": "heading-standard",
-        "rich_text": "<p><strong>Built with Purpose. Backed by Science.</strong></p><p>Dr. Biss started with a simple belief:</p><p><strong>Everyday care products should be clean, effective, and thoughtfully made.</strong></p><p>Too many products on the market rely on harsh ingredients, empty claims, and<br/>formulas designed more for trends than for real people. We wanted better<br/>products shaped with intention, backed by knowledge, and made for everyday<br/>life.</p><p>That is how Dr. Biss began.</p><p><strong>Where Chemistry Meets Practical Innovation</strong></p><p>Dr. Biss is built on more than just an idea. It is rooted in the mindset of a <strong>chemist </strong>and an <strong>industrial engineer</strong>.</p><p>From chemistry comes a deep understanding of ingredients, formulation, reactions,<br/>and how products interact with the body and environment.</p><p>From industrial engineering comes the discipline of designing products and processes that are practical, efficient, reliable, and built to serve people better.</p><p>That combination shapes everything we do:<br/><br/><strong>science-driven thinking, practical design, and a commitment to quality.</strong></p><p><strong>Why We Started Dr. Biss</strong></p><p>We were frustrated by personal care products that looked appealing but were filled with unnecessary additives, artificial fillers, and ingredients people could not trust.</p><p>We wanted to offer products that reflect a different standard:</p><p></p><ul><li>thoughtfully formulated </li><li>carefully selected ingredients </li><li>practical for real daily use </li><li>made with both performance and well-being in mind </li></ul><p>Not overhyped. Not overcomplicated.<br/><br/>Just honest products that do their job well.</p><p><strong>A Better Standard for Everyday Care</strong></p><p>As a chemist, we value what goes into a formula.<br/><br/>As an industrial engineer, we value how that formula becomes a dependable<br/>product people can use every day.</p><p>That means we think about both:</p><p></p><ul><li><strong>what a product is made of</strong> </li><li><strong>how well it fits into real life</strong><br/>     </li></ul><p>Dr. Biss is where those two worlds come together.</p>",
-        "display_on_card": false,
-        "content_width_desktop": "lg:w-2/3",
-        "button_link": "",
-        "button_label": "",
-        "color_scheme": "scheme2",
-        "use_gradient_background": false
-      }
-    },
     "mission": {
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/image_1771884652788_xkqpiz.jpg",
+        "image": "shopify://shop_images/image_08_2ff5687a-45e2-416e-867a-d6ade671f998.jpg",
         "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,
@@ -60,7 +42,7 @@
         "disable_media_style": false,
         "title": "Our Mission",
         "heading_size": "heading-standard",
-        "richtext": "<p>To create<strong>simple, skin-friendly essentials</strong>—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and<strong>clear labeling</strong>, so everyday care is easy.</p>",
+        "richtext": "<p><strong>Built with Purpose. Backed by Science.</strong></p><p>Dr. Biss started with a simple belief:</p><p><strong>Everyday care products should be clean, effective, and thoughtfully made.</strong></p><p>Too many products on the market rely on harsh ingredients, empty claims, and<br/>formulas designed more for trends than for real people. We wanted better<br/>products shaped with intention, backed by knowledge, and made for everyday<br/>life.</p><p>That is how Dr. Biss began.</p><p><strong>Where Chemistry Meets Practical Innovation</strong></p><p>Dr. Biss is built on more than just an idea. It is rooted in the mindset of a <strong>chemist </strong>and an <strong>industrial engineer</strong>.</p><p>From chemistry comes a deep understanding of ingredients, formulation, reactions,<br/>and how products interact with the body and environment.</p><p>From industrial engineering comes the discipline of designing products and processes that are practical, efficient, reliable, and built to serve people better.</p><p>That combination shapes everything we do:<br/><br/><strong>science-driven thinking, practical design, and a commitment to quality.</strong></p><p><strong>Why We Started Dr. Biss</strong></p><p>We were frustrated by personal care products that looked appealing but were filled with unnecessary additives, artificial fillers, and ingredients people could not trust.</p><p>We wanted to offer products that reflect a different standard:</p><p></p><ul><li>thoughtfully formulated </li><li>carefully selected ingredients </li><li>practical for real daily use </li><li>made with both performance and well-being in mind </li></ul><p>Not overhyped. Not overcomplicated.<br/><br/>Just honest products that do their job well.</p><p><strong>A Better Standard for Everyday Care</strong></p><p>As a chemist, we value what goes into a formula.<br/><br/>As an industrial engineer, we value how that formula becomes a dependable<br/>product people can use every day.</p><p>That means we think about both:</p><p></p><ul><li><strong>what a product is made of</strong> </li><li><strong>how well it fits into real life</strong><br/>     </li></ul><p>Dr. Biss is where those two worlds come together.</p>",
         "text_alignment": "text-left",
         "button_link": "shopify://collections",
         "button_label": "Shop All Products",
@@ -86,7 +68,7 @@
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/image_08_2ff5687a-45e2-416e-867a-d6ade671f998.jpg",
+        "image": "shopify://shop_images/ChatGPT_Image_11_._2026_._12_42_57.png",
         "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,
@@ -182,7 +164,6 @@
   },
   "order": [
     "hero",
-    "story",
     "mission",
     "promise",
     "values",

@@ -33,7 +33,9 @@
       "Bash(sed -n '4698,4715p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
       "Bash(git checkout *)",
       "Bash(Get-ChildItem -Path \"C:\\\\projects\\\\drbiss\" -Directory)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(git add *)",
+      "Bash(git merge *)"
     ]
   }
 }

@@ -745,3 +745,22 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 0.75rem;
 }
 
+/* About page — sticky image while scrolling long-text sections */
+@media (min-width: 990px) {
+  #shopify-section-template--21195744215237__mission > section,
+  #shopify-section-template--21195744215237__values > section {
+    overflow: visible;
+  }
+
+  #shopify-section-template--21195744215237__mission .grid-flow-row-dense,
+  #shopify-section-template--21195744215237__values .grid-flow-row-dense {
+    align-items: start;
+  }
+
+  #shopify-section-template--21195744215237__mission .grid-flow-row-dense > div:first-child,
+  #shopify-section-template--21195744215237__values .grid-flow-row-dense > div:first-child {
+    position: sticky;
+    top: calc(var(--header-group-height, 80px) + 20px);
+  }
+}
+

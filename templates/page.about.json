@@ -82,6 +82,28 @@
         "use_gradient_background": false
       }
     },
+    "mission2": {
+      "type": "image-with-text",
+      "settings": {
+        "display_on_card": false,
+        "image": "shopify://shop_images/image_1771884652788_xkqpiz.jpg",
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "default",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "right",
+        "image_size": "half",
+        "disable_media_style": false,
+        "title": "Our Mission2",
+        "heading_size": "heading-standard",
+        "richtext": "<p>To create<strong>simple, skin-friendly essentials</strong>—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and<strong>clear labeling</strong>, so everyday care is easy.</p>",
+        "text_alignment": "text-left",
+        "button_link": "shopify://collections",
+        "button_label": "Shop All Products",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
     "values": {
       "type": "image-with-text",
       "settings": {
@@ -185,6 +207,7 @@
     "story",
     "mission",
     "promise",
+    "mission2",
     "values",
     "icons",
     "newsletter"

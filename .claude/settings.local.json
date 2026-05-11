@@ -30,7 +30,8 @@
       "Bash(node *)",
       "Bash(sed -n '378,385p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
       "Bash(sed -n '4188,4210p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
-      "Bash(sed -n '4698,4715p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")"
+      "Bash(sed -n '4698,4715p' \"C:\\\\projects\\\\drbiss\\\\assets\\\\base.bundle.css\")",
+      "Bash(git checkout *)"
     ]
   }
 }

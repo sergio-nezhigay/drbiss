@@ -621,6 +621,17 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   outline: none;
 }
 
+/* Vertically align search and close icons in header search bar */
+[data-header-search] form .relative > button {
+  align-items: center;
+}
+
+[data-header-search] form .relative > button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Uppercase headings on homepage and selected content pages */
 .template-index .font-heading,
 .template-page-about .font-heading,

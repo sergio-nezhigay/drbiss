@@ -1,0 +1,9 @@
+# Normalize line endings to LF on checkout for all text files
+* text=auto eol=lf
+
+# Force LF for CSS/JS/Liquid assets (Shopify CLI can write CRLF)
+assets/*.css text eol=lf
+assets/*.js  text eol=lf
+sections/*.liquid text eol=lf
+snippets/*.liquid text eol=lf
+templates/*.json text eol=lf

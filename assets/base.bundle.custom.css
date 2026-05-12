@@ -616,6 +616,23 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 4px;
 }
 
+/* Remove dashed focus outline from header search input */
+.header-search-input:focus-visible {
+  /* outline: none; */
+}
+
+/* Vertically align search and close icons in header search bar */
+[data-header-search] form .relative > button {
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+[data-header-search] form .relative > button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Uppercase headings on homepage and selected content pages */
 .template-index .font-heading,
 .template-page-about .font-heading,

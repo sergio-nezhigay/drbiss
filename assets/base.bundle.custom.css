@@ -624,6 +624,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 /* Vertically align search and close icons in header search bar */
 [data-header-search] form .relative > button {
   align-items: center;
+  transform: translateY(-50%);
 }
 
 [data-header-search] form .relative > button svg {

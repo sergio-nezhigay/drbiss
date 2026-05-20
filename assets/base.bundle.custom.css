@@ -675,7 +675,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 2.5rem;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 768px) {
   .footer-social-bar {
     margin-top: 0;
   }

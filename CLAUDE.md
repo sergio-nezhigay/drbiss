@@ -51,6 +51,8 @@ Reuse these variables anywhere on the site rather than hardcoding the hex values
 
 Tailwind utility classes exist throughout the codebase but there is **no Tailwind compiler running**. The existing classes work because they are already in the pre-built `base.bundle.css`. For any new or modified styles, **use standard CSS** (in `base.bundle.custom.css` or an inline `<style>` block in a section) — do not add new Tailwind utility classes as they will not be compiled.
 
+When writing CSS for sections, avoid hard-coding generated Shopify section IDs like `#shopify-section-template--...`. Those IDs are store/export specific and can break when sections are duplicated, re-created, or moved between theme installs. Prefer reusable classes, data attributes, or dynamic `section.id` selectors inside Liquid.
+
 ### Customization Points
 
 - Visual overrides → `assets/base.bundle.custom.css`

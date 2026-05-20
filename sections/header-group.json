@@ -14,24 +14,32 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_9dfkeB": {
+        "announcement_8Cyd3H": {
           "type": "announcement",
           "settings": {
-            "text": "Free shipping on orders over $30",
+            "text": "NATURAL SOAPS FOR EVERYDAY CARE",
             "link": ""
           }
         },
-        "announcement_ghbirY": {
+        "announcement_9dfkeB": {
           "type": "announcement",
           "settings": {
-            "text": "Free shipping on orders over $30!",
+            "text": "FREE SHIPPING ON ORDERS OVER $30",
+            "link": ""
+          }
+        },
+        "announcement_n7PRap": {
+          "type": "announcement",
+          "settings": {
+            "text": "CLEAN INGREDIENTS • NATURAL CARE",
             "link": ""
           }
         }
       },
       "block_order": [
+        "announcement_8Cyd3H",
         "announcement_9dfkeB",
-        "announcement_ghbirY"
+        "announcement_n7PRap"
       ],
       "settings": {
         "home_page_only": false,

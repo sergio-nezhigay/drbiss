@@ -3476,24 +3476,6 @@
       },
       {
         "type": "text",
-        "id": "social_amazon_link",
-        "label": "Amazon",
-        "info": "Add your Amazon store or profile URL later."
-      },
-      {
-        "type": "text",
-        "id": "social_etsy_link",
-        "label": "Etsy",
-        "info": "Add your Etsy shop URL later."
-      },
-      {
-        "type": "text",
-        "id": "social_ebay_link",
-        "label": "eBay",
-        "info": "Add your eBay store or profile URL later."
-      },
-      {
-        "type": "text",
         "id": "social_tumblr_link",
         "label": "t:settings_schema.social_media.settings.social_tumblr_link.label",
         "info": "t:settings_schema.social_media.settings.social_tumblr_link.info"

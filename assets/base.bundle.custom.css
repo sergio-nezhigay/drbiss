@@ -306,11 +306,25 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .product-tile--mini .card__surface {
     padding: 0.4rem 0.6rem;
   }
-  .main-banner-section-home-page .px-section.py-section-vertical-spacing {
-    padding-bottom: 140px;
-  }
-  #shopify-section-template--21259363516613__hero_slideshow_n4GQYX .px-section.py-section-vertical-spacing {
-    padding-bottom: 90px;
+}
+
+/* Hero content safe-zone: keep text below the floating nav on all viewports.
+   --header-height is set by header.liquid; falls back to 90px if unset.
+   TODO: A dedicated mobile hero image should be set in the theme editor
+         (Slideshow → slide → "Mobile image") for optimal mobile layout. */
+.main-banner-section-home-page .px-section.py-section-vertical-spacing {
+  padding-top: max(var(--header-height, 90px), var(--section-vertical-spacing));
+}
+
+/* Announcement bar — clip adjacent Splide slides on narrow screens */
+.shopify-section--announcement-bar {
+  overflow: hidden;
+}
+
+/* Hero heading — minimum size on mobile for legibility over busy photo */
+@media (max-width: 767px) {
+  .main-banner-section-home-page .heading-standard {
+    font-size: max(1.75rem, var(--heading-standard-size, 1.75rem));
   }
 }
 

@@ -35,7 +35,10 @@
           }
         }
       },
-      "block_order": ["shape-divider-main-0", "shape-divider-main-1"],
+      "block_order": [
+        "shape-divider-main-0",
+        "shape-divider-main-1"
+      ],
       "settings": {
         "display_on_card": true,
         "posts_per_row_desktop": 3,
@@ -46,10 +49,12 @@
         "blog_show_author": false,
         "blog_show_date": false,
         "show_post_excerpt": false,
-        "color_scheme": "scheme3",
+        "color_scheme": "scheme1",
         "use_gradient_background": false
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

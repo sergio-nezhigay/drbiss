@@ -1,7 +1,7 @@
 {%- liquid
   assign country_selector = false
   assign locale_selector = false
-{% comment %} test {% endcomment %}
+  # test
   if section.settings.show_country_selector and localization.available_countries.size > 1
     assign country_selector = true
   endif
@@ -25,13 +25,20 @@
     else
       assign block_width_desktop = 'lg:col-span-4'
   endcase
+
+  assign content_blocks_count = 0
+  for block in section.blocks
+    unless block.type == 'sticker' or block.type == 'background_pattern' or block.type == 'background_shape' or block.type == 'shape_divider'
+      assign content_blocks_count = content_blocks_count | plus: 1
+    endunless
+  endfor
 -%}
 <footer
   class="relative bg-scheme-background px-section  text-scheme-text{% if section.settings.use_gradient_background %} bg-scheme-gradient{% endif %}"
   data-color-scheme="{{ section.settings.color_scheme }}"
 >
   <div class="section-content relative z-10 mx-auto max-w-site py-section-vertical-spacing">
-    <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-theme">
+    <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-theme footer__grid{% if content_blocks_count == 3 %} has-3-blocks{% endif %}">
       {%- for block in section.blocks -%}
         {% unless block.type == 'sticker'
           or block.type == 'background_pattern'
@@ -39,12 +46,12 @@
           or block.type == 'shape_divider'
         %}
           <div
-            class="space-y-5 {{ block_width_desktop }} {% if forloop.last %}lg:col-end-last{%  endif %}"
+            class="space-y-5 footer__block {{ block_width_desktop }} {% if forloop.last %}lg:col-end-last{%  endif %}"
             {{ block.shopify_attributes }}
           >
             {%- case block.type -%}
               {%- when 'logo' -%}
-                <div class="h1 font-heading">
+                <div class="h1 font-heading footer__logo-wrapper">
                   {% if block.settings.logo != blank %}
                     {% liquid
                       assign logo = block.settings.logo
@@ -62,6 +69,7 @@
                     >
                       <div
                         style="max-width: {{ block.settings.logo_max_width }}px;"
+                        class="footer__logo-img"
                       >
                         <img
                           src="{{ logo | image_url: width: image_size }}"
@@ -89,10 +97,11 @@
               {%- when 'tagline_and_social_links' -%}
                 {%- liquid
                   if forloop.last
-                    assign social_class = 'justify-start lg:justify-end'
-                    assign tagline_class = 'text-right'
+                    assign social_class = 'justify-start lg:justify-end footer__social-icons'
+                    assign tagline_class = 'text-right footer__tagline'
                   else
-                    assign social_class = 'justify-start lg:justify-start'
+                    assign social_class = 'justify-start lg:justify-start footer__social-icons'
+                    assign tagline_class = 'footer__tagline'
                   endif
                 -%}
                 {%- if block.settings.tagline != blank -%}
@@ -104,9 +113,9 @@
                   {%- render 'social-icons', list_class: social_class -%}
                 {%- endif -%}
               {%- when 'newsletter' -%}
-                <div>
+                <div class="footer__newsletter">
                   {%- if block.settings.newsletter_heading != blank -%}
-                    <h2 class="font-heading heading-secondary mb-5">
+                    <h2 class="font-heading heading-secondary mb-5 footer__newsletter-heading">
                       {{ block.settings.newsletter_heading }}
                     </h2>
                   {%- endif -%}
@@ -177,9 +186,9 @@
                   {% endform %}
                 </div>
               {%- when 'menus' -%}
-                <div class="flex flex-wrap justify-start gap-10 {% if forloop.last %}lg:justify-end{% else %}{% if forloop.first %}lg:justify-start{% else %}lg:justify-center{% endif %}{% endif %}">
+                <div class="footer__menus flex flex-wrap justify-start gap-10 {% if forloop.last %}lg:justify-end{% else %}{% if forloop.first %}lg:justify-start{% else %}lg:justify-center{% endif %}{% endif %}">
                   {%- if block.settings.linklist_1 != blank %}
-                    <div class="w-full  flex-1">
+                    <div class="footer__menu-list w-full  flex-1">
                       {% assign link_list = block.settings.linklist_1 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -201,7 +210,7 @@
                     </div>
                   {%- endif -%}
                   {%- if block.settings.linklist_2 != blank %}
-                    <div class="w-full  flex-1">
+                    <div class="footer__menu-list w-full  flex-1">
                       {% assign link_list = block.settings.linklist_2 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -223,7 +232,7 @@
                     </div>
                   {%- endif -%}
                   {%- if block.settings.linklist_3 != blank %}
-                    <div class="w-full flex-1">
+                    <div class="footer__menu-list w-full flex-1">
                       {% assign link_list = block.settings.linklist_3 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -251,8 +260,8 @@
       {%- endfor -%}
     </div>
 
-    <div class="section-content-top-margin justify-between text-scheme-text md:flex footer-bottom-bar">
-      <div class="{% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+    <div class="section-content-top-margin text-scheme-text footer-bottom-bar">
+      <div class="footer-bottom-bar__copyright {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
         <p class="text-sm">
           &copy; {{ 'now' | date: '%Y' }},
           {{ shop.name | link_to: routes.root_url }}.
@@ -270,11 +279,11 @@
 
       {%- if section.settings.show_payment_icons -%}
         {% unless shop.enabled_payment_types == empty %}
-          <div class="mt-10 md:mt-0 lg:mt-0  {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+          <div class="footer-bottom-bar__payments {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
             <h2 class="visually-hidden">
               {{ 'layout.footer.accepted_payments' | t }}
             </h2>
-            <ul class="payment-icons -mx-2 {% if country_selector or locale_selector %}lg:text-center{% endif %}">
+            <ul class="payment-icons -mx-2">
               {% for type in shop.enabled_payment_types %}
                 <li class="mx-2 inline-block w-8">
                   {{ type | payment_type_svg_tag: class: 'icon payment-icon' }}
@@ -286,7 +295,7 @@
       {%- endif -%}
 
       {%- if country_selector or locale_selector -%}
-        <div class="mb-4 mt-10 flex flex-wrap items-center justify-between lg:mb-0 lg:mt-0 lg:w-1/3 lg:justify-end">
+        <div class="footer-bottom-bar__localization {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
           {% render 'localization-form',
             context: 'footer',
             country_selector: country_selector,

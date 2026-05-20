@@ -815,12 +815,16 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
     gap: 1.5rem !important;
   }
 
-  .footer-bottom-bar__copyright,
+  .footer-bottom-bar__copyright {
+    width: auto !important;
+    flex: 1 1 0% !important;
+  }
+
   .footer-social-bar,
   .footer-bottom-bar__payments,
   .footer-bottom-bar__localization {
     width: auto !important;
-    flex: 1 1 0% !important;
+    flex: 2 2 0% !important;
   }
 
   .footer-bottom-bar__copyright {

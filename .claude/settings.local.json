@@ -38,7 +38,11 @@
       "Bash(git merge *)",
       "Bash(git commit *)",
       "Bash(git rebase *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git -C C:/projects/drbiss status)",
+      "Bash(git -C C:/projects/drbiss log --oneline -8)",
+      "Bash(git -C C:/projects/drbiss remote -v)",
+      "Bash(git *)"
     ]
   }
 }

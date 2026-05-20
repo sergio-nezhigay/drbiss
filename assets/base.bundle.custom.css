@@ -6,6 +6,7 @@
 :root {
   --announcement-bar-bg: #3d6b2e;
   --announcement-bar-color: #f5e09a;
+  --hero-max-height-desktop: 80vh; /* tune 50vh–100vh to resize the desktop hero */
 }
 
 /* Product card borders */
@@ -337,14 +338,17 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 @media (min-width: 990px) {
   .main-banner-section-home-page .splide__slide {
     min-height: 380px;
+    max-height: var(--hero-max-height-desktop);
     overflow: hidden;
   }
-  .main-banner-section-home-page .splide__slide .object-wrapper-none,
-  .main-banner-section-home-page .splide__slide .object-wrapper-none img {
+  .main-banner-section-home-page .splide__slide .object-wrapper-none {
     min-height: 380px;
+    max-height: var(--hero-max-height-desktop);
+    overflow: hidden;
   }
   .main-banner-section-home-page .splide__slide .object-wrapper-none img {
     width: 100%;
+    height: var(--hero-max-height-desktop);
     object-fit: cover;
     object-position: center center;
   }

@@ -270,7 +270,7 @@
 
       {%- if section.settings.show_payment_icons -%}
         {% unless shop.enabled_payment_types == empty %}
-          <div class="mt-10 lg:mt-0  {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+          <div class="mt-10 md:mt-0 lg:mt-0  {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
             <h2 class="visually-hidden">
               {{ 'layout.footer.accepted_payments' | t }}
             </h2>

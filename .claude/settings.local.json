@@ -37,11 +37,8 @@
       "Bash(git add *)",
       "Bash(git merge *)",
       "Bash(git commit *)",
-      "Bash(Get-ChildItem -Path \"C:\\\\projects\\\\drbiss\\\\assets\" -Filter \"*.css\")",
-      "Bash(Select-Object -ExpandProperty FullName)",
-      "Bash(findstr /N \"section-vertical-spacing\" base.bundle.css)",
-      "Bash(Get-ChildItem C:\\\\projects\\\\drbiss\\\\sections\\\\\" -Filter *header-group*\" *)",
-      "PowerShell(Get-Content *)"
+      "Bash(git rebase *)",
+      "Bash(git push *)"
     ]
   }
 }

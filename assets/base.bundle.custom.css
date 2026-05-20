@@ -665,6 +665,27 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
+/* ===== Footer bottom bar ===== */
+.footer-bottom-bar {
+  column-gap: 1.5rem;
+}
+
+/* ===== Footer social icons bar ===== */
+.footer-social-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-social-bar {
+    margin-top: 0;
+  }
+}
+
 /* ===== /collections page — collection card grid ===== */
 
 .collection-cards-grid {

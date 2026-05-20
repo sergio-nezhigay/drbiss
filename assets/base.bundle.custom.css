@@ -6,7 +6,7 @@
 :root {
   --announcement-bar-bg: #3d6b2e;
   --announcement-bar-color: #f5e09a;
-  --hero-max-height-desktop: 80vh; /* tune 50vh–100vh to resize the desktop hero */
+  --hero-max-height-desktop: 50vh; /* tune 50vh–100vh to resize the desktop hero */
 }
 
 /* Product card borders */

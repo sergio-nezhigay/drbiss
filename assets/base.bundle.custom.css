@@ -308,13 +308,8 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   }
 }
 
-/* Hero content safe-zone: keep text below the floating nav on all viewports.
-   --header-height is set by header.liquid; falls back to 90px if unset.
-   TODO: A dedicated mobile hero image should be set in the theme editor
-         (Slideshow → slide → "Mobile image") for optimal mobile layout. */
-.main-banner-section-home-page .px-section.py-section-vertical-spacing {
-  padding-top: max(var(--header-height, 90px), var(--section-vertical-spacing));
-}
+/* TODO: A dedicated mobile hero image should be set in the theme editor
+   (Slideshow → slide → "Mobile image") for optimal mobile layout. */
 
 /* Announcement bar — clip adjacent Splide slides on narrow screens */
 .shopify-section--announcement-bar {

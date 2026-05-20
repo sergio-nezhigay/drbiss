@@ -1,4 +1,4 @@
-﻿/* New Arrivals featured collection section — no bottom padding */
+/* New Arrivals featured collection section — no bottom padding */
 .featured-collection--new-arrivals {
   padding-bottom: 0;
 }
@@ -795,4 +795,112 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .collection-card__btn {
   margin-top: 0.75rem;
 }
+
+/* ===== Social Icons Styling & Colors ===== */
+.icon-facebook,
+.icon-facebook path {
+  fill: #1877f2 !important;
+}
+
+.icon-instagram,
+.icon-instagram path {
+  fill: #e1306c !important;
+}
+
+.icon-twitter,
+.icon-twitter path {
+  fill: #1da1f2 !important;
+}
+
+.icon-youtube,
+.icon-youtube path {
+  fill: #ff0000 !important;
+}
+
+.icon-pinterest,
+.icon-pinterest path {
+  fill: #bd081c !important;
+}
+
+.icon-snapchat,
+.icon-snapchat path {
+  fill: #ffde00 !important;
+}
+
+.icon-linkedin,
+.icon-linkedin path {
+  fill: #0a66c2 !important;
+}
+
+.icon-whatsapp,
+.icon-whatsapp path {
+  fill: #25d366 !important;
+}
+
+.icon-tumblr,
+.icon-tumblr path {
+  fill: #35465c !important;
+}
+
+.icon-discord,
+.icon-discord path {
+  fill: #5865f2 !important;
+}
+
+.icon-twitch,
+.icon-twitch path {
+  fill: #9146ff !important;
+}
+
+.icon-messenger,
+.icon-messenger path {
+  fill: #00b2ff !important;
+}
+
+.icon-vimeo,
+.icon-vimeo path {
+  fill: #1ab7ea !important;
+}
+
+.icon-amazon,
+.icon-amazon path {
+  fill: #ff9900 !important;
+}
+
+.icon-etsy,
+.icon-etsy path {
+  fill: #f1641e !important;
+}
+
+.icon-ebay,
+.icon-ebay path {
+  fill: #0064d2 !important;
+}
+
+/* For TikTok, keep it monochromatic by default (adapts to background contrast) and change to TikTok brand pink on hover */
+.footer-social-bar a:hover .icon-tiktok,
+.footer-social-bar a:hover .icon-tiktok path,
+.footer__social-icons a:hover .icon-tiktok,
+.footer__social-icons a:hover .icon-tiktok path,
+.sidebar-nav a:hover .icon-tiktok,
+.sidebar-nav a:hover .icon-tiktok path {
+  fill: #ff0050 !important;
+}
+
+/* Hover effects for all social icons to make them feel alive and interactive */
+.footer-social-bar a,
+.footer__social-icons a,
+.sidebar-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.footer-social-bar a:hover,
+.footer__social-icons a:hover,
+.sidebar-nav a:hover {
+  transform: scale(1.2) !important;
+}
+
 

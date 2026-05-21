@@ -680,6 +680,29 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   column-gap: 1.5rem;
 }
 
+.footer-bottom-bar__payments {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom-bar {
+    display: grid;
+    grid-template-columns: max-content 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom-bar__copyright {
+    width: auto !important;
+  }
+
+  .footer-bottom-bar__payments {
+    width: auto !important;
+    justify-self: end;
+    margin-top: 0;
+  }
+}
+
 /* ===== Footer social icons bar ===== */
 .footer-social-bar {
   display: flex;
@@ -690,9 +713,10 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer-social-bar {
     margin-top: 0;
+    justify-content: center;
   }
 }
 

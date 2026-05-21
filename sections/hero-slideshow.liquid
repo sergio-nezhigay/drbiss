@@ -115,9 +115,9 @@
     -%}
 
   {%- if section.settings.center_cta_text != blank and section.settings.center_cta_url != blank -%}
-    <div class="hero-center-btn-wrapper">
-      <a class="hero-center-btn" href="{{ section.settings.center_cta_url }}">
-        {{ section.settings.center_cta_text }}
+    <div class="hero-center-btn-wrapper" style="bottom: {{ section.settings.center_cta_bottom_offset }}px;">
+      <a class="push-btn inline-block" href="{{ section.settings.center_cta_url }}">
+        <span class="push-btn__surface">{{ section.settings.center_cta_text }}</span>
       </a>
     </div>
   {%- endif -%}
@@ -373,6 +373,16 @@
       "type": "text",
       "id": "center_cta_text",
       "label": "Button text"
+    },
+    {
+      "type": "range",
+      "id": "center_cta_bottom_offset",
+      "label": "Distance from bottom (px)",
+      "min": 20,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
     }
   ],
   "blocks": [

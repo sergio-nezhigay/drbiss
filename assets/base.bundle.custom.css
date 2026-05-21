@@ -1,28 +1,11 @@
 ﻿/* Hero section — centered CTA button overlay */
 .hero-center-btn-wrapper {
   position: absolute;
-  top: 50%;
+  bottom: 60px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 30;
   pointer-events: auto;
-}
-
-.hero-center-btn {
-  display: inline-block;
-  padding: 14px 36px;
-  background: var(--announcement-bar-bg);
-  color: var(--announcement-bar-color);
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: opacity 0.2s;
-}
-
-.hero-center-btn:hover {
-  opacity: 0.85;
 }
 
 /* New Arrivals featured collection section — no bottom padding */

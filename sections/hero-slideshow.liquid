@@ -113,6 +113,14 @@
         endfor
       endif
     -%}
+
+  {%- if section.settings.center_cta_text != blank and section.settings.center_cta_url != blank -%}
+    <div class="hero-center-btn-wrapper">
+      <a class="hero-center-btn" href="{{ section.settings.center_cta_url }}">
+        {{ section.settings.center_cta_text }}
+      </a>
+    </div>
+  {%- endif -%}
   </div>
 </section>
 
@@ -351,6 +359,20 @@
       "type": "checkbox",
       "id": "use_gradient_background",
       "label": "t:common.settings.use_gradient_background.label"
+    },
+    {
+      "type": "header",
+      "content": "Centered button"
+    },
+    {
+      "type": "url",
+      "id": "center_cta_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "center_cta_text",
+      "label": "Button text"
     }
   ],
   "blocks": [

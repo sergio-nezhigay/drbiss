@@ -22,7 +22,7 @@
 {{ 'hero-slideshow.css' | asset_url | stylesheet_tag }}
 
 <section
-  class="main-banner-section-home-page bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
+  class="main-banner-section-home-page relative bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
   data-color-scheme="{{ section_color }}"
 >
   <div
@@ -113,6 +113,14 @@
         endfor
       endif
     -%}
+
+  {%- if section.settings.center_cta_text != blank and section.settings.center_cta_url != blank -%}
+    <div class="hero-center-btn-wrapper">
+      <a class="hero-center-btn" href="{{ section.settings.center_cta_url }}">
+        {{ section.settings.center_cta_text }}
+      </a>
+    </div>
+  {%- endif -%}
   </div>
 </section>
 
@@ -351,6 +359,20 @@
       "type": "checkbox",
       "id": "use_gradient_background",
       "label": "t:common.settings.use_gradient_background.label"
+    },
+    {
+      "type": "header",
+      "content": "Centered button"
+    },
+    {
+      "type": "url",
+      "id": "center_cta_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "center_cta_text",
+      "label": "Button text"
     }
   ],
   "blocks": [

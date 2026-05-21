@@ -2,7 +2,7 @@
   background: rgb(var(--color-button-background-hover));
   color: rgb(var(--color-button-text));
   bottom: 20px;
-  padding: 8px;
+  padding: 28px;
   position: absolute;
   right: 30px;
   z-index: 19;

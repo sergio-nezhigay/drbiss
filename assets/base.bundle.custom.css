@@ -12,12 +12,45 @@
 .featured-collection--new-arrivals {
   padding-bottom: 0;
 }
-
+/* 
 :root {
   --announcement-bar-bg: #3d6b2e;
   --announcement-bar-color: #f5e09a;
   --hero-max-height-desktop: 100%; /* tune 50vh–100vh to resize the desktop hero */
+  
+} */
+
+.shopify-section--hero-slideshow .slideshow {
+  height: 90vh;
+  min-height: 700px;
 }
+
+.shopify-section--hero-slideshow .slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .shopify-section--hero-slideshow .slideshow {
+    height: 75vh;
+    min-height: 600px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .shopify-section--hero-slideshow .slideshow {
+    height: 65vh;
+    min-height: 500px;
+  }
+
+  .shopify-section--hero-slideshow .slideshow img {
+    object-position: center;
+  }
+}
+
 
 /* Product card borders */
 li > .product-tile {

@@ -42,7 +42,9 @@
         "heading_size": "heading-standard",
         "overlay_opacity": 0,
         "color_scheme": "scheme5",
-        "use_gradient_background": false
+        "use_gradient_background": false,
+        "center_cta_url": "shopify://collections",
+        "center_cta_text": "Shop now"
       }
     },
     "icon-list": {

@@ -684,6 +684,20 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 2.5rem;
 }
 
+@media (max-width: 1023px) {
+  .footer-bottom-bar__copyright {
+    text-align: center;
+  }
+
+  .footer-bottom-bar__payments {
+    text-align: center;
+  }
+
+  .footer-bottom-bar__payments .payment-icons {
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1024px) {
   .footer-bottom-bar {
     display: grid;

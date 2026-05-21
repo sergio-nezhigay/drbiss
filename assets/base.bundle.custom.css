@@ -51,6 +51,20 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+
+  .shopify-section--hero-slideshow .slideshow {
+    height: 65vh;
+    min-height: 500px;
+  }
+
+  .shopify-section--hero-slideshow .slideshow img {
+    object-fit: cover;
+    object-position: 68% center;
+  }
+
+}
+
 
 /* Product card borders */
 li > .product-tile {

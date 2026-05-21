@@ -844,6 +844,11 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 0.75rem;
 }
 
+/* Mobile drawer search icon — fix vertical centering (Tailwind CSS-variable transform unreliable here) */
+.sidebar-nav form[role="search"] button[type="submit"] {
+  transform: translateY(-50%);
+}
+
 /* Footer: 2-column grid at tablet (overrides the 3-column grid-cols-1 rule in base bundle) */
 @media (max-width: 990px) {
   .footer__grid.grid-cols-1 {

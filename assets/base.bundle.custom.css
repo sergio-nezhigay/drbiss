@@ -41,13 +41,15 @@
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-  .shopify-section--hero-slideshow .slideshow {
-    height: 65vh;
-    min-height: 500px;
+  .hero-slideshow,
+  .hero-slideshow .swiper-slide,
+  .hero-slideshow img {
+    height: 75vh !important;
   }
 
-  .shopify-section--hero-slideshow .slideshow__slide img{
-    object-position: 75% center !important;
+  .hero-slideshow img {
+    object-fit: cover;
+    object-position: center center !important;
   }
 }
 

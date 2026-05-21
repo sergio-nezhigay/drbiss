@@ -170,7 +170,7 @@
       {%- endif -%}
 
       {% if cta_url != blank and cta_text != blank %}
-        <div class="relative z-10 text-center {% if title != blank or richtext != blank %}mt-5{% endif %}">
+        <div class="relative z-10 {% if title != blank or richtext != blank %}mt-5{% endif %}">
           <a class="push-btn inline-block" href="{{ cta_url }}">
             <span class="push-btn__surface">{{ cta_text }}</span>
           </a>

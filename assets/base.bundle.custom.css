@@ -31,45 +31,7 @@
   object-fit: cover;
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  .shopify-section--hero-slideshow .slideshow {
-    height: 75vh;
-    min-height: 600px;
-  }
-}
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  .hero-slideshow,
-  .hero-slideshow .swiper-slide,
-  .hero-slideshow img {
-    height: 75vh !important;
-  }
-
-  .hero-slideshow img {
-    object-fit: cover;
-    object-position: center center !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-
-  .hero-slideshow,
-  .hero-slideshow .swiper-slide {
-    height: auto !important;
-    min-height: auto !important;
-  }
-
-  .hero-slideshow img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    object-position: center center !important;
-    display: block;
-  }
-
-}
 
 /* Product card borders */
 li > .product-tile {

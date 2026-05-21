@@ -46,23 +46,9 @@
     min-height: 500px;
   }
 
-  .shopify-section--hero-slideshow .slideshow img {
-    object-position: center;
+  .shopify-section--hero-slideshow .slideshow__slide img{
+    object-position: 75% center !important;
   }
-}
-
-@media screen and (max-width: 768px) {
-
-  .shopify-section--hero-slideshow .slideshow {
-    height: 65vh;
-    min-height: 500px;
-  }
-
-  .shopify-section--hero-slideshow .slideshow img {
-    object-fit: cover;
-    object-position: 68% center;
-  }
-
 }
 
 

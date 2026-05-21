@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "show_sold_out_badge": false,
     "drawer_color_scheme": "scheme2",
     "selected_text_background_color": "accent_2",
     "base_font_size": 16,

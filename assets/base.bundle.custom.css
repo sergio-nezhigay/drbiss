@@ -20,18 +20,6 @@
   
 } 
 
-.shopify-section--hero-slideshow .media-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 60, 30, 0.35);
-  z-index: 1;
-}
-
-.shopify-section--hero-slideshow .content-wrapper {
-  position: relative;
-  z-index: 2;
-}
 
 .shopify-section--hero-slideshow .slideshow {
   height: 90vh;

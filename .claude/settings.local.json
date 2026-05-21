@@ -44,7 +44,8 @@
       "Bash(git -C C:/projects/drbiss remote -v)",
       "Bash(git *)",
       "Bash(Get-ChildItem -Path \"C:\\\\projects\\\\drbiss\" -Recurse -Filter \"*footer*\")",
-      "Bash(Select-Object FullName)"
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem *)"
     ]
   }
 }

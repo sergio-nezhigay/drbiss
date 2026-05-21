@@ -69,11 +69,11 @@
       "block_order": [
         "title",
         "price",
+        "description",
         "qty_discount",
         "quantity-selector",
         "variant-picker",
-        "buy-buttons",
-        "description"
+        "buy-buttons"
       ],
       "settings": {
         "crop": "",

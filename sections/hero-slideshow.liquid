@@ -22,7 +22,7 @@
 {{ 'hero-slideshow.css' | asset_url | stylesheet_tag }}
 
 <section
-  class="main-banner-section-home-page bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
+  class="main-banner-section-home-page relative bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
   data-color-scheme="{{ section_color }}"
 >
   <div

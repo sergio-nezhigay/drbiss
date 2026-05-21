@@ -844,3 +844,10 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   margin-top: 0.75rem;
 }
 
+/* Footer: 2-column grid at tablet (overrides the 3-column grid-cols-1 rule in base bundle) */
+@media (max-width: 990px) {
+  .footer__grid.grid-cols-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

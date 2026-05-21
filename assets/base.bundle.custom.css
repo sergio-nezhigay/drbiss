@@ -130,13 +130,6 @@ li > .product-tile {
   padding: 1rem 2rem;
 }
 
-.main-banner-section-home-page .push-btn {
-  display: block;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .product-media .feature-media-item .media {
   max-height: calc(100vh - var(--section-vertical-spacing) - var(--header-group-height) - 52px);
 }

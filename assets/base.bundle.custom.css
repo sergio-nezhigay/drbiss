@@ -37,7 +37,20 @@
 }
 
 /* HERO RESPONSIVE FIX */
+@media screen and (max-width: 989px) {
 
+  .main-banner-object img {
+    object-fit: contain !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .main-banner-object {
+    padding-top: 0 !important;
+    height: auto !important;
+  }
+
+}
 
 
 

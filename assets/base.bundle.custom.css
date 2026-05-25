@@ -926,16 +926,4 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 }
 
 
-@media (max-width: 989px) {
 
-.main-banner-section-home-page .splide__slide .object-wrapper-none {
-    height: auto !important;
-}
-
-.main-banner-section-home-page .splide__slide img {
-    position: relative !important;
-    height: auto !important;
-    object-fit: contain !important;
-}
-
-}

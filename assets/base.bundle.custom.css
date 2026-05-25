@@ -76,6 +76,15 @@
 
 }
 
+@media (max-width: 989px) {
+
+.main-banner-section-home-page .splide__slide .object-wrapper-none {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+}
+
 
 
 

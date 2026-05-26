@@ -66,12 +66,26 @@
 @media screen and (max-width: 768px) {
 
   .main-banner-section-home-page .object-wrapper-none img {
-    object-fit: cover !important;
-    object-position: center top !important;
-    height: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+  }
+
+  .main-banner-section-home-page .object-wrapper-none {
+    height: auto !important;
+  }
+
+  .main-banner-section-home-page .splide__slide {
+    height: auto !important;
+  }
+
+  .main-banner-section-home-page .relative.z-10.h-full {
+    height: auto !important;
   }
 
 }
+
 
 
 

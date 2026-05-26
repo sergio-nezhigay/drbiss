@@ -895,6 +895,6 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 
 /* custom deyisiklikler */
 
-/* .main-banner-section-home-page .pointer-events-none {
+.main-banner-section-home-page .pointer-events-none {
     background: rgba(0,0,0,0.1) !important;
-} */
+}

@@ -56,25 +56,6 @@
     }
 }
 
-@media screen and (max-width: 989px) {
-
-.main-banner-section-home-page .place-content-center-center {
-    align-content: start !important;
-    padding-top: 40px !important;
-}
-
-.main-banner-section-home-page h1,
-.main-banner-section-home-page .h1 {
-    font-size: 42px !important;
-    line-height: 1 !important;
-}
-
-.main-banner-section-home-page .hero-center-btn-wrapper {
-    bottom: 40px !important;
-}
-
-}
-
 
 
 

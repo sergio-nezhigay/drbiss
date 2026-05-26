@@ -94,14 +94,14 @@
           }}
         {% endcapture %}
         {%- if image_mobile != blank -%}
-          <div class="hidden md:block">
+          <div class="hidden lg:block">
             {{ image_tag_output }}
           </div>
         {%- else -%}
           {{ image_tag_output }}
         {%- endif -%}
         {%- if image_mobile != blank -%}
-          <div class="md:hidden">
+          <div class="lg:hidden">
             {{
               image_mobile
               | image_url: width: image_mobile.width

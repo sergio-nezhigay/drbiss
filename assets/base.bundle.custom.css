@@ -40,22 +40,6 @@
 
 /* HERO RESPONSIVE */
 
-.main-banner-section-home-page .object-wrapper-landscape {
-    padding-top: 56.25% !important;
-}
-
-@media screen and (max-width: 1200px) {
-    .main-banner-section-home-page .object-wrapper-landscape {
-        padding-top: 72% !important;
-    }
-}
-
-@media screen and (max-width: 989px) {
-    .main-banner-section-home-page .object-wrapper-landscape {
-        padding-top: 140% !important;
-    }
-}
-
 
 
 

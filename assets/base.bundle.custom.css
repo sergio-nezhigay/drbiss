@@ -898,3 +898,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .main-banner-section-home-page .pointer-events-none {
     background: rgba(0,0,0,0.1) !important;
 }
+
+.banner-section .pointer-events-none {
+    background: rgba(0,0,0,0.4) !important;
+}

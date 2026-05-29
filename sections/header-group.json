@@ -14,17 +14,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_zqFUQ6": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚚 FREE SHIPPING ON ALL U.S. ORDERS",
+            "link": ""
+          }
+        },
         "announcement_8Cyd3H": {
           "type": "announcement",
           "settings": {
             "text": "NATURAL SOAPS FOR EVERYDAY CARE",
-            "link": ""
-          }
-        },
-        "announcement_9dfkeB": {
-          "type": "announcement",
-          "settings": {
-            "text": "FREE SHIPPING ON ORDERS OVER $30",
             "link": ""
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "block_order": [
+        "announcement_zqFUQ6",
         "announcement_8Cyd3H",
-        "announcement_9dfkeB",
         "announcement_n7PRap"
       ],
       "settings": {

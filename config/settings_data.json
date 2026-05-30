@@ -96,7 +96,7 @@
     "cart_icon": "bag",
     "enable_free_shipping_progress_in_cart": true,
     "free_shipping_threshold": "30",
-    "favicon": "shopify://shop_images/logotransparent.png",
+    "favicon": "shopify://shop_images/favicon2.jpg",
     "navigation_font": "font-main",
     "navigation_uppercase": false,
     "product_tiles_quick_buy": true,

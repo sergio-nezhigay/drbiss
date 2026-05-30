@@ -9,7 +9,6 @@
  */
 {
   "current": {
-    "show_sold_out_badge": false,
     "drawer_color_scheme": "scheme2",
     "selected_text_background_color": "accent_2",
     "base_font_size": 16,
@@ -72,6 +71,7 @@
     "hover_effect_zoom_media": true,
     "hover_effect_enlarge_shape": false,
     "on_sale_badge_shape": "scalloped_circle_3",
+    "show_sold_out_badge": false,
     "sold_out_badge_shape": "scalloped_circle_3",
     "badge_font_size": "2.441rem",
     "product_tile_metafield_badge": "badge",
@@ -96,6 +96,7 @@
     "cart_icon": "bag",
     "enable_free_shipping_progress_in_cart": true,
     "free_shipping_threshold": "30",
+    "favicon": "shopify://shop_images/logotransparent.png",
     "navigation_font": "font-main",
     "navigation_uppercase": false,
     "product_tiles_quick_buy": true,

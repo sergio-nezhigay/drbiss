@@ -105,14 +105,9 @@
                   endif
                 -%}
                 {%- if block.settings.tagline != blank -%}
-                  {% comment %} <div class="inline-rte break-words {{ tagline_class }}">
+                  <div class="inline-rte break-words {{ tagline_class }}">
                     {{ block.settings.tagline }}
-                  </div> {% endcomment %}
-                  <img
-  src="{{ block.settings.logo | image_url: width: 120 }}"
-  alt="{{ shop.name }}"
-  class="w-20 h-auto"
->
+                  </div>
                 {%- endif -%}
                 {%- if block.settings.show_social_icons -%}
                   {%- render 'social-icons', list_class: social_class -%}

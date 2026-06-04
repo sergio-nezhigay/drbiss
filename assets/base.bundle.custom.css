@@ -914,3 +914,15 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
 .banner-section .pointer-events-none {
     background: rgba(0,0,0,0.4) !important;
 }
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-brand-logo {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}

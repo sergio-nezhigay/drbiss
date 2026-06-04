@@ -921,6 +921,7 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
     align-items: center;
     gap: 0px;
     max-width: 500px;
+    padding-left:10px;
 }
 
 .footer-brand-logo {

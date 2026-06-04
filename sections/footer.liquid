@@ -108,17 +108,11 @@
                   {% comment %} <div class="inline-rte break-words {{ tagline_class }}">
                     {{ block.settings.tagline }}
                   </div> {% endcomment %}
-                  <div class="footer-brand flex items-start gap-4">
-  <img
-    src="{{ settings.logo | image_url: width: 120 }}"
-    alt="{{ shop.name }}"
-    class="w-20 h-auto"
-  >
-
-  <div class="inline-rte break-words {{ tagline_class }}">
-    {{ block.settings.tagline }}
-  </div>
-</div>
+                  <img
+  src="{{ block.settings.logo | image_url: width: 120 }}"
+  alt="{{ shop.name }}"
+  class="w-20 h-auto"
+>
                 {%- endif -%}
                 {%- if block.settings.show_social_icons -%}
                   {%- render 'social-icons', list_class: social_class -%}

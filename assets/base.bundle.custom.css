@@ -926,3 +926,16 @@ ul.grid li:has(a[href*="vc50l"]) .product-tile:hover .media--css-only img {
   height: auto;
   flex-shrink: 0;
 }
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.footer-brand-logo {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0;
+}

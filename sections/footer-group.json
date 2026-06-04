@@ -39,7 +39,7 @@
         "show_payment_icons": true,
         "show_country_selector": false,
         "show_locale_selector": false,
-        "color_scheme": "scheme1",
+        "color_scheme": "scheme2",
         "use_gradient_background": false
       }
     }

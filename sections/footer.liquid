@@ -113,17 +113,17 @@
 
                 {% assign footer_logo_block = section.blocks | where: 'type', 'logo' | first %}
 
-<div class="footer-brand flex items-start gap-4">
-  <img
-    src="{{ footer_logo_block.settings.logo | image_url: width: 120 }}"
-    alt="{{ shop.name }}"
-    class="footer-brand-logo"
-  >
+                    <div class="footer-brand">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0754/0097/0437/files/logotransparent.png?v=1780180674"
+                        alt="Dr. BISS"
+                        class="footer-brand-logo"
+                      >
 
-  <div class="inline-rte break-words {{ tagline_class }}">
-    {{ block.settings.tagline }}
-  </div>
-</div>
+                      <div class="inline-rte break-words {{ tagline_class }}">
+                        {{ block.settings.tagline }}
+                      </div>
+                    </div>
 
                 {%- if block.settings.show_social_icons -%}
                   {%- render 'social-icons', list_class: social_class -%}

@@ -315,51 +315,6 @@
         "use_gradient_background": false
       }
     },
-    "feature-text": {
-      "type": "feature-text",
-      "blocks": {
-        "shape-divider-feature-text-0": {
-          "type": "shape_divider",
-          "disabled": true,
-          "settings": {
-            "target_section": "above",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-2-patterned_1200x43",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        },
-        "shape-divider-feature-text-1": {
-          "type": "shape_divider",
-          "disabled": true,
-          "settings": {
-            "target_section": "below",
-            "target_section_color_scheme": "scheme2",
-            "style": "waves-3-patterned_1200x84",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        }
-      },
-      "block_order": [
-        "shape-divider-feature-text-0",
-        "shape-divider-feature-text-1"
-      ],
-      "settings": {
-        "rich_text": "{{ product.metafields.custom.feature_text.value }}",
-        "mobile_text_scale": 2,
-        "desktop_text_scale": 5,
-        "display_on_card": false,
-        "apply_effects": false,
-        "content_width_desktop": "lg:w-full",
-        "button_link": "",
-        "button_label": "Shop Now",
-        "color_scheme": "scheme4",
-        "use_gradient_background": false
-      }
-    },
     "featured-testimonials": {
       "type": "featured-testimonials",
       "blocks": {
@@ -680,7 +635,7 @@
         "max_products": "6",
         "product_tiles_aspect_ratio": "aspect-w-1 aspect-h-1",
         "image_shape": "default",
-        "color_scheme": "scheme1",
+        "color_scheme": "scheme6",
         "use_gradient_background": false
       }
     }
@@ -688,7 +643,6 @@
   "order": [
     "breadcrumbs",
     "main",
-    "feature-text",
     "featured-testimonials",
     "faq",
     "17696879010161131f",

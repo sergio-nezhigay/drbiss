@@ -15,15 +15,15 @@
         "slide_CBjAAz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1779284521112-pu8zkuej2.png",
-            "image_mobile": "shopify://shop_images/ChatGPT_Image_May_26_2026_04_58_45_PM.png",
-            "title": "",
-            "richtext": "",
+            "image": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1_ad90b4e5-7b2a-475c-aa5b-eb8fed853611.jpg",
+            "image_mobile": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1_2693a37e-69ff-4b57-bd15-8a712b0c6bbc.jpg",
+            "title": "Everyday care made easy.",
+            "richtext": "Vegan, sulfate-free, and clearly labeled",
             "cta_url": "shopify://collections",
-            "cta_text": "",
-            "place_content": "place-content-center-center",
+            "cta_text": "Shop Now",
+            "place_content": "place-content-end-start",
             "text_align": "text-left",
-            "product": ""
+            "product": "box-bar-soap-bundle-4-bars"
           }
         }
       },
@@ -33,7 +33,7 @@
       "name": "t:sections.hero_slideshow.name",
       "settings": {
         "style": "full",
-        "height": "natural",
+        "height": "pt-screen-height",
         "display_on_card": true,
         "display_content_below_image_on_mobile": false,
         "auto_rotate": false,
@@ -41,12 +41,8 @@
         "place_content": "place-content-center-start",
         "text_align": "text-left",
         "heading_size": "heading-standard",
-        "overlay_opacity": 0,
         "color_scheme": "scheme5",
-        "use_gradient_background": false,
-        "center_cta_url": "shopify://collections",
-        "center_cta_text": "Shop now",
-        "center_cta_bottom_offset": 60
+        "use_gradient_background": false
       }
     },
     "icon-list": {
@@ -509,7 +505,7 @@
             "emoji": "🌿",
             "icon_bg": "#dff0de",
             "title": "Zero palm oil. Ever.",
-            "description": "Palm-free by principle. We use coconut, olive, avocado oil & glycerin for a lather that's good for you and the planet."
+            "description": "Palm-free by principle. We use coconut oil, olive oil & glycerin for a lather that's good for you and the planet."
           }
         },
         "wcu_card_3": {

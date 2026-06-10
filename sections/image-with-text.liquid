@@ -5,34 +5,6 @@
     assign preload = true
   endif
 -%}
-{% if section.settings.mobile_stack %}
-<style>
-  @media (max-width: 989px) {
-    #shopify-section-{{ section.id }} .grid-flow-row-dense {
-      grid-template-columns: 1fr !important;
-    }
-    #shopify-section-{{ section.id }} .grid-flow-row-dense > *:first-child {
-      order: 2;
-    }
-    #shopify-section-{{ section.id }} .grid-flow-row-dense > *:nth-child(2) {
-      order: 1;
-    }
-  }
-</style>
-{% endif %}
-{% if section.settings.sticky_image %}
-<style>
-  @media (min-width: 990px) {
-    #MainContent { overflow: visible; }
-    #shopify-section-{{ section.id }} section { overflow: visible; }
-    #shopify-section-{{ section.id }} .grid-flow-row-dense { align-items: start; }
-    #shopify-section-{{ section.id }} .grid-flow-row-dense > div:first-child {
-      position: sticky;
-      top: calc(var(--header-group-height, 80px) + 20px);
-    }
-  }
-</style>
-{% endif %}
 <section
   class="bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %} relative overflow-hidden"
   data-color-scheme="{{ section.settings.color_scheme }}"
@@ -564,18 +536,6 @@
       "label": "t:common.settings.disable_media_style.label",
       "default": false,
       "info": "t:common.settings.disable_media_style.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "mobile_stack",
-      "label": "Stack vertically on mobile (text above, image below)",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "sticky_image",
-      "label": "Sticky image on desktop (image follows scroll for long text)",
-      "default": false
     },
     {
       "type": "header",

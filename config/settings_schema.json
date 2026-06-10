@@ -3533,21 +3533,6 @@
         "id": "social_email_link",
         "label": "t:settings_schema.social_media.settings.social_email_link.label",
         "info": "t:settings_schema.social_media.settings.social_email_link.info"
-      },
-      {
-        "type": "text",
-        "id": "social_amazon_link",
-        "label": "Amazon"
-      },
-      {
-        "type": "text",
-        "id": "social_etsy_link",
-        "label": "Etsy"
-      },
-      {
-        "type": "text",
-        "id": "social_ebay_link",
-        "label": "eBay"
       }
     ]
   },

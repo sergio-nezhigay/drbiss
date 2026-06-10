@@ -1,5 +1,5 @@
 {%- liquid
-  assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, Snapchat, TikTok, Tumblr, YouTube, LinkedIn, Threads, WhatsApp, Discord, Twitch, Messenger, Email, Vimeo, Amazon, Etsy, Ebay' | split: ', '
+  assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, Snapchat, TikTok, Tumblr, YouTube, LinkedIn, Threads, WhatsApp, Discord, Twitch, Messenger, Email, Vimeo' | split: ', '
 -%}
 <ul class="-mx-2 -mt-2 flex flex-wrap {{ list_class }}">
   {% for social in social_accounts %}
@@ -48,12 +48,6 @@
                     render 'icon-messenger'
                   when 'vimeo'
                     render 'icon-vimeo'
-                  when 'amazon'
-                    render 'icon-amazon'
-                  when 'etsy'
-                    render 'icon-etsy'
-                  when 'ebay'
-                    render 'icon-ebay'
                 endcase
               -%}
             </span>

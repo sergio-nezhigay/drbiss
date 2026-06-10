@@ -14,32 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_zqFUQ6": {
+        "announcement_9dfkeB": {
           "type": "announcement",
           "settings": {
-            "text": "FREE SHIPPING ON ALL U.S. ORDERS",
+            "text": "Free shipping on orders over $30",
             "link": ""
           }
         },
-        "announcement_8Cyd3H": {
+        "announcement_ghbirY": {
           "type": "announcement",
           "settings": {
-            "text": "NATURAL SOAPS FOR EVERYDAY CARE",
-            "link": ""
-          }
-        },
-        "announcement_n7PRap": {
-          "type": "announcement",
-          "settings": {
-            "text": "CLEAN INGREDIENTS • NATURAL CARE",
+            "text": "Free shipping on orders over $30!",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_zqFUQ6",
-        "announcement_8Cyd3H",
-        "announcement_n7PRap"
+        "announcement_9dfkeB",
+        "announcement_ghbirY"
       ],
       "settings": {
         "home_page_only": false,
@@ -70,7 +62,7 @@
         "header_show_search": true,
         "sticky_header": true,
         "show_icons": true,
-        "enable_overlay_on_homepage": false,
+        "enable_overlay_on_homepage": true,
         "enable_overlay_on_collection_pages": false,
         "enable_overlay_on_product_pages": false,
         "overlay_color_scheme": "scheme1",

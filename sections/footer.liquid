@@ -1,7 +1,7 @@
 {%- liquid
   assign country_selector = false
   assign locale_selector = false
-  # test
+
   if section.settings.show_country_selector and localization.available_countries.size > 1
     assign country_selector = true
   endif
@@ -25,20 +25,27 @@
     else
       assign block_width_desktop = 'lg:col-span-4'
   endcase
-
-  assign content_blocks_count = 0
-  for block in section.blocks
-    unless block.type == 'sticker' or block.type == 'background_pattern' or block.type == 'background_shape' or block.type == 'shape_divider'
-      assign content_blocks_count = content_blocks_count | plus: 1
-    endunless
-  endfor
 -%}
+{% style %}
+  .footer-menus-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    .footer-menus-flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+{% endstyle %}
 <footer
   class="relative bg-scheme-background px-section  text-scheme-text{% if section.settings.use_gradient_background %} bg-scheme-gradient{% endif %}"
   data-color-scheme="{{ section.settings.color_scheme }}"
 >
   <div class="section-content relative z-10 mx-auto max-w-site py-section-vertical-spacing">
-    <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-theme footer__grid{% if content_blocks_count == 3 %} has-3-blocks{% endif %}">
+    <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-theme">
       {%- for block in section.blocks -%}
         {% unless block.type == 'sticker'
           or block.type == 'background_pattern'
@@ -46,12 +53,12 @@
           or block.type == 'shape_divider'
         %}
           <div
-            class="space-y-5 footer__block {{ block_width_desktop }} {% if forloop.last %}lg:col-end-last{%  endif %}"
+            class="space-y-5 {{ block_width_desktop }} {% if forloop.last %}lg:col-end-last{%  endif %}"
             {{ block.shopify_attributes }}
           >
             {%- case block.type -%}
               {%- when 'logo' -%}
-                <div class="h1 font-heading footer__logo-wrapper">
+                <div class="h1 font-heading">
                   {% if block.settings.logo != blank %}
                     {% liquid
                       assign logo = block.settings.logo
@@ -69,7 +76,6 @@
                     >
                       <div
                         style="max-width: {{ block.settings.logo_max_width }}px;"
-                        class="footer__logo-img"
                       >
                         <img
                           src="{{ logo | image_url: width: image_size }}"
@@ -97,41 +103,24 @@
               {%- when 'tagline_and_social_links' -%}
                 {%- liquid
                   if forloop.last
-                    assign social_class = 'justify-start lg:justify-end footer__social-icons'
-                    assign tagline_class = 'text-right footer__tagline'
+                    assign social_class = 'justify-start lg:justify-end'
+                    assign tagline_class = 'lg:text-right'
                   else
-                    assign social_class = 'justify-start lg:justify-start footer__social-icons'
-                    assign tagline_class = 'footer__tagline'
+                    assign social_class = 'justify-start lg:justify-start'
                   endif
                 -%}
-{% comment %} 
                 {%- if block.settings.tagline != blank -%}
-                  <div class="inline-rte break-words {{ tagline_class }}">
+                  <div class="inline-rte break-words w-full {{ tagline_class }}">
                     {{ block.settings.tagline }}
                   </div>
-                {%- endif -%} {% endcomment %}
-
-                {% assign footer_logo_block = section.blocks | where: 'type', 'logo' | first %}
-
-                    <div class="footer-brand">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0754/0097/0437/files/logotransparent.png?v=1780180674"
-                        alt="Dr. BISS"
-                        class="footer-brand-logo"
-                      >
-
-                      <div class="inline-rte break-words {{ tagline_class }}">
-                        {{ block.settings.tagline }}
-                      </div>
-                    </div>
-
+                {%- endif -%}
                 {%- if block.settings.show_social_icons -%}
                   {%- render 'social-icons', list_class: social_class -%}
                 {%- endif -%}
               {%- when 'newsletter' -%}
-                <div class="footer__newsletter">
+                <div>
                   {%- if block.settings.newsletter_heading != blank -%}
-                    <h2 class="font-heading heading-secondary mb-5 footer__newsletter-heading">
+                    <h2 class="font-heading heading-secondary mb-5">
                       {{ block.settings.newsletter_heading }}
                     </h2>
                   {%- endif -%}
@@ -202,9 +191,9 @@
                   {% endform %}
                 </div>
               {%- when 'menus' -%}
-                <div class="footer__menus flex flex-wrap justify-start gap-10 {% if forloop.last %}lg:justify-end{% else %}{% if forloop.first %}lg:justify-start{% else %}lg:justify-center{% endif %}{% endif %}">
+                <div class="footer-menus-flex gap-10 {% if forloop.last %}lg:justify-end{% else %}{% if forloop.first %}lg:justify-start{% else %}lg:justify-center{% endif %}{% endif %}">
                   {%- if block.settings.linklist_1 != blank %}
-                    <div class="footer__menu-list w-full  flex-1">
+                    <div class="w-full  flex-1">
                       {% assign link_list = block.settings.linklist_1 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -226,7 +215,7 @@
                     </div>
                   {%- endif -%}
                   {%- if block.settings.linklist_2 != blank %}
-                    <div class="footer__menu-list w-full  flex-1">
+                    <div class="w-full  flex-1">
                       {% assign link_list = block.settings.linklist_2 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -248,7 +237,7 @@
                     </div>
                   {%- endif -%}
                   {%- if block.settings.linklist_3 != blank %}
-                    <div class="footer__menu-list w-full flex-1">
+                    <div class="w-full flex-1">
                       {% assign link_list = block.settings.linklist_3 %}
                       {% if block.settings.show_menu_headings %}
                         <h2 class="font-heading mb-4 break-all text-base">
@@ -276,30 +265,21 @@
       {%- endfor -%}
     </div>
 
-    <div class="section-content-top-margin text-scheme-text footer-bottom-bar">
-      <div class="footer-bottom-bar__copyright {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+    <div class="section-content-top-margin justify-between text-scheme-text md:flex">
+      <div class="{% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
         <p class="text-sm">
           &copy; {{ 'now' | date: '%Y' }},
           {{ shop.name | link_to: routes.root_url }}.
         </p>
       </div>
 
-      <div class="footer-social-bar">
-        <a href="https://www.instagram.com/drbiss.us/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-instagram' %}</span></a>
-        <a href="https://www.facebook.com/profile.php?id=61589642302744" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-facebook' %}</span></a>
-        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-tiktok' %}</span></a>
-        <a href="https://www.amazon.com/stores/DrBISS/page/33984F89-8231-4103-8734-79564C6E39AF?lp_asin=B0GS6RWQVL&ref_=ast_bln" target="_blank" rel="noopener noreferrer" aria-label="Amazon" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-amazon' %}</span></a>
-        <a href="https://www.etsy.com/shop/DrBissNature?ref=shop-header-name&listing_id=4457883173&from_page=listing" target="_blank" rel="noopener noreferrer" aria-label="Etsy" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-etsy' %}</span></a>
-        <a href="https://www.ebay.com/sch/i.html?item=127655902316&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=dr.biss" target="_blank" rel="noopener noreferrer" aria-label="eBay" class="fill-current"><span class="inline-block h-5 w-5">{% render 'icon-ebay' %}</span></a>
-      </div>
-
       {%- if section.settings.show_payment_icons -%}
         {% unless shop.enabled_payment_types == empty %}
-          <div class="footer-bottom-bar__payments {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+          <div class="mt-10 lg:mt-0  {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
             <h2 class="visually-hidden">
               {{ 'layout.footer.accepted_payments' | t }}
             </h2>
-            <ul class="payment-icons -mx-2">
+            <ul class="payment-icons -mx-2 {% if country_selector or locale_selector %}lg:text-center{% endif %}">
               {% for type in shop.enabled_payment_types %}
                 <li class="mx-2 inline-block w-8">
                   {{ type | payment_type_svg_tag: class: 'icon payment-icon' }}
@@ -311,7 +291,7 @@
       {%- endif -%}
 
       {%- if country_selector or locale_selector -%}
-        <div class="footer-bottom-bar__localization {% if country_selector or locale_selector %}lg:w-1/3{% endif %}">
+        <div class="mb-4 mt-10 flex flex-wrap items-center justify-between lg:mb-0 lg:mt-0 lg:w-1/3 lg:justify-end">
           {% render 'localization-form',
             context: 'footer',
             country_selector: country_selector,

@@ -33,7 +33,7 @@
       "settings": {
         "title": "Our Ingredient Philosophy",
         "heading_size": "heading-standard",
-        "rich_text": "<p>At Dr. Biss, we believe customers deserve to know exactly what they are putting on their skin. That is why we use simple, recognizable ingredients and avoid unnecessary additives.<br/><br/><strong>What We Avoid</strong><br/>We do not use sulfates, parabens, palm oil, alcohol, synthetic dyes, or unnecessary fillers.<br/><br/><strong>Liquid Soap Note</strong><br/>Our liquid soaps may include potassium hydroxide during the soap-making process. It is used for saponification and is not present as a harsh free ingredient in the finished soap.</p>",
+        "rich_text": "<p>We believe you have the right to know exactly what you are putting on your skin. Every Dr. Biss product carries a full ingredient list — no proprietary blends, no hidden complexes, no vague terms like 'fragrance' that mask dozens of unknown chemicals.</p><p>Every ingredient must pass one simple test: does it belong? If it doesn't actively benefit your skin, protect the formula or improve the texture, it doesn't make the cut.</p>",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
@@ -56,7 +56,7 @@
         "disable_media_style": false,
         "title": "What We Use",
         "heading_size": "heading-standard",
-        "richtext": "<p><strong>Oils</strong> — Coconut Oil, Olive Oil, Avocado Oil, Soybean Oil<br/><strong>Scent</strong> — Lavender Essential Oil, Peppermint Essential Oil<br/><strong>Botanical</strong> — Turmeric (Curcuma longa)<br/><strong>Supporting</strong> — Glycerin, Citric Acid, Tocopherol, Sea Salt, Sucrose</p>",
+        "richtext": "<p><strong>Oils</strong> — Coconut Oil, Olive Oil, Soybean Oil<br/><strong>Scent</strong> — Lavender Essential Oil, Peppermint Essential Oil<br/><strong>Botanical</strong> — Turmeric (Curcuma longa)<br/><strong>Supporting</strong> — Glycerin, Citric Acid, Tocopherol, Sea Salt, Sucrose</p>",
         "text_alignment": "text-left",
         "button_link": "",
         "button_label": "",
@@ -85,40 +85,35 @@
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "100% Vegan",
-            "subtext": ""
+            "text": "100% Vegan"
           }
         },
         "icon-sulfate": {
           "type": "icon",
           "settings": {
             "icon": "alcohol_free",
-            "text": "Sulfate Free",
-            "subtext": ""
+            "text": "Sulfate Free"
           }
         },
         "icon-palm": {
           "type": "icon",
           "settings": {
             "icon": "globe",
-            "text": "Palm Oil Free",
-            "subtext": ""
+            "text": "Palm Oil Free"
           }
         },
         "icon-trans": {
           "type": "icon",
           "settings": {
             "icon": "eye",
-            "text": "Full Transparency",
-            "subtext": ""
+            "text": "Full Transparency"
           }
         },
         "icon-frag": {
           "type": "icon",
           "settings": {
             "icon": "return",
-            "text": "Natural Fragrance",
-            "subtext": ""
+            "text": "Natural Fragrance"
           }
         }
       },

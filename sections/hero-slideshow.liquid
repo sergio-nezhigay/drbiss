@@ -22,7 +22,7 @@
 {{ 'hero-slideshow.css' | asset_url | stylesheet_tag }}
 
 <section
-  class="main-banner-section-home-page relative bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
+  class="main-banner-section-home-page bg-scheme-background text-scheme-text {% if section.settings.use_gradient_background %}bg-scheme-gradient{% endif %}  {% unless style == 'inset' %}full-bleed-section{% endunless %} overflow-hidden"
   data-color-scheme="{{ section_color }}"
 >
   <div
@@ -77,7 +77,7 @@
                     assign crop = 'object-wrapper  main-banner-object ' | append: height
                   endif
 
-                  render 'x-image-with-text-overlay', image: block.settings.image, image_mobile: block.settings.image_mobile, place_content: place_content, text_align: text_align, color_scheme: section.settings.color_scheme, use_gradient_background: block.settings.use_gradient_background, title: block.settings.title, richtext: block.settings.richtext, cta_url: block.settings.cta_url, cta_text: block.settings.cta_text, display_on_card: section.settings.display_on_card, style: style, crop: crop, slideshow_height: height, display_content_below_image_on_mobile: section.settings.display_content_below_image_on_mobile, heading_size: section.settings.heading_size, loading: loading, preload: preload, forloop: forloop, product: block.settings.product, overlay_opacity: section.settings.overlay_opacityassign crop
+                  render 'x-image-with-text-overlay', image: block.settings.image, image_mobile: block.settings.image_mobile, place_content: place_content, text_align: text_align, color_scheme: section.settings.color_scheme, use_gradient_background: block.settings.use_gradient_background, title: block.settings.title, richtext: block.settings.richtext, cta_url: block.settings.cta_url, cta_text: block.settings.cta_text, display_on_card: section.settings.display_on_card, style: style, crop: crop, slideshow_height: height, display_content_below_image_on_mobile: section.settings.display_content_below_image_on_mobile, heading_size: section.settings.heading_size, loading: loading, preload: preload, forloop: forloop, product: block.settings.product
                 when 'video_slide'
                   if height == 'natural'
                     assign crop = block.settings.crop
@@ -113,14 +113,6 @@
         endfor
       endif
     -%}
-
-  {%- if section.settings.center_cta_text != blank and section.settings.center_cta_url != blank -%}
-    <div class="hero-center-btn-wrapper" style="bottom: {{ section.settings.center_cta_bottom_offset }}px;">
-      <a class="push-btn inline-block" href="{{ section.settings.center_cta_url }}">
-        <span class="push-btn__surface">{{ section.settings.center_cta_text }}</span>
-      </a>
-    </div>
-  {%- endif -%}
   </div>
 </section>
 
@@ -333,20 +325,6 @@
     },
     {
       "type": "header",
-      "content": "Image overlay"
-    },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "Overlay darkness",
-      "default": 40
-    },
-    {
-      "type": "header",
       "content": "t:common.settings.header_color"
     },
     {
@@ -359,30 +337,6 @@
       "type": "checkbox",
       "id": "use_gradient_background",
       "label": "t:common.settings.use_gradient_background.label"
-    },
-    {
-      "type": "header",
-      "content": "Centered button"
-    },
-    {
-      "type": "url",
-      "id": "center_cta_url",
-      "label": "Button link"
-    },
-    {
-      "type": "text",
-      "id": "center_cta_text",
-      "label": "Button text"
-    },
-    {
-      "type": "range",
-      "id": "center_cta_bottom_offset",
-      "label": "Distance from bottom (px)",
-      "min": 20,
-      "max": 200,
-      "step": 4,
-      "unit": "px",
-      "default": 60
     }
   ],
   "blocks": [
